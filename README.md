@@ -37,18 +37,26 @@ pin the exact copies the decompilation is checked against.
 
 ## Worklist
 
-`PROGRESS.csv` lists every function (module, address, size, name, xrefs, status);
-`python3 tools/make_progress.py <survey dir> PROGRESS.csv` regenerates it and keeps
-existing statuses. Statuses: `TODO`, `THUNK`, `EXCLUDED-<reason>`, `RAW-src`,
-`PARITY-<file>`, `MATCH-<file>`.
+`PROGRESS.csv` lists every function (module, address, size, name, xrefs, status).
+Regenerate with `tools/make_progress.py <survey dir> PROGRESS.csv`, then
+`tools/collapse_families.py <orig dir> PROGRESS.csv FAMILIES.csv`; both keep
+statuses already set. Statuses: `TODO`, `THUNK`, `EXCLUDED-<reason>`,
+`DUP-<module>-<addr>`, `RAW-src`, `PARITY-<file>`, `MATCH-<file>`.
+
+`DUP-` rows have the same machine code shape as a representative (absolute
+addresses and branch targets masked), so a family is written once.
+`FAMILIES.csv` lists every family of 2+ members.
 
 | | Exe (GMSv62) | 8 Wizet DLLs |
 |---|---|---|
 | Rows in the export | 72,908 | 8,142 |
-| `EXCLUDED-seh-unwind` / `seh-catch` (compiler exception funclets) | 34,732 | 1,892 |
+| `EXCLUDED` (exception funclets; libraries) | 34,732 | 4,190 (+2,083 in msvcrt/ijl15) |
 | `THUNK` | 257 | 134 |
-| `TODO` | 37,919 | 5,870 |
+| `DUP` (same shape as a representative) | 28,707 | 2,227 |
+| **`TODO` (unique, to decompile)** | **9,212** | **3,643** |
 
-The exe's `TODO` count still includes statically linked CRT/STL/ATL code that has
-not been excluded yet (PLAN.md, Phase 0 step 3). `msvcrt.dll` and `ijl15.dll`
-(2,083 rows) are excluded as libraries.
+The biggest exe family is 20,105 identical 63-byte stubs (allocate a 0x18-byte
+object, set one vtable) laid out back to back across about 1.2 MB: filler, not
+logic. The 4,248 vtable methods found by the code-pointer scan had no size;
+`collapse_families.py` estimates one by scanning to the first `ret` past every
+forward branch.

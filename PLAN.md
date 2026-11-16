@@ -8,7 +8,7 @@ adjusted for a target about 30 times larger.
 | | GunBound-Decomp | MapleStory-v62-Decomp (today) |
 |---|---|---|
 | Target | `GunBound.gme`, 1.8 MB | `GMSv62.exe`, 6.4 MB, plus 8 Wizet DLLs |
-| Functions | 2,404 | 72,908 rows in the exe, but 34,732 are compiler exception funclets: about 38,200 real; about 5,900 more in the DLLs |
+| Functions | 2,404 | 72,908 rows in the exe, but 34,732 are compiler exception funclets: about 38,200 real, of which 9,212 are unique shapes; 3,643 unique in the DLLs |
 | Compiler | MSVC 7.1 | MSVC 6.0 (linker 6.0, built 2008-11-11) |
 | RTTI | n/a | 10 type names only (exception classes), so no class names for free |
 | Lifted C (machine output, runs) | `recomp/`, gitignored | `src/lifted/`, published |
@@ -48,14 +48,17 @@ Statuses, as in GunBound: `TODO`, `EXCLUDED-<reason>`, `RAW-src`,
 2. Generate `PROGRESS.csv` from the existing function CSVs: done, 83,102 rows.
 3. Triage exclusions before any porting. **Done so far:** exception funclets
    (`Unwind@`, `Catch@`), thunks and the two library DLLs are classified by
-   `tools/make_progress.py`, leaving 43,789 `TODO`. **Still to do:** mark the statically linked CRT, STL,
+   `tools/make_progress.py`. **Still to do:** mark the statically linked CRT, STL,
    ATL/COM support, zlib and other library code `EXCLUDED`, using Ghidra
    function-ID signatures for VC6. Exclude `ijl15.dll` and `msvcrt.dll`
    entirely. This is expected to remove a large share of the 72,908; the real
    number is not known until this step runs.
-4. Collapse template instantiations (`ZXString`, `ZArray`, `ZRef`, `ZList`,
-   `_com_ptr_t` wrappers) into families by byte-pattern similarity, so one
-   template is written once instead of hundreds of times.
+4. Collapse same-shape functions into families so each is written once.
+   **Done** (`tools/collapse_families.py`, `FAMILIES.csv`): 30,934 functions
+   are `DUP-` of a representative, leaving 12,855 unique `TODO`, about 7 times
+   GunBound's raw-port count. Each family representative still has to be
+   checked against its duplicates when ported, since the shape hash masks
+   absolute addresses (templates over different globals share a hash).
 5. Port the GunBound tooling: Ghidra scripts, the per-file compile sweep, the
    call-site register audit, `promote.sh`, the score report.
 6. Stand up an MSVC 6.0 toolchain under Wine in Docker (user-supplied, like
