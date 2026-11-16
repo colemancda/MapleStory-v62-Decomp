@@ -141,7 +141,7 @@ so the client stays runnable throughout.
 
 ## Pilot result
 
-ZLZ.dll: 141 of 182 unique functions compile clean with no hand edits; see `docs/PILOT-ZLZ.md`.
+All eight DLLs: 2938 of 3640 unique functions compile clean with no hand edits (80%); see `docs/PILOT-ZLZ.md` and the README table. The exe is next.
 
 ## First milestones
 

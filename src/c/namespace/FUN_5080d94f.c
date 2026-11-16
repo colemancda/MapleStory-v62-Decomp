@@ -1,0 +1,32 @@
+/* FUN_5080d94f - 0x5080d94f in NameSpace.dll (image base 0x50800000).
+ * Raw Ghidra decompiler output, not yet reviewed. */
+#include "ghidra_types.h"
+#include "namespace_decls.h"
+
+
+void __thiscall FUN_5080d94f(void *this,int *param_1,int param_2)
+
+{
+  int iVar1;
+  undefined1 local_14 [16];
+  
+  iVar1 = FUN_5080d697((int)this);
+  if (iVar1 == 0) {
+    FUN_5080450d(local_14,0x80070005,(int *)0x0,'\0');
+                    /* WARNING: Subroutine does not return */
+    _CxxThrowException(local_14,(ThrowInfo *)&DAT_50819008);
+  }
+  iVar1 = FUN_5080d9b8();
+  if (iVar1 == 0) {
+    (**(code **)(*param_1 + 0x20))(this,param_2);
+  }
+  else {
+    if (param_2 == 0) {
+      param_2 = (**(code **)(*(int *)this + 0x2c))();
+    }
+    (**(code **)(*param_1 + 0x18))(iVar1,param_2);
+  }
+  return;
+}
+
+

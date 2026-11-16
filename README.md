@@ -61,7 +61,23 @@ logic. The 4,248 vtable methods found by the code-pointer scan had no size;
 `collapse_families.py` estimates one by scanning to the first `ret` past every
 forward branch.
 
-## Pilot
+## Raw C tier
 
-`ZLZ.dll` has been taken through the raw C tier: 141 of 182 functions compile clean with no
-hand edits (`src/c/zlz/`, status `RAW-src` in `PROGRESS.csv`). See `docs/PILOT-ZLZ.md`.
+All eight Wizet DLLs have been decompiled to `src/c/<module>/` with `tools/run_module.sh`
+(Ghidra, generated headers, MSVC syntax sweep). `RAW-src` means the file compiles under MSVC 7.1
+with no hand edits; it does not mean the function is correct.
+
+| Module | Decompiled | `RAW-src` (compiles) | `RAW-draft` | |
+|---|---|---|---|---|
+| ZLZ | 182 | 141 | 41 | 77% |
+| ResMan | 187 | 155 | 32 | 82% |
+| Shape2D | 411 | 328 | 83 | 79% |
+| PCOM | 468 | 367 | 101 | 78% |
+| NameSpace | 571 | 449 | 122 | 78% |
+| Sound_DX8 | 594 | 482 | 112 | 81% |
+| Canvas | 470 | 377 | 93 | 80% |
+| Gr2D_DX8 | 757 | 639 | 118 | 84% |
+| **All 8 DLLs** | **3640** | **2938** | **702** | **80%** |
+
+See `docs/PILOT-ZLZ.md` for the pipeline and the kinds of failures. The exe (`GMSv62`) has not been
+started. Class-heavy code there will fail more often on unknown struct layouts.

@@ -1,0 +1,22 @@
+/* ptr_50403f6a - 0x50403f6a in Gr2D_DX8.dll (image base 0x50400000).
+ * Raw Ghidra decompiler output, not yet reviewed. */
+#include "ghidra_types.h"
+#include "gr2d_dx8_decls.h"
+
+
+undefined4 ptr_50403f6a(int param_1,undefined4 *param_2)
+
+{
+  undefined4 uVar1;
+  
+  if (param_2 == (undefined4 *)0x0) {
+    uVar1 = 0x80004003;
+  }
+  else {
+    *param_2 = *(undefined4 *)(param_1 + 0x328);
+    uVar1 = 0;
+  }
+  return uVar1;
+}
+
+

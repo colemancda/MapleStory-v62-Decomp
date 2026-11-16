@@ -37,6 +37,10 @@ typedef unsigned char bool;
 #endif
 
 typedef struct _s_ThrowInfo ThrowInfo;   /* MSVC C++ throw descriptor, only ever cast to a pointer */
+/* MSVC COM support classes (comdef.h): only ever used through pointers in raw C ports */
+typedef struct _com_error _com_error;
+typedef struct _bstr_t _bstr_t;
+typedef struct _variant_t _variant_t;
 typedef long double float10;            /* x87 extended; only the arithmetic has to parse */
 
 typedef uint8_t undefined;
