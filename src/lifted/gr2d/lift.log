@@ -1,0 +1,134 @@
+functions            1799
+  by origin          reloc-code=239, reloc-label=53, seed=1507
+unique instructions  56675 (172623 bytes of 175924 in the code section)
+emitted instructions 59182 (shared tails are duplicated per function)
+chunks               11
+jump tables          7 (bound=7)
+indirect jumps       table=7 import-thunk=166 runtime-dispatch=49
+    50410e99 jmp dword ptr [0x504356b0]
+    504110a9 jmp dword ptr [0x504355f8]
+    504110b6 jmp dword ptr [0x5043561c]
+    504110c3 jmp dword ptr [0x5043560c]
+    504110d0 jmp dword ptr [0x50435614]
+    504110d6 jmp dword ptr [0x50435614]
+    50411342 jmp dword ptr [0x504355fc]
+    5041134f jmp dword ptr [0x50435620]
+    50411355 jmp dword ptr [0x50435620]
+    50411362 jmp dword ptr [0x50435610]
+    504113d9 jmp dword ptr [0x50435630]
+    504113ea jmp dword ptr [0x50435634]
+    504113f7 jmp dword ptr [0x50435638]
+    504114f4 jmp dword ptr [0x50435618]
+    504117bf jmp dword ptr [0x50435600]
+    5041186b jmp dword ptr [0x50435624]
+    50411942 jmp dword ptr [0x50435604]
+    50411948 jmp dword ptr [0x50435604]
+    50411b8b jmp dword ptr [0x5043568c]
+    50411b91 jmp dword ptr [0x5043568c]
+    50411c0b jmp dword ptr [0x50435608]
+    50411e4e jmp dword ptr [0x50435640]
+    50411e54 jmp dword ptr [0x50435640]
+    504125e9 jmp dword ptr [0x50435690]
+    504125ef jmp dword ptr [0x50435690]
+    50412710 jmp dword ptr [0x50435694]
+    5041289e jmp dword ptr [0x50435664]
+    504128ab jmp dword ptr [0x50435668]
+    504128b8 jmp dword ptr [0x50435654]
+    50412962 jmp dword ptr [0x50435658]
+    50412b46 jmp dword ptr [0x5043565c]
+    50412c2c jmp dword ptr [0x50435644]
+    50412c32 jmp dword ptr [0x50435644]
+    50412cd5 jmp dword ptr [0x50435648]
+    50412d9b jmp dword ptr [0x504356a8]
+    50412da1 jmp dword ptr [0x504356a8]
+    50412e5b jmp dword ptr [0x504356d4]
+    50412edf jmp dword ptr [0x504356d8]
+    50412fa4 jmp dword ptr [0x50435684]
+    50413119 jmp dword ptr [0x504356ac]
+    504131e0 jmp dword ptr [0x5043564c]
+    504131e6 jmp dword ptr [0x5043564c]
+    50413297 jmp dword ptr [0x50435650]
+    50413346 jmp dword ptr [0x50435628]
+    5041338b jmp dword ptr [0x5043562c]
+    5041343a jmp dword ptr [0x50435680]
+    5041469a jmp dword ptr [0x50438fd0]
+    50415371 jmp dword ptr [0x50435d30]
+    504153a4 jmp eax
+indirect calls       803
+tail calls           480
+int3 reached         1
+undecodable targets  0 (decode failures: 0, overlapping decodes: 1)
+rejected pointers    1
+scope tables repaired 0
+trapped mnemonics    8341 sites, 70 distinct
+    movq             1976
+    pfmul            1258
+    pfadd            705
+    punpckhdq        526
+    punpckldq        473
+    movaps           398
+    mulps            370
+    shufps           345
+    movss            246
+    movd             245
+    addps            217
+    pfsub            141
+    movhps           137
+    movlps           137
+    femms            128
+    pxor             120
+    mulss            111
+    pfacc            100
+    subps            71
+    movups           61
+    pand             52
+    xorps            49
+    pfrcpit2         42
+    addss            41
+    pfsubr           27
+    movhlps          25
+    andps            24
+    pfrcp            24
+    pfrcpit1         22
+    pfcmpge          20
+    pfrsqit1         20
+    pfrsqrt          20
+    pswapd           19
+    subss            19
+    psrlq            12
+    rsqrtss          12
+    pfcmpgt          11
+    unpcklps         11
+    comiss           9
+    pfpnacc          9
+    pslld            9
+    paddw            8
+    pi2fd            8
+    pfnacc           7
+    por              6
+    andnps           5
+    orps             5
+    pandn            5
+    rcpps            5
+    psllq            4
+    punpckhbw        4
+    punpcklbw        4
+    rcpss            4
+    unpckhps         4
+    cmpneqps         3
+    emms             3
+    pcmpgtd          3
+    pfcmpeq          3
+    packssdw         2
+    packsswb         2
+    paddd            2
+    pf2id            2
+    psraw            2
+    psubd            2
+    packuswb         1
+    pfmax            1
+    pfmin            1
+    pmovmskb         1
+    psrad            1
+    psrld            1
+time                 analysis 9.3s, emission 1.7s

@@ -1,0 +1,68 @@
+functions            754
+  by origin          call=1, reloc-code=204, reloc-label=47, seed=502
+unique instructions  80917 (298760 bytes of 308490 in the code section)
+emitted instructions 83804 (shared tails are duplicated per function)
+chunks               20
+jump tables          34 (bound=1, scan=31, scan-back=2)
+indirect jumps       table=65 import-thunk=3 runtime-dispatch=8
+    60024b13 jmp edx
+    6002b137 jmp eax
+    6002e79c jmp eax
+    60045bce jmp eax
+indirect calls       330
+tail calls           78
+int3 reached         0
+undecodable targets  0 (decode failures: 0, overlapping decodes: 0)
+rejected pointers    5
+scope tables repaired 0
+trapped mnemonics    11707 sites, 49 distinct
+    movq             3228
+    pmaddwd          676
+    paddd            604
+    por              515
+    paddsw           420
+    punpcklbw        395
+    psrad            364
+    movdqa           350
+    paddw            345
+    punpcklwd        337
+    psrlq            310
+    psllq            273
+    pmulhw           272
+    psllw            260
+    packuswb         258
+    packssdw         257
+    punpckldq        256
+    psubw            255
+    psubsw           232
+    punpckhdq        220
+    movd             217
+    pand             196
+    psubd            189
+    punpckhwd        188
+    psraw            156
+    pxor             138
+    movdqu           117
+    pslld            117
+    psrlw            93
+    pmullw           72
+    pshufw           65
+    pshufhw          64
+    pshufd           48
+    pcmpeqb          36
+    pshuflw          32
+    movlhps          16
+    movsd(sse2)      16
+    paddusw          16
+    psubusw          16
+    punpckhbw        16
+    psubusb          14
+    pandn            11
+    psrld            10
+    movhlps          8
+    movhps           8
+    movlps           8
+    pcmpeqw          6
+    pcmpgtw          5
+    emms             2
+time                 analysis 10.4s, emission 1.9s

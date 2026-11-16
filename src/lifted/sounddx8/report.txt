@@ -1,0 +1,17 @@
+functions            1897
+  by origin          reloc-code=258, reloc-label=3, seed=1636
+unique instructions  31124 (90563 bytes of 91038 in the code section)
+emitted instructions 31456 (shared tails are duplicated per function)
+chunks               6
+jump tables          0 ()
+indirect jumps       table=0 import-thunk=265 runtime-dispatch=2
+    518017af jmp dword ptr [0x5181fc98]
+    5180ae82 jmp dword ptr [eax + 0xc]
+indirect calls       685
+tail calls           585
+int3 reached         1
+undecodable targets  0 (decode failures: 0, overlapping decodes: 0)
+rejected pointers    0
+scope tables repaired 0
+trapped mnemonics    0 sites, 0 distinct
+time                 analysis 4.6s, emission 1.4s

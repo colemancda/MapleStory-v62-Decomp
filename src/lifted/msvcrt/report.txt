@@ -1,0 +1,27 @@
+functions            1762
+  by origin          call=4, reloc-code=18, reloc-label=159, seed=1581
+unique instructions  70928 (199843 bytes of 201330 in the code section)
+emitted instructions 79930 (shared tails are duplicated per function)
+chunks               13
+jump tables          55 (bound=7, bound2=3, scan=43, scan+neg=1, scan-back=1)
+indirect jumps       table=132 import-thunk=8 runtime-dispatch=6
+    78008fd6 jmp eax
+    78008fdd jmp eax
+    7800921a jmp dword ptr [ebx + 0x18]
+    7801f2cc jmp dword ptr [edx + 0x14]
+    7802ef00 jmp dword ptr [ebx]
+    7802ef90 jmp dword ptr [ebx]
+indirect calls       666
+tail calls           187
+int3 reached         2
+undecodable targets  4 (decode failures: 4, overlapping decodes: 69)
+rejected pointers    3
+scope tables repaired 0
+trapped mnemonics    26 sites, 6 distinct
+    int              16
+    in               4
+    out              3
+    aam              1
+    les              1
+    mov              1
+time                 analysis 9.5s, emission 2.1s

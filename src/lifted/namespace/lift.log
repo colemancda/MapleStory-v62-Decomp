@@ -1,0 +1,15 @@
+functions            1738
+  by origin          call=1, reloc-code=244, reloc-label=4, seed=1489
+unique instructions  30307 (86643 bytes of 87034 in the code section)
+emitted instructions 30957 (shared tails are duplicated per function)
+chunks               6
+jump tables          0 ()
+indirect jumps       table=0 import-thunk=229 runtime-dispatch=0
+indirect calls       699
+tail calls           564
+int3 reached         0
+undecodable targets  0 (decode failures: 0, overlapping decodes: 0)
+rejected pointers    0
+scope tables repaired 0
+trapped mnemonics    0 sites, 0 distinct
+time                 analysis 7.0s, emission 0.8s

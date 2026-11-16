@@ -1,0 +1,139 @@
+functions            77175
+  by origin          call=351, data-label=124, data-vt-code=42, data-vt-label=197, imm-code=3320, imm-label=233, seed=72908
+unique instructions  1619444 (5111364 bytes of 5644288 in the code section)
+emitted instructions 1739678 (shared tails are duplicated per function)
+chunks               323
+jump tables          129 (bound=64, bound2=6, scan=57, scan-back=2)
+indirect jumps       table=139 import-thunk=16 runtime-dispatch=82
+    00459b2a jmp ptr [edx - 1]
+    0050fc48 jmp ptr [eax - 0x60]
+    006a50ff jmp ptr [edx + 1]
+    0078a19c jmp ptr [eax + 0x78]
+    0084840f jmp ptr [eax + 0x64]
+    008797eb jmp eax
+    008797f9 jmp eax
+    00879800 jmp eax
+    00879807 jmp eax
+    00879a41 jmp dword ptr [ebx + 0x18]
+    008824d5 jmp dword ptr [ebx]
+    00882561 jmp dword ptr [ebx]
+    008e83ac jmp dword ptr [eax - 0x5ef0ff88]
+    008e8e00 jmp dword ptr [edx - 0x7f]
+    008e9270 jmp dword ptr [edx - 0x7f]
+    008e9480 jmp dword ptr [edx - 0x7f]
+    008e98b8 jmp dword ptr [edx - 0x7f]
+    008e9940 jmp dword ptr [edx - 0x7f]
+    008e9d40 jmp dword ptr [edx - 0x7f]
+    008ea250 jmp dword ptr [edx - 0x7f]
+    008ea470 jmp dword ptr [edx - 0x7f]
+    008eb358 jmp dword ptr [edx - 0x7f]
+    008eb460 jmp dword ptr [edx - 0x7f]
+    008eb620 jmp dword ptr [edx - 0x7f]
+    008eb6a8 jmp dword ptr [edx - 0x7f]
+    008eb730 jmp dword ptr [edx - 0x7f]
+    008eb7b8 jmp dword ptr [edx - 0x7f]
+    008eb840 jmp dword ptr [edx - 0x7f]
+    008eb980 jmp dword ptr [edx - 0x7f]
+    008ebb70 jmp dword ptr [edx - 0x7f]
+    008ebcd0 jmp dword ptr [edx - 0x7f]
+    008ebd70 jmp dword ptr [edx - 0x7f]
+    008ec0c4 jmp dword ptr [edx - 0x7f]
+    008ec450 jmp dword ptr [edx - 0x7f]
+    008ec850 jmp dword ptr [edx - 0x7f]
+    008ec9a8 jmp dword ptr [edx - 0x7f]
+    008ed034 jmp dword ptr [edx - 0x7f]
+    008ed0bc jmp dword ptr [edx - 0x7f]
+    008ed718 jmp dword ptr [ecx]
+    008ee900 jmp dword ptr [edx - 0x7f]
+    008eebb0 jmp dword ptr [edx - 0x7f]
+    008eed48 jmp dword ptr [edx - 0x7f]
+    008eee58 jmp dword ptr [edx - 0x7f]
+    008ef184 jmp dword ptr [edx - 0x7f]
+    008ef294 jmp dword ptr [edx - 0x7f]
+    008ef31c jmp dword ptr [edx - 0x7f]
+    008ef42c jmp dword ptr [edx - 0x7f]
+    008ef4b4 jmp dword ptr [edx - 0x7f]
+    008ef53c jmp dword ptr [edx - 0x7f]
+    008ef5c4 jmp dword ptr [edx - 0x7f]
+    008ef810 jmp dword ptr [edx - 0x7f]
+    008ef894 jmp dword ptr [edx - 0x7f]
+    008ef9b8 jmp dword ptr [edx - 0x7f]
+    008efa58 jmp dword ptr [edx - 0x7f]
+    008efc00 jmp dword ptr [edx - 0x7f]
+    008f00c0 jmp dword ptr [edx - 0x7f]
+    008f0400 jmp dword ptr [edx - 0x7f]
+    008f06c8 jmp dword ptr [edx - 0x7f]
+    008f0950 jmp dword ptr [edx - 0x7f]
+    008f0d48 jmp dword ptr [edx - 0x7f]
+    008f0dd0 jmp dword ptr [edx - 0x7f]
+    008f0e68 jmp dword ptr [edx - 0x7f]
+    008f0f80 jmp dword ptr [edx - 0x7f]
+    008f10d0 jmp dword ptr [edx - 0x7f]
+    008f12e8 jmp dword ptr [edx - 0x7f]
+    008f136c jmp dword ptr [edx - 0x7f]
+    008f13f8 jmp dword ptr [edx - 0x7f]
+    008f147c jmp dword ptr [edx - 0x7f]
+    008f15a8 jmp dword ptr [edx - 0x7f]
+    008f1bb0 jmp dword ptr [edx - 0x7f]
+    008f1cc0 jmp dword ptr [edx - 0x7f]
+    008f1d48 jmp dword ptr [edx - 0x7f]
+    008f1dd0 jmp dword ptr [edx - 0x7f]
+    008f1e58 jmp dword ptr [edx - 0x7f]
+    008f1ee0 jmp dword ptr [edx - 0x7f]
+    008f1f68 jmp dword ptr [edx - 0x7f]
+    008f2c10 jmp dword ptr [edx - 0x7f]
+    008f2cac jmp dword ptr [edx - 0x7f]
+    008f30dc jmp dword ptr [edx - 0x7f]
+    008f3164 jmp dword ptr [edx - 0x7f]
+    008f3274 jmp dword ptr [edx - 0x7f]
+    008f3600 jmp dword ptr [edx - 0x7f]
+indirect calls       17540
+tail calls           40910
+int3 reached         11
+undecodable targets  127 (decode failures: 89, overlapping decodes: 2537)
+rejected pointers    6840
+scope tables repaired 0
+trapped mnemonics    763 sites, 42 distinct
+    outsb            125
+    arpl             90
+    outsd            77
+    bound            63
+    insb             59
+    add              44
+    insd             35
+    in               31
+    enter            25
+    aas              22
+    out              21
+    retf             15
+    into             14
+    int1             12
+    salc             12
+    cli              9
+    hlt              9
+    imul             9
+    lcall            9
+    aad              8
+    les              8
+    sti              8
+    iretd            7
+    aam              6
+    and              6
+    mov              6
+    outsw            6
+    aaa              4
+    das              4
+    int              4
+    daa              2
+    lds              2
+    maxps            2
+    adc              1
+    ljmp             1
+    movlhps          1
+    mulps            1
+    psubsb           1
+    rcl              1
+    sub              1
+    subps            1
+    xor              1
+time                 analysis 107.5s, emission 34.3s
