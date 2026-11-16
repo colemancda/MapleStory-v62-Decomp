@@ -8,7 +8,7 @@ adjusted for a target about 30 times larger.
 | | GunBound-Decomp | MapleStory-v62-Decomp (today) |
 |---|---|---|
 | Target | `GunBound.gme`, 1.8 MB | `GMSv62.exe`, 6.4 MB, plus 8 Wizet DLLs |
-| Functions | 2,404 | 72,908 in the exe, about 8,100 in the DLLs |
+| Functions | 2,404 | 72,908 rows in the exe, but 34,732 are compiler exception funclets: about 38,200 real; about 5,900 more in the DLLs |
 | Compiler | MSVC 7.1 | MSVC 6.0 (linker 6.0, built 2008-11-11) |
 | RTTI | n/a | 10 type names only (exception classes), so no class names for free |
 | Lifted C (machine output, runs) | `recomp/`, gitignored | `src/lifted/`, published |
@@ -44,9 +44,11 @@ Statuses, as in GunBound: `TODO`, `EXCLUDED-<reason>`, `RAW-src`,
 ## Phase 0: foundations
 
 1. Import `GMSv62.exe` and the eight Wizet DLLs into one tracked Ghidra
-   project. Record SHA-256 of every input in the README.
-2. Generate `PROGRESS.csv` from the existing function CSVs (81,000 rows).
-3. Triage exclusions before any porting. Mark the statically linked CRT, STL,
+   project. (SHA-256 of every input is in the README: done.)
+2. Generate `PROGRESS.csv` from the existing function CSVs: done, 83,102 rows.
+3. Triage exclusions before any porting. **Done so far:** exception funclets
+   (`Unwind@`, `Catch@`), thunks and the two library DLLs are classified by
+   `tools/make_progress.py`, leaving 43,789 `TODO`. **Still to do:** mark the statically linked CRT, STL,
    ATL/COM support, zlib and other library code `EXCLUDED`, using Ghidra
    function-ID signatures for VC6. Exclude `ijl15.dll` and `msvcrt.dll`
    entirely. This is expected to remove a large share of the 72,908; the real
