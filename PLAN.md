@@ -139,6 +139,10 @@ so the client stays runnable throughout.
 - The MSVC 6.0 toolchain is proprietary and must be supplied locally.
 - The repo publishes code derived from a proprietary binary.
 
+## Pilot result
+
+ZLZ.dll: 141 of 182 unique functions compile clean with no hand edits; see `docs/PILOT-ZLZ.md`.
+
 ## First milestones
 
 1. `PROGRESS.csv`, tracked Ghidra project, exclusion triage with real counts.

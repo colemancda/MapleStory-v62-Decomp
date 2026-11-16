@@ -60,3 +60,8 @@ object, set one vtable) laid out back to back across about 1.2 MB: filler, not
 logic. The 4,248 vtable methods found by the code-pointer scan had no size;
 `collapse_families.py` estimates one by scanning to the first `ret` past every
 forward branch.
+
+## Pilot
+
+`ZLZ.dll` has been taken through the raw C tier: 141 of 182 functions compile clean with no
+hand edits (`src/c/zlz/`, status `RAW-src` in `PROGRESS.csv`). See `docs/PILOT-ZLZ.md`.

@@ -53,3 +53,8 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Ghidra project: tracked (names, types, comments), except transient lock files
+ghidra_proj/*.lock
+ghidra_proj/*.lock~
+__pycache__/
