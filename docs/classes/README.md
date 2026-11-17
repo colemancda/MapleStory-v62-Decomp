@@ -27,9 +27,8 @@ Everything here is for the exe; the DLLs have not been run yet.
 
 | | |
 |---|---|
-| Classes with any allocation-size vote | 83 of 1,318 (6%) |
-| Single size at every site (and size >= constructor extent) | 81; in 31 of them size equals the extent exactly |
-| Size asserts emitted | 10 (a derived class needs its base's size, and most bases have none) |
+| Classes with any allocation-size vote | 297 of 1,318 (23%), 209 of them the singleton classes (all 24) |
+| Size asserts emitted | 220 (a derived class needs its base's size) |
 
 The votes are only trustworthy for classes allocated at a visible `new`. A base class's votes are
 contaminated: derived constructors call the base constructor, so the `push` before that call is
@@ -42,11 +41,11 @@ padding and base-size consistency, not the fields.
 | | |
 |---|---|
 | Vtables | 1,318 (765 have a single slot, 350 have 12 or more, largest 90) |
-| With an inferred base | 202 (two more edges dropped: derived vtable shorter than base) |
-| Roots | 1,116 |
+| With an inferred base | 513 (9 edges dropped: cycle, or derived vtable shorter than base); 514 of 522 raw edges have a derived vtable at least as long as its base |
+| Roots | 805 |
 | Deepest chain | 5 levels, e.g. `8ea674 (17 slots) > 8ea5e0 (17) > 8ea1c8 (14) > 8e84a0 (1) > 8e8580 (1)` |
-| Most subclassed | `8e84a0` (175 subclasses, one slot: a common root), `8eac20` (8), `8ea1c8` (4) |
-| Vtable with most installers | `8e84a8`, 20,854: the one-slot class behind the 20,105 identical 63-byte stubs |
+| Most subclassed | `8e84a8` (210, the singleton node base), `8e84a0` (176, one slot: a common root), `8e8608` (12), `8eac20` (8) |
+| Vtable with most installers | `8e84a8`, 20,854: the singleton node base (next section) |
 
 ## Naming
 
@@ -112,10 +111,37 @@ The deleting destructor frees with `mov ecx, 0x97bac0; call 0x402b41`: the clien
 | Other common sizes | 0x578 (402), 0x69c (94), 0x110 (45) |
 | Pools loaded into `ecx` | `0x97bac0` (42,263 uses), `0x97bc68` (3,192) |
 
-So the 20,105 identical 63-byte stubs (`push 0x18; mov ecx, 0x97bac0; call 0x4029b9; … mov [eax], 0x8e84a8`) are
-`new` of one 24-byte, one-slot class, not 20,000 distinct things, and most allocations in the client are
-that same kind of object. Reproducing the byte-identical deleting destructor means defining that
-`operator new`/`operator delete` pair on the pool; not done yet.
+### The 20,105 "identical stubs" are 250 singleton creators
+
+Correcting an earlier note (here and in the README), which called them filler or `new` of one class. Grouping the
+stubs by what they store (`GMSv62_singletons.csv`):
+
+| | |
+|---|---|
+| Stub copies (all 63 bytes) | 20,105 |
+| Distinct (final vtable, destination global) pairs | **250** |
+| Copies per pair | 1 to 218; 35 pairs have a single copy |
+| Placement of copies | scattered across `0x404ef7`-`0x868aac`, never adjacent |
+| Destination globals | `0x980a34`-`0x980ebc`, 243 of 250 at a 4-byte stride: a contiguous array of singleton pointers |
+
+Each stub: `new` a 24-byte node from the pool, store the base vtable `0x8e84a8`, link the node into a global
+list (head `0x97b988`, `next` at `+4`), zero `+8`, `+0xc` and `+0x14`, store the class's own vtable, and write the
+pointer to the class's global. That is a lazily created singleton accessor emitted inline once per translation
+unit that uses it (MSVC 6 does not merge the copies), which is why a creator appears up to 218 times. 209 of the
+250 vtables are in the vtable list and all 209 now have base `8e84a8` and size 24 in the hierarchy and layouts.
+
+Method notes: two bugs fixed on the way. The inline size vote took the push before the previous call instead of
+the allocator call itself (no singleton had a size), and stores into a fresh allocation (`eax`) were not counted
+as base-then-derived evidence (no singleton had a base).
+
+### The pool allocator (details)
+
+`0x4029b9` allocate, `0x402b41` free, `0x402aea` carve a chunk, `0x402aba` lock (a spin on a function pointer, `Sleep(0)`
+between polls). Four size classes with a free list each: sizes up to 16, 32, 64 and 128 bytes, in chunks of
+1 KB (64, 32, 16 and 8 blocks, each block preceded by a 4-byte size word); above 128 bytes it falls back to
+`HeapAlloc` with a 4-byte size header. The exe exports `ZtlTaskMemAllocImp`, `ZtlTaskMemFreeImp` and
+`ZtlTaskMemReallocImp` (names from the export table), so the DLLs share this allocator. Not reconstructed
+in C++ yet: the lock primitive (`PTR_FUN_00969e94`) and the pool constructor are unread.
 
 ## Limits (read before trusting)
 

@@ -20,17 +20,17 @@ public:
     virtual void vf0();    // virtual 0x0040278d
 };
 
-// vtable 0x008e8494: 1 slot, installed by 1 function
-class C_008e8494 {
-public:
-    virtual void vf0();    // virtual 0x004043fb
-};
-
 // vtable 0x008e8498: 1 slot, installed by 2 functions
 // size unknown; constructor touches up to +0x4
 class C_008e8498 {
 public:
     virtual void vf0();    // virtual 0x004037a8
+};
+
+// vtable 0x008e8494: 1 slot, installed by 1 function, base 0x008e8498 (1 vote)
+class C_008e8494 : public C_008e8498 {
+public:
+    virtual void vf0();    // override 0x004043fb
 };
 
 // vtable 0x008e8580: 1 slot, installed by 1 function
@@ -54,179 +54,237 @@ public:
 };
 
 // vtable 0x008e84a4: 1 slot, installed by 454 functions
+// size 0x18 (454 allocation sites)
 class C_008e84a4 {
 public:
     virtual void vf0();    // virtual 0x0040441c
+    unsigned char m_raw[20];    // opaque: fields not recovered
 };
+typedef char size_check_C_008e84a4[sizeof(C_008e84a4) == 24 ? 1 : -1];
 
-// vtable 0x008e84a8: 1 slot, installed by 20854 functions
-// size unknown; constructor touches up to +0x4
-class C_008e84a8 {
+// vtable 0x008e84a8: 1 slot, installed by 20854 functions, base 0x008e84a4 (10312 votes)
+// size 0x18 (3767 allocation sites), constructor touches up to +0x4
+class C_008e84a8 : public C_008e84a4 {
 public:
-    virtual void vf0();    // virtual 0x00403ba9
+    virtual void vf0();    // override 0x00403ba9
 };
+typedef char size_check_C_008e84a8[sizeof(C_008e84a8) == 24 ? 1 : -1];
 
-// vtable 0x008e84ac: 1 slot, installed by 454 functions
-class C_008e84ac {
+// vtable 0x008e84ac: 1 slot, installed by 454 functions, base 0x008e84a8 (692 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84ac : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040443c
+    virtual void vf0();    // override 0x0040443c
 };
+typedef char size_check_C_008e84ac[sizeof(C_008e84ac) == 24 ? 1 : -1];
 
-// vtable 0x008e84b0: 1 slot, installed by 454 functions
-class C_008e84b0 {
+// vtable 0x008e84b0: 1 slot, installed by 454 functions, base 0x008e84a8 (930 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84b0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040445c
+    virtual void vf0();    // override 0x0040445c
 };
+typedef char size_check_C_008e84b0[sizeof(C_008e84b0) == 24 ? 1 : -1];
 
-// vtable 0x008e84b4: 1 slot, installed by 454 functions
-class C_008e84b4 {
+// vtable 0x008e84b4: 1 slot, installed by 454 functions, base 0x008e84a8 (1168 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84b4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040447c
+    virtual void vf0();    // override 0x0040447c
 };
+typedef char size_check_C_008e84b4[sizeof(C_008e84b4) == 24 ? 1 : -1];
 
-// vtable 0x008e84b8: 1 slot, installed by 454 functions
-class C_008e84b8 {
+// vtable 0x008e84b8: 1 slot, installed by 454 functions, base 0x008e84a8 (1406 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84b8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040449c
+    virtual void vf0();    // override 0x0040449c
 };
+typedef char size_check_C_008e84b8[sizeof(C_008e84b8) == 24 ? 1 : -1];
 
-// vtable 0x008e84bc: 1 slot, installed by 454 functions
-class C_008e84bc {
+// vtable 0x008e84bc: 1 slot, installed by 454 functions, base 0x008e84a8 (1644 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84bc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004044bc
+    virtual void vf0();    // override 0x004044bc
 };
+typedef char size_check_C_008e84bc[sizeof(C_008e84bc) == 24 ? 1 : -1];
 
-// vtable 0x008e84c0: 1 slot, installed by 454 functions
-class C_008e84c0 {
+// vtable 0x008e84c0: 1 slot, installed by 454 functions, base 0x008e84a8 (1882 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84c0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004044dc
+    virtual void vf0();    // override 0x004044dc
 };
+typedef char size_check_C_008e84c0[sizeof(C_008e84c0) == 24 ? 1 : -1];
 
-// vtable 0x008e84c4: 1 slot, installed by 454 functions
-class C_008e84c4 {
+// vtable 0x008e84c4: 1 slot, installed by 454 functions, base 0x008e84a8 (2120 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84c4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004044fc
+    virtual void vf0();    // override 0x004044fc
 };
+typedef char size_check_C_008e84c4[sizeof(C_008e84c4) == 24 ? 1 : -1];
 
-// vtable 0x008e84c8: 1 slot, installed by 456 functions
-class C_008e84c8 {
+// vtable 0x008e84c8: 1 slot, installed by 456 functions, base 0x008e84a8 (2360 votes)
+// size 0x18 (455 allocation sites)
+class C_008e84c8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040451c
+    virtual void vf0();    // override 0x0040451c
 };
+typedef char size_check_C_008e84c8[sizeof(C_008e84c8) == 24 ? 1 : -1];
 
-// vtable 0x008e84cc: 1 slot, installed by 454 functions
-class C_008e84cc {
+// vtable 0x008e84cc: 1 slot, installed by 454 functions, base 0x008e84a8 (2596 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84cc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040453c
+    virtual void vf0();    // override 0x0040453c
 };
+typedef char size_check_C_008e84cc[sizeof(C_008e84cc) == 24 ? 1 : -1];
 
-// vtable 0x008e84d0: 1 slot, installed by 454 functions
-class C_008e84d0 {
+// vtable 0x008e84d0: 1 slot, installed by 454 functions, base 0x008e84a8 (2834 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84d0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040455c
+    virtual void vf0();    // override 0x0040455c
 };
+typedef char size_check_C_008e84d0[sizeof(C_008e84d0) == 24 ? 1 : -1];
 
-// vtable 0x008e84d4: 1 slot, installed by 454 functions
-class C_008e84d4 {
+// vtable 0x008e84d4: 1 slot, installed by 454 functions, base 0x008e84a8 (3072 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84d4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040457c
+    virtual void vf0();    // override 0x0040457c
 };
+typedef char size_check_C_008e84d4[sizeof(C_008e84d4) == 24 ? 1 : -1];
 
-// vtable 0x008e84d8: 1 slot, installed by 455 functions
-class C_008e84d8 {
+// vtable 0x008e84d8: 1 slot, installed by 455 functions, base 0x008e84a8 (3311 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84d8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040459c
+    virtual void vf0();    // override 0x0040459c
 };
+typedef char size_check_C_008e84d8[sizeof(C_008e84d8) == 24 ? 1 : -1];
 
-// vtable 0x008e84dc: 1 slot, installed by 455 functions
-class C_008e84dc {
+// vtable 0x008e84dc: 1 slot, installed by 455 functions, base 0x008e84a8 (3548 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84dc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004045bc
+    virtual void vf0();    // override 0x004045bc
 };
+typedef char size_check_C_008e84dc[sizeof(C_008e84dc) == 24 ? 1 : -1];
 
-// vtable 0x008e84e0: 1 slot, installed by 456 functions
-class C_008e84e0 {
+// vtable 0x008e84e0: 1 slot, installed by 456 functions, base 0x008e84a8 (3788 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84e0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004045dc
+    virtual void vf0();    // override 0x004045dc
 };
+typedef char size_check_C_008e84e0[sizeof(C_008e84e0) == 24 ? 1 : -1];
 
-// vtable 0x008e84e4: 1 slot, installed by 454 functions
-class C_008e84e4 {
+// vtable 0x008e84e4: 1 slot, installed by 454 functions, base 0x008e84a8 (4024 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84e4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004045fc
+    virtual void vf0();    // override 0x004045fc
 };
+typedef char size_check_C_008e84e4[sizeof(C_008e84e4) == 24 ? 1 : -1];
 
-// vtable 0x008e84e8: 1 slot, installed by 454 functions
-class C_008e84e8 {
+// vtable 0x008e84e8: 1 slot, installed by 454 functions, base 0x008e84a8 (4262 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84e8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040461c
+    virtual void vf0();    // override 0x0040461c
 };
+typedef char size_check_C_008e84e8[sizeof(C_008e84e8) == 24 ? 1 : -1];
 
-// vtable 0x008e84ec: 1 slot, installed by 455 functions
-class C_008e84ec {
+// vtable 0x008e84ec: 1 slot, installed by 455 functions, base 0x008e84a8 (4501 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84ec : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040463c
+    virtual void vf0();    // override 0x0040463c
 };
+typedef char size_check_C_008e84ec[sizeof(C_008e84ec) == 24 ? 1 : -1];
 
-// vtable 0x008e84f0: 1 slot, installed by 454 functions
-class C_008e84f0 {
+// vtable 0x008e84f0: 1 slot, installed by 454 functions, base 0x008e84a8 (4738 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84f0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040465c
+    virtual void vf0();    // override 0x0040465c
 };
+typedef char size_check_C_008e84f0[sizeof(C_008e84f0) == 24 ? 1 : -1];
 
-// vtable 0x008e84f4: 1 slot, installed by 455 functions
-class C_008e84f4 {
+// vtable 0x008e84f4: 1 slot, installed by 455 functions, base 0x008e84a8 (4977 votes)
+// size 0x18 (454 allocation sites)
+class C_008e84f4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040467c
+    virtual void vf0();    // override 0x0040467c
 };
+typedef char size_check_C_008e84f4[sizeof(C_008e84f4) == 24 ? 1 : -1];
 
-// vtable 0x008e84f8: 1 slot, installed by 2 functions
-class C_008e84f8 {
+// vtable 0x008e84f8: 1 slot, installed by 2 functions, base 0x008e84a8 (22 votes)
+// size 0x18 (2 allocation sites)
+class C_008e84f8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040469c
+    virtual void vf0();    // override 0x0040469c
 };
+typedef char size_check_C_008e84f8[sizeof(C_008e84f8) == 24 ? 1 : -1];
 
-// vtable 0x008e84fc: 1 slot, installed by 456 functions
-class C_008e84fc {
+// vtable 0x008e84fc: 1 slot, installed by 456 functions, base 0x008e84a8 (9196 votes)
+// size 0x18 (455 allocation sites)
+class C_008e84fc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004046bc
+    virtual void vf0();    // override 0x004046bc
 };
+typedef char size_check_C_008e84fc[sizeof(C_008e84fc) == 24 ? 1 : -1];
 
-// vtable 0x008e8500: 1 slot, installed by 455 functions
-class C_008e8500 {
+// vtable 0x008e8500: 1 slot, installed by 455 functions, base 0x008e84a8 (9434 votes)
+// size 0x18 (455 allocation sites)
+class C_008e8500 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004046dc
+    virtual void vf0();    // override 0x004046dc
 };
+typedef char size_check_C_008e8500[sizeof(C_008e8500) == 24 ? 1 : -1];
 
-// vtable 0x008e8504: 1 slot, installed by 455 functions
-class C_008e8504 {
+// vtable 0x008e8504: 1 slot, installed by 455 functions, base 0x008e84a8 (9687 votes)
+// size 0x18 (455 allocation sites)
+class C_008e8504 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004046fc
+    virtual void vf0();    // override 0x004046fc
 };
+typedef char size_check_C_008e8504[sizeof(C_008e8504) == 24 ? 1 : -1];
 
-// vtable 0x008e8508: 1 slot, installed by 456 functions
-class C_008e8508 {
+// vtable 0x008e8508: 1 slot, installed by 456 functions, base 0x008e84a8 (9925 votes)
+// size 0x18 (455 allocation sites)
+class C_008e8508 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040471c
+    virtual void vf0();    // override 0x0040471c
 };
+typedef char size_check_C_008e8508[sizeof(C_008e8508) == 24 ? 1 : -1];
 
-// vtable 0x008e850c: 1 slot, installed by 455 functions
-class C_008e850c {
+// vtable 0x008e850c: 1 slot, installed by 455 functions, base 0x008e84a8 (10163 votes)
+// size 0x18 (455 allocation sites)
+class C_008e850c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040473c
+    virtual void vf0();    // override 0x0040473c
 };
+typedef char size_check_C_008e850c[sizeof(C_008e850c) == 24 ? 1 : -1];
 
-// vtable 0x008e8510: 1 slot, installed by 455 functions
-class C_008e8510 {
+// vtable 0x008e8510: 1 slot, installed by 455 functions, base 0x008e84a8 (10401 votes)
+// size 0x18 (455 allocation sites)
+class C_008e8510 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040475c
+    virtual void vf0();    // override 0x0040475c
 };
+typedef char size_check_C_008e8510[sizeof(C_008e8510) == 24 ? 1 : -1];
 
-// vtable 0x008e8514: 1 slot, installed by 2 functions
-class C_008e8514 {
+// vtable 0x008e8514: 1 slot, installed by 2 functions, base 0x008e84a8 (29 votes)
+// size 0x18 (2 allocation sites)
+class C_008e8514 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040477c
+    virtual void vf0();    // override 0x0040477c
 };
+typedef char size_check_C_008e8514[sizeof(C_008e8514) == 24 ? 1 : -1];
 
 // vtable 0x008e8518: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
 // size 0x34 (1 allocation site), constructor touches up to +0x34
@@ -250,90 +308,118 @@ public:
     virtual void vf0();    // virtual 0x004042df
 };
 
-// vtable 0x008e8528: 1 slot, installed by 413 functions
-class C_008e8528 {
+// vtable 0x008e8528: 1 slot, installed by 413 functions, base 0x008e84a8 (465 votes)
+// size 0x18 (413 allocation sites)
+class C_008e8528 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004052bf
+    virtual void vf0();    // override 0x004052bf
 };
+typedef char size_check_C_008e8528[sizeof(C_008e8528) == 24 ? 1 : -1];
 
-// vtable 0x008e852c: 1 slot, installed by 413 functions
-class C_008e852c {
+// vtable 0x008e852c: 1 slot, installed by 413 functions, base 0x008e84a8 (660 votes)
+// size 0x18 (413 allocation sites)
+class C_008e852c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004052df
+    virtual void vf0();    // override 0x004052df
 };
+typedef char size_check_C_008e852c[sizeof(C_008e852c) == 24 ? 1 : -1];
 
-// vtable 0x008e8530: 1 slot, installed by 414 functions
-class C_008e8530 {
+// vtable 0x008e8530: 1 slot, installed by 414 functions, base 0x008e84a8 (856 votes)
+// size 0x18 (412 allocation sites)
+class C_008e8530 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004052ff
+    virtual void vf0();    // override 0x004052ff
 };
+typedef char size_check_C_008e8530[sizeof(C_008e8530) == 24 ? 1 : -1];
 
-// vtable 0x008e8534: 1 slot, installed by 414 functions
-class C_008e8534 {
+// vtable 0x008e8534: 1 slot, installed by 414 functions, base 0x008e84a8 (1051 votes)
+// size 0x18 (413 allocation sites)
+class C_008e8534 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040531f
+    virtual void vf0();    // override 0x0040531f
 };
+typedef char size_check_C_008e8534[sizeof(C_008e8534) == 24 ? 1 : -1];
 
-// vtable 0x008e8538: 1 slot, installed by 414 functions
-class C_008e8538 {
+// vtable 0x008e8538: 1 slot, installed by 414 functions, base 0x008e84a8 (1245 votes)
+// size 0x18 (413 allocation sites)
+class C_008e8538 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040533f
+    virtual void vf0();    // override 0x0040533f
 };
+typedef char size_check_C_008e8538[sizeof(C_008e8538) == 24 ? 1 : -1];
 
-// vtable 0x008e853c: 1 slot, installed by 414 functions
-class C_008e853c {
+// vtable 0x008e853c: 1 slot, installed by 414 functions, base 0x008e84a8 (1440 votes)
+// size 0x18 (413 allocation sites)
+class C_008e853c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040535f
+    virtual void vf0();    // override 0x0040535f
 };
+typedef char size_check_C_008e853c[sizeof(C_008e853c) == 24 ? 1 : -1];
 
-// vtable 0x008e8540: 1 slot, installed by 414 functions
-class C_008e8540 {
+// vtable 0x008e8540: 1 slot, installed by 414 functions, base 0x008e84a8 (1635 votes)
+// size 0x18 (413 allocation sites)
+class C_008e8540 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040537f
+    virtual void vf0();    // override 0x0040537f
 };
+typedef char size_check_C_008e8540[sizeof(C_008e8540) == 24 ? 1 : -1];
 
-// vtable 0x008e8544: 1 slot, installed by 414 functions
-class C_008e8544 {
+// vtable 0x008e8544: 1 slot, installed by 414 functions, base 0x008e84a8 (1831 votes)
+// size 0x18 (413 allocation sites)
+class C_008e8544 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040539f
+    virtual void vf0();    // override 0x0040539f
 };
+typedef char size_check_C_008e8544[sizeof(C_008e8544) == 24 ? 1 : -1];
 
-// vtable 0x008e8548: 1 slot, installed by 416 functions
-class C_008e8548 {
+// vtable 0x008e8548: 1 slot, installed by 416 functions, base 0x008e84a8 (2027 votes)
+// size 0x18 (413 allocation sites)
+class C_008e8548 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004053bf
+    virtual void vf0();    // override 0x004053bf
 };
+typedef char size_check_C_008e8548[sizeof(C_008e8548) == 24 ? 1 : -1];
 
-// vtable 0x008e854c: 1 slot, installed by 414 functions
-class C_008e854c {
+// vtable 0x008e854c: 1 slot, installed by 414 functions, base 0x008e84a8 (2221 votes)
+// size 0x18 (413 allocation sites)
+class C_008e854c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004053df
+    virtual void vf0();    // override 0x004053df
 };
+typedef char size_check_C_008e854c[sizeof(C_008e854c) == 24 ? 1 : -1];
 
-// vtable 0x008e8550: 1 slot, installed by 413 functions
-class C_008e8550 {
+// vtable 0x008e8550: 1 slot, installed by 413 functions, base 0x008e84a8 (2415 votes)
+// size 0x18 (413 allocation sites)
+class C_008e8550 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004053ff
+    virtual void vf0();    // override 0x004053ff
 };
+typedef char size_check_C_008e8550[sizeof(C_008e8550) == 24 ? 1 : -1];
 
-// vtable 0x008e8554: 1 slot, installed by 236 functions
-class C_008e8554 {
+// vtable 0x008e8554: 1 slot, installed by 236 functions, base 0x008e84a8 (2663 votes)
+// size 0x18 (236 allocation sites)
+class C_008e8554 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040541f
+    virtual void vf0();    // override 0x0040541f
 };
+typedef char size_check_C_008e8554[sizeof(C_008e8554) == 24 ? 1 : -1];
 
-// vtable 0x008e8558: 1 slot, installed by 236 functions
-class C_008e8558 {
+// vtable 0x008e8558: 1 slot, installed by 236 functions, base 0x008e84a8 (2772 votes)
+// size 0x18 (236 allocation sites)
+class C_008e8558 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040543f
+    virtual void vf0();    // override 0x0040543f
 };
+typedef char size_check_C_008e8558[sizeof(C_008e8558) == 24 ? 1 : -1];
 
-// vtable 0x008e855c: 2 slots, installed by 2 functions
-class C_008e855c {
+// vtable 0x008e855c: 2 slots, installed by 2 functions, base 0x008e84a8 (15 votes)
+// size 0x18 (2 allocation sites)
+class C_008e855c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0040545f
+    virtual void vf0();    // override 0x0040545f
     virtual void vf1();    // virtual 0x004059dd
 };
+typedef char size_check_C_008e855c[sizeof(C_008e855c) == 24 ? 1 : -1];
 
 // vtable 0x008e8564: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x18
@@ -385,19 +471,26 @@ public:
     virtual void vf0();    // virtual 0x0041230f
 };
 
-// vtable 0x008e8598: 2 slots, installed by 4 functions
+// vtable 0x008e8608: 1 slot, installed by 4 functions
 // size unknown; constructor touches up to +0x4
-class C_008e8598 {
+class C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x004122e9
+    virtual void vf0();    // virtual 0x00411ee7
+};
+
+// vtable 0x008e8598: 2 slots, installed by 4 functions, base 0x008e8608 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008e8598 : public C_008e8608 {
+public:
+    virtual void vf0();    // override 0x004122e9
     virtual void vf1();    // virtual 0x004122c3
 };
 
-// vtable 0x008e85a0: 1 slot, installed by 4 functions
+// vtable 0x008e85a0: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008e85a0 {
+class C_008e85a0 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x0041229d
+    virtual void vf0();    // override 0x0041229d
 };
 
 // vtable 0x008e85a4: 1 slot, installed by 4 functions
@@ -407,11 +500,11 @@ public:
     virtual void vf0();    // virtual 0x00412277
 };
 
-// vtable 0x008e85a8: 1 slot, installed by 4 functions
+// vtable 0x008e85a8: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008e85a8 {
+class C_008e85a8 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x00412251
+    virtual void vf0();    // override 0x00412251
 };
 
 // vtable 0x008e85ac: 1 slot, installed by 4 functions
@@ -421,11 +514,11 @@ public:
     virtual void vf0();    // virtual 0x0041222b
 };
 
-// vtable 0x008e85b0: 1 slot, installed by 4 functions
+// vtable 0x008e85b0: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008e85b0 {
+class C_008e85b0 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x00412205
+    virtual void vf0();    // override 0x00412205
 };
 
 // vtable 0x008e85b4: 1 slot, installed by 4 functions
@@ -435,11 +528,11 @@ public:
     virtual void vf0();    // virtual 0x004121df
 };
 
-// vtable 0x008e85b8: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008e85b8 {
+// vtable 0x008e85b8: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
+// size 0x64 (1 allocation site), constructor touches up to +0x4
+class C_008e85b8 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x004121b9
+    virtual void vf0();    // override 0x004121b9
 };
 
 // vtable 0x008e85bc: 1 slot, installed by 4 functions
@@ -449,11 +542,11 @@ public:
     virtual void vf0();    // virtual 0x00412193
 };
 
-// vtable 0x008e85c0: 1 slot, installed by 4 functions
+// vtable 0x008e85c0: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008e85c0 {
+class C_008e85c0 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x0041216d
+    virtual void vf0();    // override 0x0041216d
 };
 
 // vtable 0x008e85c4: 1 slot, installed by 4 functions
@@ -463,11 +556,11 @@ public:
     virtual void vf0();    // virtual 0x00412147
 };
 
-// vtable 0x008e85c8: 1 slot, installed by 4 functions
+// vtable 0x008e85c8: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008e85c8 {
+class C_008e85c8 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x00412121
+    virtual void vf0();    // override 0x00412121
 };
 
 // vtable 0x008e85cc: 1 slot, installed by 4 functions
@@ -477,11 +570,11 @@ public:
     virtual void vf0();    // virtual 0x004120fb
 };
 
-// vtable 0x008e85d0: 1 slot, installed by 4 functions
+// vtable 0x008e85d0: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008e85d0 {
+class C_008e85d0 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x004120d5
+    virtual void vf0();    // override 0x004120d5
 };
 
 // vtable 0x008e85d4: 1 slot, installed by 4 functions
@@ -498,14 +591,12 @@ public:
     virtual void vf0();    // virtual 0x00412089
 };
 
-// vtable 0x008e85dc: 1 slot, installed by 4 functions
-// size 0x64 (1 allocation site), constructor touches up to +0x4
-class C_008e85dc {
+// vtable 0x008e85dc: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008e85dc : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x00412063
-    unsigned char m_raw[96];    // opaque: fields not recovered
+    virtual void vf0();    // override 0x00412063
 };
-typedef char size_check_C_008e85dc[sizeof(C_008e85dc) == 100 ? 1 : -1];
 
 // vtable 0x008e85e0: 1 slot, installed by 4 functions
 // size unknown; constructor touches up to +0x4
@@ -514,11 +605,11 @@ public:
     virtual void vf0();    // virtual 0x0041203d
 };
 
-// vtable 0x008e85e4: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008e85e4 {
+// vtable 0x008e85e4: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
+// size 0x64 (1 allocation site), constructor touches up to +0x4
+class C_008e85e4 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x00412017
+    virtual void vf0();    // override 0x00412017
 };
 
 // vtable 0x008e85e8: 1 slot, installed by 4 functions
@@ -528,11 +619,11 @@ public:
     virtual void vf0();    // virtual 0x00411ff1
 };
 
-// vtable 0x008e85ec: 1 slot, installed by 4 functions
+// vtable 0x008e85ec: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008e85ec {
+class C_008e85ec : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x00411fcb
+    virtual void vf0();    // override 0x00411fcb
 };
 
 // vtable 0x008e85f0: 1 slot, installed by 4 functions
@@ -542,11 +633,11 @@ public:
     virtual void vf0();    // virtual 0x00411fa5
 };
 
-// vtable 0x008e85f4: 1 slot, installed by 4 functions
+// vtable 0x008e85f4: 1 slot, installed by 4 functions, base 0x008e8608 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008e85f4 {
+class C_008e85f4 : public C_008e8608 {
 public:
-    virtual void vf0();    // virtual 0x00411f7f
+    virtual void vf0();    // override 0x00411f7f
 };
 
 // vtable 0x008e85f8: 1 slot, installed by 4 functions
@@ -575,13 +666,6 @@ public:
 class C_008e8604 {
 public:
     virtual void vf0();    // virtual 0x00411f0d
-};
-
-// vtable 0x008e8608: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008e8608 {
-public:
-    virtual void vf0();    // virtual 0x00411ee7
 };
 
 // vtable 0x008e860c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
@@ -690,11 +774,13 @@ public:
 };
 
 // vtable 0x008e8648: 1 slot, installed by 6 functions
-// size unknown; constructor touches up to +0x4
+// size 0x18 (1 allocation site), constructor touches up to +0x4
 class C_008e8648 {
 public:
     virtual void vf0();    // virtual 0x00411e4f
+    unsigned char m_raw[20];    // opaque: fields not recovered
 };
+typedef char size_check_C_008e8648[sizeof(C_008e8648) == 24 ? 1 : -1];
 
 // vtable 0x008e864c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size 0x44 (4 allocation sites), constructor touches up to +0x10
@@ -794,12 +880,6 @@ public:
     virtual void vf0();    // override 0x0040fb89
 };
 
-// vtable 0x008e8684: 1 slot, installed by 1 function
-class C_008e8684 {
-public:
-    virtual void vf0();    // virtual 0x004185b1
-};
-
 // vtable 0x008e8688: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008e8688 {
@@ -807,10 +887,10 @@ public:
     virtual void vf0();    // virtual 0x00413dd5
 };
 
-// vtable 0x008e868c: 1 slot, installed by 1 function
-class C_008e868c {
+// vtable 0x008e8684: 1 slot, installed by 1 function, base 0x008e8688 (1 vote)
+class C_008e8684 : public C_008e8688 {
 public:
-    virtual void vf0();    // virtual 0x004185d2
+    virtual void vf0();    // override 0x004185b1
 };
 
 // vtable 0x008e8690: 1 slot, installed by 3 functions
@@ -820,10 +900,10 @@ public:
     virtual void vf0();    // virtual 0x004140a0
 };
 
-// vtable 0x008e8694: 1 slot, installed by 1 function
-class C_008e8694 {
+// vtable 0x008e868c: 1 slot, installed by 1 function, base 0x008e8690 (1 vote)
+class C_008e868c : public C_008e8690 {
 public:
-    virtual void vf0();    // virtual 0x004185f3
+    virtual void vf0();    // override 0x004185d2
 };
 
 // vtable 0x008e8698: 1 slot, installed by 3 functions
@@ -833,10 +913,10 @@ public:
     virtual void vf0();    // virtual 0x004142cb
 };
 
-// vtable 0x008e869c: 1 slot, installed by 1 function
-class C_008e869c {
+// vtable 0x008e8694: 1 slot, installed by 1 function, base 0x008e8698 (1 vote)
+class C_008e8694 : public C_008e8698 {
 public:
-    virtual void vf0();    // virtual 0x00418614
+    virtual void vf0();    // override 0x004185f3
 };
 
 // vtable 0x008e86a0: 1 slot, installed by 3 functions
@@ -846,10 +926,10 @@ public:
     virtual void vf0();    // virtual 0x004144f6
 };
 
-// vtable 0x008e86a4: 1 slot, installed by 1 function
-class C_008e86a4 {
+// vtable 0x008e869c: 1 slot, installed by 1 function, base 0x008e86a0 (1 vote)
+class C_008e869c : public C_008e86a0 {
 public:
-    virtual void vf0();    // virtual 0x00418635
+    virtual void vf0();    // override 0x00418614
 };
 
 // vtable 0x008e86a8: 1 slot, installed by 3 functions
@@ -859,10 +939,10 @@ public:
     virtual void vf0();    // virtual 0x00414833
 };
 
-// vtable 0x008e86ac: 1 slot, installed by 1 function
-class C_008e86ac {
+// vtable 0x008e86a4: 1 slot, installed by 1 function, base 0x008e86a8 (1 vote)
+class C_008e86a4 : public C_008e86a8 {
 public:
-    virtual void vf0();    // virtual 0x00418656
+    virtual void vf0();    // override 0x00418635
 };
 
 // vtable 0x008e86b0: 1 slot, installed by 3 functions
@@ -870,6 +950,12 @@ public:
 class C_008e86b0 {
 public:
     virtual void vf0();    // virtual 0x00414bde
+};
+
+// vtable 0x008e86ac: 1 slot, installed by 1 function, base 0x008e86b0 (1 vote)
+class C_008e86ac : public C_008e86b0 {
+public:
+    virtual void vf0();    // override 0x00418656
 };
 
 // vtable 0x008e86b4: 1 slot, installed by 1 function
@@ -885,12 +971,6 @@ public:
     virtual void vf0();    // virtual 0x00414f59
 };
 
-// vtable 0x008e86bc: 1 slot, installed by 2 functions
-class C_008e86bc {
-public:
-    virtual void vf0();    // virtual 0x00418698
-};
-
 // vtable 0x008e86c0: 1 slot, installed by 4 functions
 // size unknown; constructor touches up to +0x4
 class C_008e86c0 {
@@ -898,10 +978,10 @@ public:
     virtual void vf0();    // virtual 0x00415409
 };
 
-// vtable 0x008e86c4: 1 slot, installed by 1 function
-class C_008e86c4 {
+// vtable 0x008e86bc: 1 slot, installed by 2 functions, base 0x008e86c0 (2 votes)
+class C_008e86bc : public C_008e86c0 {
 public:
-    virtual void vf0();    // virtual 0x004186b9
+    virtual void vf0();    // override 0x00418698
 };
 
 // vtable 0x008e86c8: 1 slot, installed by 3 functions
@@ -911,10 +991,10 @@ public:
     virtual void vf0();    // virtual 0x004157b4
 };
 
-// vtable 0x008e86cc: 1 slot, installed by 1 function
-class C_008e86cc {
+// vtable 0x008e86c4: 1 slot, installed by 1 function, base 0x008e86c8 (1 vote)
+class C_008e86c4 : public C_008e86c8 {
 public:
-    virtual void vf0();    // virtual 0x004186da
+    virtual void vf0();    // override 0x004186b9
 };
 
 // vtable 0x008e86d0: 1 slot, installed by 3 functions
@@ -924,10 +1004,10 @@ public:
     virtual void vf0();    // virtual 0x00415b5f
 };
 
-// vtable 0x008e86d4: 1 slot, installed by 1 function
-class C_008e86d4 {
+// vtable 0x008e86cc: 1 slot, installed by 1 function, base 0x008e86d0 (1 vote)
+class C_008e86cc : public C_008e86d0 {
 public:
-    virtual void vf0();    // virtual 0x004186fb
+    virtual void vf0();    // override 0x004186da
 };
 
 // vtable 0x008e86d8: 1 slot, installed by 3 functions
@@ -937,10 +1017,10 @@ public:
     virtual void vf0();    // virtual 0x00415f0a
 };
 
-// vtable 0x008e86dc: 1 slot, installed by 2 functions
-class C_008e86dc {
+// vtable 0x008e86d4: 1 slot, installed by 1 function, base 0x008e86d8 (1 vote)
+class C_008e86d4 : public C_008e86d8 {
 public:
-    virtual void vf0();    // virtual 0x0041871c
+    virtual void vf0();    // override 0x004186fb
 };
 
 // vtable 0x008e86e0: 1 slot, installed by 4 functions
@@ -950,10 +1030,10 @@ public:
     virtual void vf0();    // virtual 0x004162b5
 };
 
-// vtable 0x008e86e4: 1 slot, installed by 1 function
-class C_008e86e4 {
+// vtable 0x008e86dc: 1 slot, installed by 2 functions, base 0x008e86e0 (2 votes)
+class C_008e86dc : public C_008e86e0 {
 public:
-    virtual void vf0();    // virtual 0x0041873d
+    virtual void vf0();    // override 0x0041871c
 };
 
 // vtable 0x008e86e8: 1 slot, installed by 3 functions
@@ -963,10 +1043,10 @@ public:
     virtual void vf0();    // virtual 0x00416660
 };
 
-// vtable 0x008e86ec: 1 slot, installed by 1 function
-class C_008e86ec {
+// vtable 0x008e86e4: 1 slot, installed by 1 function, base 0x008e86e8 (1 vote)
+class C_008e86e4 : public C_008e86e8 {
 public:
-    virtual void vf0();    // virtual 0x0041875e
+    virtual void vf0();    // override 0x0041873d
 };
 
 // vtable 0x008e86f0: 1 slot, installed by 3 functions
@@ -976,10 +1056,10 @@ public:
     virtual void vf0();    // virtual 0x00416a3d
 };
 
-// vtable 0x008e86f4: 1 slot, installed by 1 function
-class C_008e86f4 {
+// vtable 0x008e86ec: 1 slot, installed by 1 function, base 0x008e86f0 (1 vote)
+class C_008e86ec : public C_008e86f0 {
 public:
-    virtual void vf0();    // virtual 0x0041877f
+    virtual void vf0();    // override 0x0041875e
 };
 
 // vtable 0x008e86f8: 1 slot, installed by 3 functions
@@ -989,173 +1069,235 @@ public:
     virtual void vf0();    // virtual 0x00416e03
 };
 
-// vtable 0x008e86fc: 1 slot, installed by 298 functions
-class C_008e86fc {
+// vtable 0x008e86f4: 1 slot, installed by 1 function, base 0x008e86f8 (1 vote)
+class C_008e86f4 : public C_008e86f8 {
 public:
-    virtual void vf0();    // virtual 0x004187a0
+    virtual void vf0();    // override 0x0041877f
 };
 
-// vtable 0x008e8700: 1 slot, installed by 147 functions
-class C_008e8700 {
+// vtable 0x008e86fc: 1 slot, installed by 298 functions, base 0x008e84a8 (4804 votes)
+// size 0x18 (298 allocation sites)
+class C_008e86fc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004187c0
+    virtual void vf0();    // override 0x004187a0
 };
+typedef char size_check_C_008e86fc[sizeof(C_008e86fc) == 24 ? 1 : -1];
 
-// vtable 0x008e8704: 1 slot, installed by 148 functions
-class C_008e8704 {
+// vtable 0x008e8700: 1 slot, installed by 147 functions, base 0x008e84a8 (2816 votes)
+// size 0x18 (147 allocation sites)
+class C_008e8700 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004187e0
+    virtual void vf0();    // override 0x004187c0
 };
+typedef char size_check_C_008e8700[sizeof(C_008e8700) == 24 ? 1 : -1];
 
-// vtable 0x008e8708: 1 slot, installed by 148 functions
-class C_008e8708 {
+// vtable 0x008e8704: 1 slot, installed by 148 functions, base 0x008e84a8 (2892 votes)
+// size 0x18 (147 allocation sites)
+class C_008e8704 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418800
+    virtual void vf0();    // override 0x004187e0
 };
+typedef char size_check_C_008e8704[sizeof(C_008e8704) == 24 ? 1 : -1];
 
-// vtable 0x008e870c: 1 slot, installed by 147 functions
-class C_008e870c {
+// vtable 0x008e8708: 1 slot, installed by 148 functions, base 0x008e84a8 (2969 votes)
+// size 0x18 (147 allocation sites)
+class C_008e8708 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418820
+    virtual void vf0();    // override 0x00418800
 };
+typedef char size_check_C_008e8708[sizeof(C_008e8708) == 24 ? 1 : -1];
 
-// vtable 0x008e8710: 1 slot, installed by 148 functions
-class C_008e8710 {
+// vtable 0x008e870c: 1 slot, installed by 147 functions, base 0x008e84a8 (3044 votes)
+// size 0x18 (147 allocation sites)
+class C_008e870c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418840
+    virtual void vf0();    // override 0x00418820
 };
+typedef char size_check_C_008e870c[sizeof(C_008e870c) == 24 ? 1 : -1];
 
-// vtable 0x008e8714: 1 slot, installed by 257 functions
-class C_008e8714 {
+// vtable 0x008e8710: 1 slot, installed by 148 functions, base 0x008e84a8 (3121 votes)
+// size 0x18 (147 allocation sites)
+class C_008e8710 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418860
+    virtual void vf0();    // override 0x00418840
 };
+typedef char size_check_C_008e8710[sizeof(C_008e8710) == 24 ? 1 : -1];
 
-// vtable 0x008e8718: 1 slot, installed by 259 functions
-class C_008e8718 {
+// vtable 0x008e8714: 1 slot, installed by 257 functions, base 0x008e84a8 (3385 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8714 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418880
+    virtual void vf0();    // override 0x00418860
 };
+typedef char size_check_C_008e8714[sizeof(C_008e8714) == 24 ? 1 : -1];
 
-// vtable 0x008e871c: 1 slot, installed by 257 functions
-class C_008e871c {
+// vtable 0x008e8718: 1 slot, installed by 259 functions, base 0x008e84a8 (3519 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8718 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004188a0
+    virtual void vf0();    // override 0x00418880
 };
+typedef char size_check_C_008e8718[sizeof(C_008e8718) == 24 ? 1 : -1];
 
-// vtable 0x008e8720: 1 slot, installed by 257 functions
-class C_008e8720 {
+// vtable 0x008e871c: 1 slot, installed by 257 functions, base 0x008e84a8 (3651 votes)
+// size 0x18 (257 allocation sites)
+class C_008e871c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004188c0
+    virtual void vf0();    // override 0x004188a0
 };
+typedef char size_check_C_008e871c[sizeof(C_008e871c) == 24 ? 1 : -1];
 
-// vtable 0x008e8724: 1 slot, installed by 257 functions
-class C_008e8724 {
+// vtable 0x008e8720: 1 slot, installed by 257 functions, base 0x008e84a8 (3784 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8720 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004188e0
+    virtual void vf0();    // override 0x004188c0
 };
+typedef char size_check_C_008e8720[sizeof(C_008e8720) == 24 ? 1 : -1];
 
-// vtable 0x008e8728: 1 slot, installed by 257 functions
-class C_008e8728 {
+// vtable 0x008e8724: 1 slot, installed by 257 functions, base 0x008e84a8 (3917 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8724 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418900
+    virtual void vf0();    // override 0x004188e0
 };
+typedef char size_check_C_008e8724[sizeof(C_008e8724) == 24 ? 1 : -1];
 
-// vtable 0x008e872c: 1 slot, installed by 258 functions
-class C_008e872c {
+// vtable 0x008e8728: 1 slot, installed by 257 functions, base 0x008e84a8 (4050 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8728 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418920
+    virtual void vf0();    // override 0x00418900
 };
+typedef char size_check_C_008e8728[sizeof(C_008e8728) == 24 ? 1 : -1];
 
-// vtable 0x008e8730: 1 slot, installed by 257 functions
-class C_008e8730 {
+// vtable 0x008e872c: 1 slot, installed by 258 functions, base 0x008e84a8 (4184 votes)
+// size 0x18 (257 allocation sites)
+class C_008e872c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418940
+    virtual void vf0();    // override 0x00418920
 };
+typedef char size_check_C_008e872c[sizeof(C_008e872c) == 24 ? 1 : -1];
 
-// vtable 0x008e8734: 1 slot, installed by 257 functions
-class C_008e8734 {
+// vtable 0x008e8730: 1 slot, installed by 257 functions, base 0x008e84a8 (4316 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8730 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418960
+    virtual void vf0();    // override 0x00418940
 };
+typedef char size_check_C_008e8730[sizeof(C_008e8730) == 24 ? 1 : -1];
 
-// vtable 0x008e8738: 1 slot, installed by 257 functions
-class C_008e8738 {
+// vtable 0x008e8734: 1 slot, installed by 257 functions, base 0x008e84a8 (4449 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8734 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418980
+    virtual void vf0();    // override 0x00418960
 };
+typedef char size_check_C_008e8734[sizeof(C_008e8734) == 24 ? 1 : -1];
 
-// vtable 0x008e873c: 1 slot, installed by 257 functions
-class C_008e873c {
+// vtable 0x008e8738: 1 slot, installed by 257 functions, base 0x008e84a8 (4582 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8738 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004189a0
+    virtual void vf0();    // override 0x00418980
 };
+typedef char size_check_C_008e8738[sizeof(C_008e8738) == 24 ? 1 : -1];
 
-// vtable 0x008e8740: 1 slot, installed by 258 functions
-class C_008e8740 {
+// vtable 0x008e873c: 1 slot, installed by 257 functions, base 0x008e84a8 (4715 votes)
+// size 0x18 (257 allocation sites)
+class C_008e873c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004189c0
+    virtual void vf0();    // override 0x004189a0
 };
+typedef char size_check_C_008e873c[sizeof(C_008e873c) == 24 ? 1 : -1];
 
-// vtable 0x008e8744: 1 slot, installed by 257 functions
-class C_008e8744 {
+// vtable 0x008e8740: 1 slot, installed by 258 functions, base 0x008e84a8 (4849 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8740 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004189e0
+    virtual void vf0();    // override 0x004189c0
 };
+typedef char size_check_C_008e8740[sizeof(C_008e8740) == 24 ? 1 : -1];
 
-// vtable 0x008e8748: 1 slot, installed by 257 functions
-class C_008e8748 {
+// vtable 0x008e8744: 1 slot, installed by 257 functions, base 0x008e84a8 (4981 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8744 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418a00
+    virtual void vf0();    // override 0x004189e0
 };
+typedef char size_check_C_008e8744[sizeof(C_008e8744) == 24 ? 1 : -1];
 
-// vtable 0x008e874c: 1 slot, installed by 258 functions
-class C_008e874c {
+// vtable 0x008e8748: 1 slot, installed by 257 functions, base 0x008e84a8 (5114 votes)
+// size 0x18 (257 allocation sites)
+class C_008e8748 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418a20
+    virtual void vf0();    // override 0x00418a00
 };
+typedef char size_check_C_008e8748[sizeof(C_008e8748) == 24 ? 1 : -1];
 
-// vtable 0x008e8750: 1 slot, installed by 240 functions
-class C_008e8750 {
+// vtable 0x008e874c: 1 slot, installed by 258 functions, base 0x008e84a8 (5247 votes)
+// size 0x18 (257 allocation sites)
+class C_008e874c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418a40
+    virtual void vf0();    // override 0x00418a20
 };
+typedef char size_check_C_008e874c[sizeof(C_008e874c) == 24 ? 1 : -1];
 
-// vtable 0x008e8754: 1 slot, installed by 43 functions
-class C_008e8754 {
+// vtable 0x008e8750: 1 slot, installed by 240 functions, base 0x008e84a8 (4255 votes)
+// size 0x18 (239 allocation sites)
+class C_008e8750 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418a60
+    virtual void vf0();    // override 0x00418a40
 };
+typedef char size_check_C_008e8750[sizeof(C_008e8750) == 24 ? 1 : -1];
 
-// vtable 0x008e8758: 1 slot, installed by 83 functions
-class C_008e8758 {
+// vtable 0x008e8754: 1 slot, installed by 43 functions, base 0x008e84a8 (1042 votes)
+// size 0x18 (43 allocation sites)
+class C_008e8754 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418a80
+    virtual void vf0();    // override 0x00418a60
 };
+typedef char size_check_C_008e8754[sizeof(C_008e8754) == 24 ? 1 : -1];
 
-// vtable 0x008e875c: 1 slot, installed by 17 functions
-class C_008e875c {
+// vtable 0x008e8758: 1 slot, installed by 83 functions, base 0x008e84a8 (2172 votes)
+// size 0x18 (83 allocation sites)
+class C_008e8758 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418aa0
+    virtual void vf0();    // override 0x00418a80
 };
+typedef char size_check_C_008e8758[sizeof(C_008e8758) == 24 ? 1 : -1];
 
-// vtable 0x008e8760: 1 slot, installed by 286 functions
-class C_008e8760 {
+// vtable 0x008e875c: 1 slot, installed by 17 functions, base 0x008e84a8 (423 votes)
+// size 0x18 (17 allocation sites)
+class C_008e875c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418ac0
+    virtual void vf0();    // override 0x00418aa0
 };
+typedef char size_check_C_008e875c[sizeof(C_008e875c) == 24 ? 1 : -1];
 
-// vtable 0x008e8764: 1 slot, installed by 284 functions
-class C_008e8764 {
+// vtable 0x008e8760: 1 slot, installed by 286 functions, base 0x008e84a8 (5599 votes)
+// size 0x18 (286 allocation sites)
+class C_008e8760 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418ae0
+    virtual void vf0();    // override 0x00418ac0
 };
+typedef char size_check_C_008e8760[sizeof(C_008e8760) == 24 ? 1 : -1];
 
-// vtable 0x008e8768: 1 slot, installed by 287 functions
-class C_008e8768 {
+// vtable 0x008e8764: 1 slot, installed by 284 functions, base 0x008e84a8 (5758 votes)
+// size 0x18 (282 allocation sites)
+class C_008e8764 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00418b00
+    virtual void vf0();    // override 0x00418ae0
 };
+typedef char size_check_C_008e8764[sizeof(C_008e8764) == 24 ? 1 : -1];
+
+// vtable 0x008e8768: 1 slot, installed by 287 functions, base 0x008e84a8 (8003 votes)
+// size 0x18 (286 allocation sites)
+class C_008e8768 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x00418b00
+};
+typedef char size_check_C_008e8768[sizeof(C_008e8768) == 24 ? 1 : -1];
 
 // vtable 0x008e876c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size 0x14 (1 allocation site), constructor touches up to +0x14
@@ -1185,270 +1327,358 @@ public:
     virtual void vf0();    // virtual 0x0041abc7
 };
 
-// vtable 0x008e877c: 1 slot, installed by 266 functions
-class C_008e877c {
+// vtable 0x008e877c: 1 slot, installed by 266 functions, base 0x008e84a8 (4397 votes)
+// size 0x18 (266 allocation sites)
+class C_008e877c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bc7a
+    virtual void vf0();    // override 0x0041bc7a
 };
+typedef char size_check_C_008e877c[sizeof(C_008e877c) == 24 ? 1 : -1];
 
-// vtable 0x008e8780: 1 slot, installed by 132 functions
-class C_008e8780 {
+// vtable 0x008e8780: 1 slot, installed by 132 functions, base 0x008e84a8 (2777 votes)
+// size 0x18 (132 allocation sites)
+class C_008e8780 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bc9a
+    virtual void vf0();    // override 0x0041bc9a
 };
+typedef char size_check_C_008e8780[sizeof(C_008e8780) == 24 ? 1 : -1];
 
-// vtable 0x008e8784: 1 slot, installed by 232 functions
-class C_008e8784 {
+// vtable 0x008e8784: 1 slot, installed by 232 functions, base 0x008e84a8 (2851 votes)
+// size 0x18 (232 allocation sites)
+class C_008e8784 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bcba
+    virtual void vf0();    // override 0x0041bcba
 };
+typedef char size_check_C_008e8784[sizeof(C_008e8784) == 24 ? 1 : -1];
 
-// vtable 0x008e8788: 1 slot, installed by 233 functions
-class C_008e8788 {
+// vtable 0x008e8788: 1 slot, installed by 233 functions, base 0x008e84a8 (2959 votes)
+// size 0x18 (232 allocation sites)
+class C_008e8788 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bcda
+    virtual void vf0();    // override 0x0041bcda
 };
+typedef char size_check_C_008e8788[sizeof(C_008e8788) == 24 ? 1 : -1];
 
-// vtable 0x008e878c: 1 slot, installed by 232 functions
-class C_008e878c {
+// vtable 0x008e878c: 1 slot, installed by 232 functions, base 0x008e84a8 (3065 votes)
+// size 0x18 (232 allocation sites)
+class C_008e878c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bcfa
+    virtual void vf0();    // override 0x0041bcfa
 };
+typedef char size_check_C_008e878c[sizeof(C_008e878c) == 24 ? 1 : -1];
 
-// vtable 0x008e8790: 1 slot, installed by 232 functions
-class C_008e8790 {
+// vtable 0x008e8790: 1 slot, installed by 232 functions, base 0x008e84a8 (3172 votes)
+// size 0x18 (232 allocation sites)
+class C_008e8790 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bd1a
+    virtual void vf0();    // override 0x0041bd1a
 };
+typedef char size_check_C_008e8790[sizeof(C_008e8790) == 24 ? 1 : -1];
 
-// vtable 0x008e8794: 1 slot, installed by 232 functions
-class C_008e8794 {
+// vtable 0x008e8794: 1 slot, installed by 232 functions, base 0x008e84a8 (3279 votes)
+// size 0x18 (232 allocation sites)
+class C_008e8794 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bd3a
+    virtual void vf0();    // override 0x0041bd3a
 };
+typedef char size_check_C_008e8794[sizeof(C_008e8794) == 24 ? 1 : -1];
 
-// vtable 0x008e8798: 1 slot, installed by 232 functions
-class C_008e8798 {
+// vtable 0x008e8798: 1 slot, installed by 232 functions, base 0x008e84a8 (3386 votes)
+// size 0x18 (232 allocation sites)
+class C_008e8798 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bd5a
+    virtual void vf0();    // override 0x0041bd5a
 };
+typedef char size_check_C_008e8798[sizeof(C_008e8798) == 24 ? 1 : -1];
 
-// vtable 0x008e879c: 1 slot, installed by 231 functions
-class C_008e879c {
+// vtable 0x008e879c: 1 slot, installed by 231 functions, base 0x008e84a8 (3492 votes)
+// size 0x18 (231 allocation sites)
+class C_008e879c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bd7a
+    virtual void vf0();    // override 0x0041bd7a
 };
+typedef char size_check_C_008e879c[sizeof(C_008e879c) == 24 ? 1 : -1];
 
-// vtable 0x008e87a0: 1 slot, installed by 232 functions
-class C_008e87a0 {
+// vtable 0x008e87a0: 1 slot, installed by 232 functions, base 0x008e84a8 (3600 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87a0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bd9a
+    virtual void vf0();    // override 0x0041bd9a
 };
+typedef char size_check_C_008e87a0[sizeof(C_008e87a0) == 24 ? 1 : -1];
 
-// vtable 0x008e87a4: 1 slot, installed by 232 functions
-class C_008e87a4 {
+// vtable 0x008e87a4: 1 slot, installed by 232 functions, base 0x008e84a8 (3707 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87a4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bdba
+    virtual void vf0();    // override 0x0041bdba
 };
+typedef char size_check_C_008e87a4[sizeof(C_008e87a4) == 24 ? 1 : -1];
 
-// vtable 0x008e87a8: 1 slot, installed by 233 functions
-class C_008e87a8 {
+// vtable 0x008e87a8: 1 slot, installed by 233 functions, base 0x008e84a8 (3815 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87a8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bdda
+    virtual void vf0();    // override 0x0041bdda
 };
+typedef char size_check_C_008e87a8[sizeof(C_008e87a8) == 24 ? 1 : -1];
 
-// vtable 0x008e87ac: 1 slot, installed by 232 functions
-class C_008e87ac {
+// vtable 0x008e87ac: 1 slot, installed by 232 functions, base 0x008e84a8 (3921 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87ac : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bdfa
+    virtual void vf0();    // override 0x0041bdfa
 };
+typedef char size_check_C_008e87ac[sizeof(C_008e87ac) == 24 ? 1 : -1];
 
-// vtable 0x008e87b0: 1 slot, installed by 232 functions
-class C_008e87b0 {
+// vtable 0x008e87b0: 1 slot, installed by 232 functions, base 0x008e84a8 (4028 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87b0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041be1a
+    virtual void vf0();    // override 0x0041be1a
 };
+typedef char size_check_C_008e87b0[sizeof(C_008e87b0) == 24 ? 1 : -1];
 
-// vtable 0x008e87b4: 1 slot, installed by 232 functions
-class C_008e87b4 {
+// vtable 0x008e87b4: 1 slot, installed by 232 functions, base 0x008e84a8 (4135 votes)
+// size 0x18 (231 allocation sites)
+class C_008e87b4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041be3a
+    virtual void vf0();    // override 0x0041be3a
 };
+typedef char size_check_C_008e87b4[sizeof(C_008e87b4) == 24 ? 1 : -1];
 
-// vtable 0x008e87b8: 1 slot, installed by 232 functions
-class C_008e87b8 {
+// vtable 0x008e87b8: 1 slot, installed by 232 functions, base 0x008e84a8 (4242 votes)
+// size 0x18 (231 allocation sites)
+class C_008e87b8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041be5a
+    virtual void vf0();    // override 0x0041be5a
 };
+typedef char size_check_C_008e87b8[sizeof(C_008e87b8) == 24 ? 1 : -1];
 
-// vtable 0x008e87bc: 1 slot, installed by 233 functions
-class C_008e87bc {
+// vtable 0x008e87bc: 1 slot, installed by 233 functions, base 0x008e84a8 (4350 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87bc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041be7a
+    virtual void vf0();    // override 0x0041be7a
 };
+typedef char size_check_C_008e87bc[sizeof(C_008e87bc) == 24 ? 1 : -1];
 
-// vtable 0x008e87c0: 1 slot, installed by 234 functions
-class C_008e87c0 {
+// vtable 0x008e87c0: 1 slot, installed by 234 functions, base 0x008e84a8 (4458 votes)
+// size 0x18 (231 allocation sites)
+class C_008e87c0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041be9a
+    virtual void vf0();    // override 0x0041be9a
 };
+typedef char size_check_C_008e87c0[sizeof(C_008e87c0) == 24 ? 1 : -1];
 
-// vtable 0x008e87c4: 1 slot, installed by 232 functions
-class C_008e87c4 {
+// vtable 0x008e87c4: 1 slot, installed by 232 functions, base 0x008e84a8 (4563 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87c4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041beba
+    virtual void vf0();    // override 0x0041beba
 };
+typedef char size_check_C_008e87c4[sizeof(C_008e87c4) == 24 ? 1 : -1];
 
-// vtable 0x008e87c8: 1 slot, installed by 232 functions
-class C_008e87c8 {
+// vtable 0x008e87c8: 1 slot, installed by 232 functions, base 0x008e84a8 (4670 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87c8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041beda
+    virtual void vf0();    // override 0x0041beda
 };
+typedef char size_check_C_008e87c8[sizeof(C_008e87c8) == 24 ? 1 : -1];
 
-// vtable 0x008e87cc: 1 slot, installed by 232 functions
-class C_008e87cc {
+// vtable 0x008e87cc: 1 slot, installed by 232 functions, base 0x008e84a8 (4777 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87cc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041befa
+    virtual void vf0();    // override 0x0041befa
 };
+typedef char size_check_C_008e87cc[sizeof(C_008e87cc) == 24 ? 1 : -1];
 
-// vtable 0x008e87d0: 1 slot, installed by 232 functions
-class C_008e87d0 {
+// vtable 0x008e87d0: 1 slot, installed by 232 functions, base 0x008e84a8 (4884 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87d0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bf1a
+    virtual void vf0();    // override 0x0041bf1a
 };
+typedef char size_check_C_008e87d0[sizeof(C_008e87d0) == 24 ? 1 : -1];
 
-// vtable 0x008e87d4: 1 slot, installed by 232 functions
-class C_008e87d4 {
+// vtable 0x008e87d4: 1 slot, installed by 232 functions, base 0x008e84a8 (4991 votes)
+// size 0x18 (232 allocation sites)
+class C_008e87d4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bf3a
+    virtual void vf0();    // override 0x0041bf3a
 };
+typedef char size_check_C_008e87d4[sizeof(C_008e87d4) == 24 ? 1 : -1];
 
-// vtable 0x008e87d8: 1 slot, installed by 219 functions
-class C_008e87d8 {
+// vtable 0x008e87d8: 1 slot, installed by 219 functions, base 0x008e84a8 (3334 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87d8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bf5a
+    virtual void vf0();    // override 0x0041bf5a
 };
+typedef char size_check_C_008e87d8[sizeof(C_008e87d8) == 24 ? 1 : -1];
 
-// vtable 0x008e87dc: 1 slot, installed by 217 functions
-class C_008e87dc {
+// vtable 0x008e87dc: 1 slot, installed by 217 functions, base 0x008e84a8 (3432 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87dc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bf7a
+    virtual void vf0();    // override 0x0041bf7a
 };
+typedef char size_check_C_008e87dc[sizeof(C_008e87dc) == 24 ? 1 : -1];
 
-// vtable 0x008e87e0: 1 slot, installed by 218 functions
-class C_008e87e0 {
+// vtable 0x008e87e0: 1 slot, installed by 218 functions, base 0x008e84a8 (3533 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87e0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bf9a
+    virtual void vf0();    // override 0x0041bf9a
 };
+typedef char size_check_C_008e87e0[sizeof(C_008e87e0) == 24 ? 1 : -1];
 
-// vtable 0x008e87e4: 1 slot, installed by 217 functions
-class C_008e87e4 {
+// vtable 0x008e87e4: 1 slot, installed by 217 functions, base 0x008e84a8 (3632 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87e4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bfba
+    virtual void vf0();    // override 0x0041bfba
 };
+typedef char size_check_C_008e87e4[sizeof(C_008e87e4) == 24 ? 1 : -1];
 
-// vtable 0x008e87e8: 1 slot, installed by 217 functions
-class C_008e87e8 {
+// vtable 0x008e87e8: 1 slot, installed by 217 functions, base 0x008e84a8 (3732 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87e8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bfda
+    virtual void vf0();    // override 0x0041bfda
 };
+typedef char size_check_C_008e87e8[sizeof(C_008e87e8) == 24 ? 1 : -1];
 
-// vtable 0x008e87ec: 1 slot, installed by 218 functions
-class C_008e87ec {
+// vtable 0x008e87ec: 1 slot, installed by 218 functions, base 0x008e84a8 (3833 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87ec : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041bffa
+    virtual void vf0();    // override 0x0041bffa
 };
+typedef char size_check_C_008e87ec[sizeof(C_008e87ec) == 24 ? 1 : -1];
 
-// vtable 0x008e87f0: 1 slot, installed by 217 functions
-class C_008e87f0 {
+// vtable 0x008e87f0: 1 slot, installed by 217 functions, base 0x008e84a8 (3932 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87f0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c01a
+    virtual void vf0();    // override 0x0041c01a
 };
+typedef char size_check_C_008e87f0[sizeof(C_008e87f0) == 24 ? 1 : -1];
 
-// vtable 0x008e87f4: 1 slot, installed by 217 functions
-class C_008e87f4 {
+// vtable 0x008e87f4: 1 slot, installed by 217 functions, base 0x008e84a8 (4032 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87f4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c03a
+    virtual void vf0();    // override 0x0041c03a
 };
+typedef char size_check_C_008e87f4[sizeof(C_008e87f4) == 24 ? 1 : -1];
 
-// vtable 0x008e87f8: 1 slot, installed by 218 functions
-class C_008e87f8 {
+// vtable 0x008e87f8: 1 slot, installed by 218 functions, base 0x008e84a8 (4133 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87f8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c05a
+    virtual void vf0();    // override 0x0041c05a
 };
+typedef char size_check_C_008e87f8[sizeof(C_008e87f8) == 24 ? 1 : -1];
 
-// vtable 0x008e87fc: 1 slot, installed by 217 functions
-class C_008e87fc {
+// vtable 0x008e87fc: 1 slot, installed by 217 functions, base 0x008e84a8 (4232 votes)
+// size 0x18 (217 allocation sites)
+class C_008e87fc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c07a
+    virtual void vf0();    // override 0x0041c07a
 };
+typedef char size_check_C_008e87fc[sizeof(C_008e87fc) == 24 ? 1 : -1];
 
-// vtable 0x008e8800: 1 slot, installed by 217 functions
-class C_008e8800 {
+// vtable 0x008e8800: 1 slot, installed by 217 functions, base 0x008e84a8 (4331 votes)
+// size 0x18 (216 allocation sites)
+class C_008e8800 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c09a
+    virtual void vf0();    // override 0x0041c09a
 };
+typedef char size_check_C_008e8800[sizeof(C_008e8800) == 24 ? 1 : -1];
 
-// vtable 0x008e8804: 1 slot, installed by 218 functions
-class C_008e8804 {
+// vtable 0x008e8804: 1 slot, installed by 218 functions, base 0x008e84a8 (4433 votes)
+// size 0x18 (217 allocation sites)
+class C_008e8804 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c0ba
+    virtual void vf0();    // override 0x0041c0ba
 };
+typedef char size_check_C_008e8804[sizeof(C_008e8804) == 24 ? 1 : -1];
 
-// vtable 0x008e8808: 1 slot, installed by 217 functions
-class C_008e8808 {
+// vtable 0x008e8808: 1 slot, installed by 217 functions, base 0x008e84a8 (4532 votes)
+// size 0x18 (217 allocation sites)
+class C_008e8808 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c0da
+    virtual void vf0();    // override 0x0041c0da
 };
+typedef char size_check_C_008e8808[sizeof(C_008e8808) == 24 ? 1 : -1];
 
-// vtable 0x008e880c: 1 slot, installed by 217 functions
-class C_008e880c {
+// vtable 0x008e880c: 1 slot, installed by 217 functions, base 0x008e84a8 (4632 votes)
+// size 0x18 (216 allocation sites)
+class C_008e880c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c0fa
+    virtual void vf0();    // override 0x0041c0fa
 };
+typedef char size_check_C_008e880c[sizeof(C_008e880c) == 24 ? 1 : -1];
 
-// vtable 0x008e8810: 1 slot, installed by 217 functions
-class C_008e8810 {
+// vtable 0x008e8810: 1 slot, installed by 217 functions, base 0x008e84a8 (4732 votes)
+// size 0x18 (216 allocation sites)
+class C_008e8810 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c11a
+    virtual void vf0();    // override 0x0041c11a
 };
+typedef char size_check_C_008e8810[sizeof(C_008e8810) == 24 ? 1 : -1];
 
-// vtable 0x008e8814: 1 slot, installed by 217 functions
-class C_008e8814 {
+// vtable 0x008e8814: 1 slot, installed by 217 functions, base 0x008e84a8 (4832 votes)
+// size 0x18 (217 allocation sites)
+class C_008e8814 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c13a
+    virtual void vf0();    // override 0x0041c13a
 };
+typedef char size_check_C_008e8814[sizeof(C_008e8814) == 24 ? 1 : -1];
 
-// vtable 0x008e8818: 1 slot, installed by 36 functions
-class C_008e8818 {
+// vtable 0x008e8818: 1 slot, installed by 36 functions, base 0x008e84a8 (849 votes)
+// size 0x18 (36 allocation sites)
+class C_008e8818 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c15a
+    virtual void vf0();    // override 0x0041c15a
 };
+typedef char size_check_C_008e8818[sizeof(C_008e8818) == 24 ? 1 : -1];
 
-// vtable 0x008e881c: 1 slot, installed by 288 functions
-class C_008e881c {
+// vtable 0x008e881c: 1 slot, installed by 288 functions, base 0x008e84a8 (3870 votes)
+// size 0x18 (285 allocation sites)
+class C_008e881c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c17a
+    virtual void vf0();    // override 0x0041c17a
 };
+typedef char size_check_C_008e881c[sizeof(C_008e881c) == 24 ? 1 : -1];
 
-// vtable 0x008e8820: 1 slot, installed by 264 functions
-class C_008e8820 {
+// vtable 0x008e8820: 1 slot, installed by 264 functions, base 0x008e84a8 (4590 votes)
+// size 0x18 (264 allocation sites)
+class C_008e8820 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c19a
+    virtual void vf0();    // override 0x0041c19a
 };
+typedef char size_check_C_008e8820[sizeof(C_008e8820) == 24 ? 1 : -1];
 
-// vtable 0x008e8824: 1 slot, installed by 256 functions
-class C_008e8824 {
+// vtable 0x008e8824: 1 slot, installed by 256 functions, base 0x008e84a8 (5771 votes)
+// size 0x18 (256 allocation sites)
+class C_008e8824 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c1ba
+    virtual void vf0();    // override 0x0041c1ba
 };
+typedef char size_check_C_008e8824[sizeof(C_008e8824) == 24 ? 1 : -1];
 
-// vtable 0x008e8828: 2 slots, installed by 256 functions
-class C_008e8828 {
+// vtable 0x008e8828: 2 slots, installed by 256 functions, base 0x008e84a8 (5891 votes)
+// size 0x18 (256 allocation sites)
+class C_008e8828 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0041c1da
+    virtual void vf0();    // override 0x0041c1da
     virtual void vf1();    // virtual 0x0041e700
 };
+typedef char size_check_C_008e8828[sizeof(C_008e8828) == 24 ? 1 : -1];
 
 // vtable 0x008e8830: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x14
@@ -1780,11 +2010,13 @@ public:
     virtual void vf1();    // virtual 0x0041f4f9
 };
 
-// vtable 0x008e89a8: 1 slot, installed by 97 functions
-class C_008e89a8 {
+// vtable 0x008e89a8: 1 slot, installed by 97 functions, base 0x008e84a8 (1578 votes)
+// size 0x18 (97 allocation sites)
+class C_008e89a8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00420452
+    virtual void vf0();    // override 0x00420452
 };
+typedef char size_check_C_008e89a8[sizeof(C_008e89a8) == 24 ? 1 : -1];
 
 // vtable 0x008e89bc: 1 slot, installed by 2 functions
 // size unknown; constructor touches up to +0x30
@@ -1807,12 +2039,6 @@ public:
     virtual void vf0();    // virtual 0x00424e88
 };
 
-// vtable 0x008e89d8: 1 slot, installed by 2 functions
-class C_008e89d8 {
-public:
-    virtual void vf0();    // virtual 0x00426217
-};
-
 // vtable 0x008e89dc: 1 slot, installed by 4 functions
 // size unknown; constructor touches up to +0x4
 class C_008e89dc {
@@ -1820,24 +2046,36 @@ public:
     virtual void vf0();    // virtual 0x00425500
 };
 
-// vtable 0x008e89e0: 1 slot, installed by 10 functions
-class C_008e89e0 {
+// vtable 0x008e89d8: 1 slot, installed by 2 functions, base 0x008e89dc (2 votes)
+class C_008e89d8 : public C_008e89dc {
 public:
-    virtual void vf0();    // virtual 0x00426238
+    virtual void vf0();    // override 0x00426217
 };
 
-// vtable 0x008e89e4: 1 slot, installed by 247 functions
-class C_008e89e4 {
+// vtable 0x008e89e0: 1 slot, installed by 10 functions, base 0x008e84a8 (260 votes)
+// size 0x18 (10 allocation sites)
+class C_008e89e0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00426258
+    virtual void vf0();    // override 0x00426238
 };
+typedef char size_check_C_008e89e0[sizeof(C_008e89e0) == 24 ? 1 : -1];
 
-// vtable 0x008e89e8: 2 slots, installed by 10 functions
-class C_008e89e8 {
+// vtable 0x008e89e4: 1 slot, installed by 247 functions, base 0x008e84a8 (3983 votes)
+// size 0x18 (247 allocation sites)
+class C_008e89e4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00426278
+    virtual void vf0();    // override 0x00426258
+};
+typedef char size_check_C_008e89e4[sizeof(C_008e89e4) == 24 ? 1 : -1];
+
+// vtable 0x008e89e8: 2 slots, installed by 10 functions, base 0x008e84a8 (389 votes)
+// size 0x18 (10 allocation sites)
+class C_008e89e8 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x00426278
     virtual void vf1();    // virtual 0x00427111
 };
+typedef char size_check_C_008e89e8[sizeof(C_008e89e8) == 24 ? 1 : -1];
 
 // vtable 0x008e89f0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x50
@@ -1853,30 +2091,38 @@ public:
     virtual void vf0();    // virtual 0x00426042
 };
 
-// vtable 0x008e89f8: 1 slot, installed by 7 functions
-class C_008e89f8 {
+// vtable 0x008e89f8: 1 slot, installed by 7 functions, base 0x008e84a8 (98 votes)
+// size 0x18 (7 allocation sites)
+class C_008e89f8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00426ee8
+    virtual void vf0();    // override 0x00426ee8
 };
+typedef char size_check_C_008e89f8[sizeof(C_008e89f8) == 24 ? 1 : -1];
 
-// vtable 0x008e89fc: 1 slot, installed by 225 functions
-class C_008e89fc {
+// vtable 0x008e89fc: 1 slot, installed by 225 functions, base 0x008e84a8 (3091 votes)
+// size 0x18 (225 allocation sites)
+class C_008e89fc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00426f08
+    virtual void vf0();    // override 0x00426f08
 };
+typedef char size_check_C_008e89fc[sizeof(C_008e89fc) == 24 ? 1 : -1];
 
-// vtable 0x008e8a00: 1 slot, installed by 226 functions
-class C_008e8a00 {
+// vtable 0x008e8a00: 1 slot, installed by 226 functions, base 0x008e84a8 (3197 votes)
+// size 0x18 (226 allocation sites)
+class C_008e8a00 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00426f28
+    virtual void vf0();    // override 0x00426f28
 };
+typedef char size_check_C_008e8a00[sizeof(C_008e8a00) == 24 ? 1 : -1];
 
-// vtable 0x008e8a04: 2 slots, installed by 226 functions
-class C_008e8a04 {
+// vtable 0x008e8a04: 2 slots, installed by 226 functions, base 0x008e84a8 (3302 votes)
+// size 0x18 (226 allocation sites)
+class C_008e8a04 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00426f48
+    virtual void vf0();    // override 0x00426f48
     virtual void vf1();    // virtual 0x00427119
 };
+typedef char size_check_C_008e8a04[sizeof(C_008e8a04) == 24 ? 1 : -1];
 
 // vtable 0x008e8a0c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x18
@@ -1899,53 +2145,53 @@ public:
     virtual void vf1();    // virtual 0x00427840
 };
 
-// vtable 0x008e8a2c: 1 slot, installed by 5 functions
-// size unknown; constructor touches up to +0x4
-class C_008e8a2c {
-public:
-    virtual void vf0();    // virtual 0x00434b30
-};
-
-// vtable 0x008e8a30: 1 slot, installed by 5 functions
-// size unknown; constructor touches up to +0x4
-class C_008e8a30 {
-public:
-    virtual void vf0();    // virtual 0x00434b0a
-};
-
-// vtable 0x008e8a34: 1 slot, installed by 5 functions
-// size unknown; constructor touches up to +0x4
-class C_008e8a34 {
-public:
-    virtual void vf0();    // virtual 0x00434ae4
-};
-
-// vtable 0x008e8a38: 1 slot, installed by 5 functions
-// size unknown; constructor touches up to +0x4
-class C_008e8a38 {
-public:
-    virtual void vf0();    // virtual 0x00434abe
-};
-
-// vtable 0x008e8a3c: 1 slot, installed by 5 functions
-// size unknown; constructor touches up to +0x4
-class C_008e8a3c {
-public:
-    virtual void vf0();    // virtual 0x00434a98
-};
-
-// vtable 0x008e8a40: 1 slot, installed by 5 functions
-// size unknown; constructor touches up to +0x4
-class C_008e8a40 {
-public:
-    virtual void vf0();    // virtual 0x00434a72
-};
-
 // vtable 0x008e8a44: 1 slot, installed by 5 functions
 // size unknown; constructor touches up to +0x4
 class C_008e8a44 {
 public:
     virtual void vf0();    // virtual 0x00434a4c
+};
+
+// vtable 0x008e8a2c: 1 slot, installed by 5 functions, base 0x008e8a44 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008e8a2c : public C_008e8a44 {
+public:
+    virtual void vf0();    // override 0x00434b30
+};
+
+// vtable 0x008e8a30: 1 slot, installed by 5 functions, base 0x008e8a44 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008e8a30 : public C_008e8a44 {
+public:
+    virtual void vf0();    // override 0x00434b0a
+};
+
+// vtable 0x008e8a34: 1 slot, installed by 5 functions, base 0x008e8a44 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008e8a34 : public C_008e8a44 {
+public:
+    virtual void vf0();    // override 0x00434ae4
+};
+
+// vtable 0x008e8a38: 1 slot, installed by 5 functions, base 0x008e8a44 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008e8a38 : public C_008e8a44 {
+public:
+    virtual void vf0();    // override 0x00434abe
+};
+
+// vtable 0x008e8a3c: 1 slot, installed by 5 functions, base 0x008e8a44 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008e8a3c : public C_008e8a44 {
+public:
+    virtual void vf0();    // override 0x00434a98
+};
+
+// vtable 0x008e8a40: 1 slot, installed by 5 functions, base 0x008e8a44 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008e8a40 : public C_008e8a44 {
+public:
+    virtual void vf0();    // override 0x00434a72
 };
 
 // vtable 0x008e8a48: 1 slot, installed by 4 functions
@@ -2041,29 +2287,37 @@ public:
     virtual void vf0();    // override 0x0044595a
 };
 
-// vtable 0x008e8cdc: 1 slot, installed by 19 functions
-class C_008e8cdc {
+// vtable 0x008e8cdc: 1 slot, installed by 19 functions, base 0x008e84a8 (535 votes)
+// size 0x18 (19 allocation sites)
+class C_008e8cdc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00447f1a
+    virtual void vf0();    // override 0x00447f1a
 };
+typedef char size_check_C_008e8cdc[sizeof(C_008e8cdc) == 24 ? 1 : -1];
 
-// vtable 0x008e8ce0: 1 slot, installed by 107 functions
-class C_008e8ce0 {
+// vtable 0x008e8ce0: 1 slot, installed by 107 functions, base 0x008e84a8 (3504 votes)
+// size 0x18 (106 allocation sites)
+class C_008e8ce0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00447f3a
+    virtual void vf0();    // override 0x00447f3a
 };
+typedef char size_check_C_008e8ce0[sizeof(C_008e8ce0) == 24 ? 1 : -1];
 
-// vtable 0x008e8ce4: 1 slot, installed by 106 functions
-class C_008e8ce4 {
+// vtable 0x008e8ce4: 1 slot, installed by 106 functions, base 0x008e84a8 (3550 votes)
+// size 0x18 (106 allocation sites)
+class C_008e8ce4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00447f5a
+    virtual void vf0();    // override 0x00447f5a
 };
+typedef char size_check_C_008e8ce4[sizeof(C_008e8ce4) == 24 ? 1 : -1];
 
-// vtable 0x008e8ce8: 1 slot, installed by 106 functions
-class C_008e8ce8 {
+// vtable 0x008e8ce8: 1 slot, installed by 106 functions, base 0x008e84a8 (3597 votes)
+// size 0x18 (106 allocation sites)
+class C_008e8ce8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00447f7a
+    virtual void vf0();    // override 0x00447f7a
 };
+typedef char size_check_C_008e8ce8[sizeof(C_008e8ce8) == 24 ? 1 : -1];
 
 // vtable 0x008e8cf8: 20 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x250
@@ -2109,12 +2363,14 @@ public:
     virtual void vf12();    // virtual 0x00448140
 };
 
-// vtable 0x008e8d88: 2 slots, installed by 119 functions
-class C_008e8d88 {
+// vtable 0x008e8d88: 2 slots, installed by 119 functions, base 0x008e84a8 (3663 votes)
+// size 0x18 (119 allocation sites)
+class C_008e8d88 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0044aa44
+    virtual void vf0();    // override 0x0044aa44
     virtual void vf1();    // virtual 0x0044bfcf
 };
+typedef char size_check_C_008e8d88[sizeof(C_008e8d88) == 24 ? 1 : -1];
 
 // vtable 0x008e8d90: 1 slot, installed by 1 function
 class C_008e8d90 {
@@ -2129,29 +2385,37 @@ public:
     virtual void vf0();    // virtual 0x0044a9bd
 };
 
-// vtable 0x008e8d98: 1 slot, installed by 144 functions
-class C_008e8d98 {
+// vtable 0x008e8d98: 1 slot, installed by 144 functions, base 0x008e84a8 (2937 votes)
+// size 0x18 (144 allocation sites)
+class C_008e8d98 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0044bf33
+    virtual void vf0();    // override 0x0044bf33
 };
+typedef char size_check_C_008e8d98[sizeof(C_008e8d98) == 24 ? 1 : -1];
 
-// vtable 0x008e8d9c: 1 slot, installed by 145 functions
-class C_008e8d9c {
+// vtable 0x008e8d9c: 1 slot, installed by 145 functions, base 0x008e84a8 (3002 votes)
+// size 0x18 (144 allocation sites)
+class C_008e8d9c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0044bf53
+    virtual void vf0();    // override 0x0044bf53
 };
+typedef char size_check_C_008e8d9c[sizeof(C_008e8d9c) == 24 ? 1 : -1];
 
-// vtable 0x008e8da0: 1 slot, installed by 198 functions
-class C_008e8da0 {
+// vtable 0x008e8da0: 1 slot, installed by 198 functions, base 0x008e84a8 (3493 votes)
+// size 0x18 (198 allocation sites)
+class C_008e8da0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0044bf73
+    virtual void vf0();    // override 0x0044bf73
 };
+typedef char size_check_C_008e8da0[sizeof(C_008e8da0) == 24 ? 1 : -1];
 
-// vtable 0x008e8da4: 1 slot, installed by 189 functions
-class C_008e8da4 {
+// vtable 0x008e8da4: 1 slot, installed by 189 functions, base 0x008e84a8 (3979 votes)
+// size 0x18 (189 allocation sites)
+class C_008e8da4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0044bf93
+    virtual void vf0();    // override 0x0044bf93
 };
+typedef char size_check_C_008e8da4[sizeof(C_008e8da4) == 24 ? 1 : -1];
 
 // vtable 0x008e8db0: 20 slots, installed by 1 function
 class C_008e8db0 {
@@ -2235,11 +2499,11 @@ public:
     virtual void vf8();    // virtual 0x004984ea
 };
 
-// vtable 0x008e8ea8: 46 slots, installed by 17 functions
-// size 0x14 (7 allocation sites)
-class C_008e8ea8 {
+// vtable 0x008e8ea8: 46 slots, installed by 17 functions, base 0x008e84a0 (7 votes)
+// size 0xc (7 allocation sites)
+class C_008e8ea8 : public C_008e84a0 {
 public:
-    virtual void vf0();    // virtual 0x00450130
+    virtual void vf0();    // override 0x00450130
     virtual void vf1();    // virtual 0x0045441f
     virtual void vf2();    // virtual 0x00454429
     virtual void vf3();    // virtual 0x00454433
@@ -2285,9 +2549,7 @@ public:
     virtual void vf43();    // virtual 0x00452e09
     virtual void vf44();    // virtual 0x00452e52
     virtual void vf45();    // virtual 0x00452e9b
-    unsigned char m_raw[16];    // opaque: fields not recovered
 };
-typedef char size_check_C_008e8ea8[sizeof(C_008e8ea8) == 20 ? 1 : -1];
 
 // vtable 0x008e8f60: 13 slots, installed by 2 functions
 class C_008e8f60 {
@@ -2891,24 +3153,30 @@ public:
     virtual void vf20();    // virtual 0x0045ceee
 };
 
-// vtable 0x008e9664: 1 slot, installed by 35 functions
-class C_008e9664 {
+// vtable 0x008e9664: 1 slot, installed by 35 functions, base 0x008e84a8 (1184 votes)
+// size 0x18 (35 allocation sites)
+class C_008e9664 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004607d0
+    virtual void vf0();    // override 0x004607d0
 };
+typedef char size_check_C_008e9664[sizeof(C_008e9664) == 24 ? 1 : -1];
 
-// vtable 0x008e9668: 1 slot, installed by 80 functions
-class C_008e9668 {
+// vtable 0x008e9668: 1 slot, installed by 80 functions, base 0x008e84a8 (1524 votes)
+// size 0x18 (79 allocation sites)
+class C_008e9668 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00461e20
+    virtual void vf0();    // override 0x00461e20
 };
+typedef char size_check_C_008e9668[sizeof(C_008e9668) == 24 ? 1 : -1];
 
-// vtable 0x008e966c: 2 slots, installed by 28 functions
-class C_008e966c {
+// vtable 0x008e966c: 2 slots, installed by 28 functions, base 0x008e84a8 (1000 votes)
+// size 0x18 (28 allocation sites)
+class C_008e966c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00461e40
+    virtual void vf0();    // override 0x00461e40
     virtual void vf1();    // virtual 0x00461ffb
 };
+typedef char size_check_C_008e966c[sizeof(C_008e966c) == 24 ? 1 : -1];
 
 // vtable 0x008e9674: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x18
@@ -2924,12 +3192,6 @@ public:
     virtual void vf0();    // virtual 0x00461f0c
 };
 
-// vtable 0x008e9688: 1 slot, installed by 1 function
-class C_008e9688 {
-public:
-    virtual void vf0();    // virtual 0x0046a2e5
-};
-
 // vtable 0x008e968c: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008e968c {
@@ -2937,11 +3199,19 @@ public:
     virtual void vf0();    // virtual 0x00469956
 };
 
-// vtable 0x008e9690: 1 slot, installed by 2 functions
-class C_008e9690 {
+// vtable 0x008e9688: 1 slot, installed by 1 function, base 0x008e968c (1 vote)
+class C_008e9688 : public C_008e968c {
 public:
-    virtual void vf0();    // virtual 0x0046a306
+    virtual void vf0();    // override 0x0046a2e5
 };
+
+// vtable 0x008e9690: 1 slot, installed by 2 functions, base 0x008e84a8 (22 votes)
+// size 0x18 (2 allocation sites)
+class C_008e9690 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x0046a306
+};
+typedef char size_check_C_008e9690[sizeof(C_008e9690) == 24 ? 1 : -1];
 
 // vtable 0x008e9694: 1 slot, installed by 1 function
 class C_008e9694 {
@@ -2962,12 +3232,14 @@ public:
     virtual void vf0();    // virtual 0x0046fcef
 };
 
-// vtable 0x008e96a0: 2 slots, installed by 4 functions
-class C_008e96a0 {
+// vtable 0x008e96a0: 2 slots, installed by 4 functions, base 0x008e84a8 (87 votes)
+// size 0x18 (4 allocation sites)
+class C_008e96a0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00470d29
+    virtual void vf0();    // override 0x00470d29
     virtual void vf1();    // virtual 0x00470eae
 };
+typedef char size_check_C_008e96a0[sizeof(C_008e96a0) == 24 ? 1 : -1];
 
 // vtable 0x008e96a8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x14
@@ -3083,12 +3355,14 @@ public:
     virtual void vf0();    // virtual 0x00475b67
 };
 
-// vtable 0x008e9750: 2 slots, installed by 26 functions
-class C_008e9750 {
+// vtable 0x008e9750: 2 slots, installed by 26 functions, base 0x008e84a8 (490 votes)
+// size 0x18 (26 allocation sites)
+class C_008e9750 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004783ed
+    virtual void vf0();    // override 0x004783ed
     virtual void vf1();    // virtual 0x004786f3
 };
+typedef char size_check_C_008e9750[sizeof(C_008e9750) == 24 ? 1 : -1];
 
 // vtable 0x008e9758: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x18
@@ -3125,41 +3399,49 @@ public:
     virtual void vf0();    // virtual 0x0047a38e
 };
 
-// vtable 0x008e9784: 1 slot, installed by 19 functions
-class C_008e9784 {
+// vtable 0x008e9784: 1 slot, installed by 19 functions, base 0x008e84a8 (536 votes)
+// size 0x18 (19 allocation sites)
+class C_008e9784 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0047dfeb
+    virtual void vf0();    // override 0x0047dfeb
 };
+typedef char size_check_C_008e9784[sizeof(C_008e9784) == 24 ? 1 : -1];
 
-// vtable 0x008e9788: 1 slot, installed by 31 functions
-class C_008e9788 {
+// vtable 0x008e9788: 1 slot, installed by 31 functions, base 0x008e84a8 (734 votes)
+// size 0x18 (31 allocation sites)
+class C_008e9788 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0047e00b
+    virtual void vf0();    // override 0x0047e00b
 };
+typedef char size_check_C_008e9788[sizeof(C_008e9788) == 24 ? 1 : -1];
 
-// vtable 0x008e978c: 1 slot, installed by 12 functions
-class C_008e978c {
+// vtable 0x008e978c: 1 slot, installed by 12 functions, base 0x008e84a8 (322 votes)
+// size 0x18 (11 allocation sites)
+class C_008e978c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0047e02b
+    virtual void vf0();    // override 0x0047e02b
 };
+typedef char size_check_C_008e978c[sizeof(C_008e978c) == 24 ? 1 : -1];
 
-// vtable 0x008e9790: 1 slot, installed by 24 functions
-class C_008e9790 {
+// vtable 0x008e9790: 1 slot, installed by 24 functions, base 0x008e84a8 (483 votes)
+// size 0x18 (24 allocation sites)
+class C_008e9790 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0047f4ca
+    virtual void vf0();    // override 0x0047f4ca
 };
-
-// vtable 0x008e9794: 1 slot, installed by 1 function
-class C_008e9794 {
-public:
-    virtual void vf0();    // virtual 0x00484467
-};
+typedef char size_check_C_008e9790[sizeof(C_008e9790) == 24 ? 1 : -1];
 
 // vtable 0x008e9798: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008e9798 {
 public:
     virtual void vf0();    // virtual 0x00483cc9
+};
+
+// vtable 0x008e9794: 1 slot, installed by 1 function, base 0x008e9798 (1 vote)
+class C_008e9794 : public C_008e9798 {
+public:
+    virtual void vf0();    // override 0x00484467
 };
 
 // vtable 0x008e97e4: 10 slots, installed by 1 function
@@ -3581,12 +3863,14 @@ public:
     virtual void vf0();    // virtual 0x004a6af6
 };
 
-// vtable 0x008e9c70: 2 slots, installed by 2 functions
-class C_008e9c70 {
+// vtable 0x008e9c70: 2 slots, installed by 2 functions, base 0x008e84a8 (14 votes)
+// size 0x18 (2 allocation sites)
+class C_008e9c70 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004a762f
+    virtual void vf0();    // override 0x004a762f
     virtual void vf1();    // virtual 0x004a77d3
 };
+typedef char size_check_C_008e9c70[sizeof(C_008e9c70) == 24 ? 1 : -1];
 
 // vtable 0x008e9c78: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x14
@@ -3983,12 +4267,6 @@ public:
     virtual void vf19();    // virtual 0x004bb543
 };
 
-// vtable 0x008ea0ac: 1 slot, installed by 2 functions
-class C_008ea0ac {
-public:
-    virtual void vf0();    // virtual 0x004ba5f3
-};
-
 // vtable 0x008ea0b0: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ea0b0 {
@@ -3996,88 +4274,104 @@ public:
     virtual void vf0();    // virtual 0x004b9021
 };
 
-// vtable 0x008ea0b4: 1 slot, installed by 2 functions
-class C_008ea0b4 {
+// vtable 0x008ea0ac: 1 slot, installed by 2 functions, base 0x008ea0b0 (2 votes)
+class C_008ea0ac : public C_008ea0b0 {
 public:
-    virtual void vf0();    // virtual 0x004ba614
+    virtual void vf0();    // override 0x004ba5f3
 };
 
-// vtable 0x008ea0b8: 1 slot, installed by 3 functions
+// vtable 0x008ea0b8: 1 slot, installed by 3 functions, base 0x008ea0b0 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ea0b8 {
+class C_008ea0b8 : public C_008ea0b0 {
 public:
-    virtual void vf0();    // virtual 0x004b9156
+    virtual void vf0();    // override 0x004b9156
 };
 
-// vtable 0x008ea0bc: 1 slot, installed by 2 functions
-class C_008ea0bc {
+// vtable 0x008ea0b4: 1 slot, installed by 2 functions, base 0x008ea0b8 (2 votes)
+class C_008ea0b4 : public C_008ea0b8 {
 public:
-    virtual void vf0();    // virtual 0x004ba635
+    virtual void vf0();    // override 0x004ba614
 };
 
-// vtable 0x008ea0c0: 1 slot, installed by 3 functions
+// vtable 0x008ea0c0: 1 slot, installed by 3 functions, base 0x008ea0b0 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ea0c0 {
+class C_008ea0c0 : public C_008ea0b0 {
 public:
-    virtual void vf0();    // virtual 0x004b92eb
+    virtual void vf0();    // override 0x004b92eb
 };
 
-// vtable 0x008ea0c4: 1 slot, installed by 2 functions
-class C_008ea0c4 {
+// vtable 0x008ea0bc: 1 slot, installed by 2 functions, base 0x008ea0c0 (2 votes)
+class C_008ea0bc : public C_008ea0c0 {
 public:
-    virtual void vf0();    // virtual 0x004ba656
+    virtual void vf0();    // override 0x004ba635
 };
 
-// vtable 0x008ea0c8: 1 slot, installed by 4 functions
+// vtable 0x008ea0c8: 1 slot, installed by 4 functions, base 0x008ea0b0 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ea0c8 {
+class C_008ea0c8 : public C_008ea0b0 {
 public:
-    virtual void vf0();    // virtual 0x004b9490
+    virtual void vf0();    // override 0x004b9490
 };
 
-// vtable 0x008ea0cc: 1 slot, installed by 2 functions
-class C_008ea0cc {
+// vtable 0x008ea0c4: 1 slot, installed by 2 functions, base 0x008ea0c8 (2 votes)
+class C_008ea0c4 : public C_008ea0c8 {
 public:
-    virtual void vf0();    // virtual 0x004ba677
+    virtual void vf0();    // override 0x004ba656
 };
 
-// vtable 0x008ea0d0: 1 slot, installed by 4 functions
+// vtable 0x008ea0d0: 1 slot, installed by 4 functions, base 0x008ea0b0 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ea0d0 {
+class C_008ea0d0 : public C_008ea0b0 {
 public:
-    virtual void vf0();    // virtual 0x004b96f7
+    virtual void vf0();    // override 0x004b96f7
 };
 
-// vtable 0x008ea0d4: 1 slot, installed by 17 functions
-class C_008ea0d4 {
+// vtable 0x008ea0cc: 1 slot, installed by 2 functions, base 0x008ea0d0 (2 votes)
+class C_008ea0cc : public C_008ea0d0 {
 public:
-    virtual void vf0();    // virtual 0x004ba698
+    virtual void vf0();    // override 0x004ba677
 };
 
-// vtable 0x008ea0d8: 1 slot, installed by 17 functions
-class C_008ea0d8 {
+// vtable 0x008ea0d4: 1 slot, installed by 17 functions, base 0x008e84a8 (281 votes)
+// size 0x18 (17 allocation sites)
+class C_008ea0d4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004ba6b8
+    virtual void vf0();    // override 0x004ba698
 };
+typedef char size_check_C_008ea0d4[sizeof(C_008ea0d4) == 24 ? 1 : -1];
 
-// vtable 0x008ea0dc: 1 slot, installed by 19 functions
-class C_008ea0dc {
+// vtable 0x008ea0d8: 1 slot, installed by 17 functions, base 0x008e84a8 (290 votes)
+// size 0x18 (17 allocation sites)
+class C_008ea0d8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004ba6d8
+    virtual void vf0();    // override 0x004ba6b8
 };
+typedef char size_check_C_008ea0d8[sizeof(C_008ea0d8) == 24 ? 1 : -1];
 
-// vtable 0x008ea0e0: 1 slot, installed by 18 functions
-class C_008ea0e0 {
+// vtable 0x008ea0dc: 1 slot, installed by 19 functions, base 0x008e84a8 (352 votes)
+// size 0x18 (19 allocation sites)
+class C_008ea0dc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004ba6f8
+    virtual void vf0();    // override 0x004ba6d8
 };
+typedef char size_check_C_008ea0dc[sizeof(C_008ea0dc) == 24 ? 1 : -1];
 
-// vtable 0x008ea0e4: 2 slots, installed by 25 functions
-class C_008ea0e4 {
+// vtable 0x008ea0e0: 1 slot, installed by 18 functions, base 0x008e84a8 (309 votes)
+// size 0x18 (18 allocation sites)
+class C_008ea0e0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004ba718
+    virtual void vf0();    // override 0x004ba6f8
+};
+typedef char size_check_C_008ea0e0[sizeof(C_008ea0e0) == 24 ? 1 : -1];
+
+// vtable 0x008ea0e4: 2 slots, installed by 25 functions, base 0x008e84a8 (744 votes)
+// size 0x18 (25 allocation sites)
+class C_008ea0e4 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x004ba718
     virtual void vf1();    // virtual 0x004bc4e2
 };
+typedef char size_check_C_008ea0e4[sizeof(C_008ea0e4) == 24 ? 1 : -1];
 
 // vtable 0x008ea0ec: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x10
@@ -4130,12 +4424,14 @@ public:
     virtual void vf17();    // virtual 0x004b5a10
 };
 
-// vtable 0x008ea148: 2 slots, installed by 13 functions
-class C_008ea148 {
+// vtable 0x008ea148: 2 slots, installed by 13 functions, base 0x008e84a8 (190 votes)
+// size 0x18 (13 allocation sites)
+class C_008ea148 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004bbaae
+    virtual void vf0();    // override 0x004bbaae
     virtual void vf1();    // virtual 0x004bc4da
 };
+typedef char size_check_C_008ea148[sizeof(C_008ea148) == 24 ? 1 : -1];
 
 // vtable 0x008ea150: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x10
@@ -4244,17 +4540,21 @@ public:
     virtual void vf34();    // virtual 0x004bc92a
 };
 
-// vtable 0x008ea28c: 1 slot, installed by 11 functions
-class C_008ea28c {
+// vtable 0x008ea28c: 1 slot, installed by 11 functions, base 0x008e84a8 (348 votes)
+// size 0x18 (11 allocation sites)
+class C_008ea28c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004bd105
+    virtual void vf0();    // override 0x004bd105
 };
+typedef char size_check_C_008ea28c[sizeof(C_008ea28c) == 24 ? 1 : -1];
 
-// vtable 0x008ea290: 1 slot, installed by 7 functions
-class C_008ea290 {
+// vtable 0x008ea290: 1 slot, installed by 7 functions, base 0x008e84a8 (36 votes)
+// size 0x18 (7 allocation sites)
+class C_008ea290 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004bd5b0
+    virtual void vf0();    // override 0x004bd5b0
 };
+typedef char size_check_C_008ea290[sizeof(C_008ea290) == 24 ? 1 : -1];
 
 // vtable 0x008ea2a8: 3 slots, installed by 7 functions
 // size unknown; constructor touches up to +0x4
@@ -4273,17 +4573,21 @@ public:
     virtual void vf2();    // virtual 0x004c2625
 };
 
-// vtable 0x008ea2c0: 1 slot, installed by 8 functions
-class C_008ea2c0 {
+// vtable 0x008ea2c0: 1 slot, installed by 8 functions, base 0x008e84a8 (216 votes)
+// size 0x18 (8 allocation sites)
+class C_008ea2c0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004c3a6f
+    virtual void vf0();    // override 0x004c3a6f
 };
+typedef char size_check_C_008ea2c0[sizeof(C_008ea2c0) == 24 ? 1 : -1];
 
-// vtable 0x008ea2c4: 1 slot, installed by 6 functions
-class C_008ea2c4 {
+// vtable 0x008ea2c4: 1 slot, installed by 6 functions, base 0x008e84a8 (204 votes)
+// size 0x18 (6 allocation sites)
+class C_008ea2c4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004c3a8f
+    virtual void vf0();    // override 0x004c3a8f
 };
+typedef char size_check_C_008ea2c4[sizeof(C_008ea2c4) == 24 ? 1 : -1];
 
 // vtable 0x008ea2e0: 1 slot, installed by 2 functions
 class C_008ea2e0 {
@@ -4333,12 +4637,6 @@ public:
     virtual void vf0();    // virtual 0x004cd44d
 };
 
-// vtable 0x008ea34c: 1 slot, installed by 1 function
-class C_008ea34c {
-public:
-    virtual void vf0();    // virtual 0x004cf284
-};
-
 // vtable 0x008ea350: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ea350 {
@@ -4346,10 +4644,10 @@ public:
     virtual void vf0();    // virtual 0x004cd7da
 };
 
-// vtable 0x008ea354: 1 slot, installed by 1 function
-class C_008ea354 {
+// vtable 0x008ea34c: 1 slot, installed by 1 function, base 0x008ea350 (1 vote)
+class C_008ea34c : public C_008ea350 {
 public:
-    virtual void vf0();    // virtual 0x004cf2a5
+    virtual void vf0();    // override 0x004cf284
 };
 
 // vtable 0x008ea358: 1 slot, installed by 2 functions
@@ -4359,18 +4657,28 @@ public:
     virtual void vf0();    // virtual 0x004cdb53
 };
 
-// vtable 0x008ea35c: 1 slot, installed by 22 functions
-class C_008ea35c {
+// vtable 0x008ea354: 1 slot, installed by 1 function, base 0x008ea358 (1 vote)
+class C_008ea354 : public C_008ea358 {
 public:
-    virtual void vf0();    // virtual 0x004cf2c6
+    virtual void vf0();    // override 0x004cf2a5
 };
 
-// vtable 0x008ea360: 2 slots, installed by 22 functions
-class C_008ea360 {
+// vtable 0x008ea35c: 1 slot, installed by 22 functions, base 0x008e84a8 (532 votes)
+// size 0x18 (22 allocation sites)
+class C_008ea35c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004cf2e6
+    virtual void vf0();    // override 0x004cf2c6
+};
+typedef char size_check_C_008ea35c[sizeof(C_008ea35c) == 24 ? 1 : -1];
+
+// vtable 0x008ea360: 2 slots, installed by 22 functions, base 0x008e84a8 (768 votes)
+// size 0x18 (22 allocation sites)
+class C_008ea360 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x004cf2e6
     virtual void vf1();    // virtual 0x004d13bf
 };
+typedef char size_check_C_008ea360[sizeof(C_008ea360) == 24 ? 1 : -1];
 
 // vtable 0x008ea368: 1 slot, installed by 1 function
 class C_008ea368 {
@@ -4385,18 +4693,22 @@ public:
     virtual void vf0();    // virtual 0x004cf0f9
 };
 
-// vtable 0x008ea370: 1 slot, installed by 18 functions
-class C_008ea370 {
+// vtable 0x008ea370: 1 slot, installed by 18 functions, base 0x008e84a8 (378 votes)
+// size 0x18 (18 allocation sites)
+class C_008ea370 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004d0dbb
+    virtual void vf0();    // override 0x004d0dbb
 };
+typedef char size_check_C_008ea370[sizeof(C_008ea370) == 24 ? 1 : -1];
 
-// vtable 0x008ea374: 2 slots, installed by 2 functions
-class C_008ea374 {
+// vtable 0x008ea374: 2 slots, installed by 2 functions, base 0x008e84a8 (84 votes)
+// size 0x18 (2 allocation sites)
+class C_008ea374 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004d0ddb
+    virtual void vf0();    // override 0x004d0ddb
     virtual void vf1();    // virtual 0x004d13c7
 };
+typedef char size_check_C_008ea374[sizeof(C_008ea374) == 24 ? 1 : -1];
 
 // vtable 0x008ea37c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x18
@@ -4498,17 +4810,17 @@ public:
     virtual void vf0();    // virtual 0x004d49fa
 };
 
-// vtable 0x008ea3ec: 1 slot, installed by 1 function
-class C_008ea3ec {
-public:
-    virtual void vf0();    // virtual 0x004d58d8
-};
-
 // vtable 0x008ea3f0: 1 slot, installed by 2 functions
 // size unknown; constructor touches up to +0x4
 class C_008ea3f0 {
 public:
     virtual void vf0();    // virtual 0x004d4b75
+};
+
+// vtable 0x008ea3ec: 1 slot, installed by 1 function, base 0x008ea3f0 (1 vote)
+class C_008ea3ec : public C_008ea3f0 {
+public:
+    virtual void vf0();    // override 0x004d58d8
 };
 
 // vtable 0x008ea3f4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
@@ -4525,12 +4837,6 @@ public:
     virtual void vf0();    // virtual 0x004d6c73
 };
 
-// vtable 0x008ea3fc: 1 slot, installed by 1 function
-class C_008ea3fc {
-public:
-    virtual void vf0();    // virtual 0x004d7c72
-};
-
 // vtable 0x008ea400: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ea400 {
@@ -4538,12 +4844,20 @@ public:
     virtual void vf0();    // virtual 0x004d6ea9
 };
 
-// vtable 0x008ea404: 2 slots, installed by 2 functions
-class C_008ea404 {
+// vtable 0x008ea3fc: 1 slot, installed by 1 function, base 0x008ea400 (1 vote)
+class C_008ea3fc : public C_008ea400 {
 public:
-    virtual void vf0();    // virtual 0x004d7c93
+    virtual void vf0();    // override 0x004d7c72
+};
+
+// vtable 0x008ea404: 2 slots, installed by 2 functions, base 0x008e84a8 (45 votes)
+// size 0x18 (2 allocation sites)
+class C_008ea404 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x004d7c93
     virtual void vf1();    // virtual 0x004d89de
 };
+typedef char size_check_C_008ea404[sizeof(C_008ea404) == 24 ? 1 : -1];
 
 // vtable 0x008ea40c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x18
@@ -4734,73 +5048,99 @@ public:
     virtual void vf14();    // override 0x004e0d04
 };
 
-// vtable 0x008ea6b8: 1 slot, installed by 5 functions
+// vtable 0x008f2f74: 1 slot, installed by 3 functions
+class C_008f2f74 {
+public:
+    virtual void vf0();    // virtual 0x0082f862
+};
+
+// vtable 0x008ea6b8: 1 slot, installed by 5 functions, base 0x008f2f74 (2 votes)
 // size unknown; constructor touches up to +0x4
-class C_008ea6b8 {
+class C_008ea6b8 : public C_008f2f74 {
 public:
-    virtual void vf0();    // virtual 0x004e21f1
+    virtual void vf0();    // override 0x004e21f1
 };
 
-// vtable 0x008ea6bc: 1 slot, installed by 28 functions
-class C_008ea6bc {
+// vtable 0x008ea6bc: 1 slot, installed by 28 functions, base 0x008e84a8 (599 votes)
+// size 0x18 (28 allocation sites)
+class C_008ea6bc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e345b
+    virtual void vf0();    // override 0x004e345b
 };
+typedef char size_check_C_008ea6bc[sizeof(C_008ea6bc) == 24 ? 1 : -1];
 
-// vtable 0x008ea6c0: 1 slot, installed by 28 functions
-class C_008ea6c0 {
+// vtable 0x008ea6c0: 1 slot, installed by 28 functions, base 0x008e84a8 (615 votes)
+// size 0x18 (28 allocation sites)
+class C_008ea6c0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e347b
+    virtual void vf0();    // override 0x004e347b
 };
+typedef char size_check_C_008ea6c0[sizeof(C_008ea6c0) == 24 ? 1 : -1];
 
-// vtable 0x008ea6c4: 1 slot, installed by 28 functions
-class C_008ea6c4 {
+// vtable 0x008ea6c4: 1 slot, installed by 28 functions, base 0x008e84a8 (631 votes)
+// size 0x18 (28 allocation sites)
+class C_008ea6c4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e349b
+    virtual void vf0();    // override 0x004e349b
 };
+typedef char size_check_C_008ea6c4[sizeof(C_008ea6c4) == 24 ? 1 : -1];
 
-// vtable 0x008ea6c8: 1 slot, installed by 28 functions
-class C_008ea6c8 {
+// vtable 0x008ea6c8: 1 slot, installed by 28 functions, base 0x008e84a8 (647 votes)
+// size 0x18 (28 allocation sites)
+class C_008ea6c8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e34bb
+    virtual void vf0();    // override 0x004e34bb
 };
+typedef char size_check_C_008ea6c8[sizeof(C_008ea6c8) == 24 ? 1 : -1];
 
-// vtable 0x008ea6cc: 1 slot, installed by 28 functions
-class C_008ea6cc {
+// vtable 0x008ea6cc: 1 slot, installed by 28 functions, base 0x008e84a8 (672 votes)
+// size 0x18 (28 allocation sites)
+class C_008ea6cc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e34db
+    virtual void vf0();    // override 0x004e34db
 };
+typedef char size_check_C_008ea6cc[sizeof(C_008ea6cc) == 24 ? 1 : -1];
 
-// vtable 0x008ea6d0: 1 slot, installed by 28 functions
-class C_008ea6d0 {
+// vtable 0x008ea6d0: 1 slot, installed by 28 functions, base 0x008e84a8 (688 votes)
+// size 0x18 (28 allocation sites)
+class C_008ea6d0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e34fb
+    virtual void vf0();    // override 0x004e34fb
 };
+typedef char size_check_C_008ea6d0[sizeof(C_008ea6d0) == 24 ? 1 : -1];
 
-// vtable 0x008ea6d4: 1 slot, installed by 12 functions
-class C_008ea6d4 {
+// vtable 0x008ea6d4: 1 slot, installed by 12 functions, base 0x008e84a8 (362 votes)
+// size 0x18 (12 allocation sites)
+class C_008ea6d4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e351b
+    virtual void vf0();    // override 0x004e351b
 };
+typedef char size_check_C_008ea6d4[sizeof(C_008ea6d4) == 24 ? 1 : -1];
 
-// vtable 0x008ea6d8: 1 slot, installed by 28 functions
-class C_008ea6d8 {
+// vtable 0x008ea6d8: 1 slot, installed by 28 functions, base 0x008e84a8 (1064 votes)
+// size 0x18 (28 allocation sites)
+class C_008ea6d8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e353b
+    virtual void vf0();    // override 0x004e353b
 };
+typedef char size_check_C_008ea6d8[sizeof(C_008ea6d8) == 24 ? 1 : -1];
 
-// vtable 0x008ea6dc: 1 slot, installed by 12 functions
-class C_008ea6dc {
+// vtable 0x008ea6dc: 1 slot, installed by 12 functions, base 0x008e84a8 (537 votes)
+// size 0x18 (12 allocation sites)
+class C_008ea6dc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e355b
+    virtual void vf0();    // override 0x004e355b
 };
+typedef char size_check_C_008ea6dc[sizeof(C_008ea6dc) == 24 ? 1 : -1];
 
-// vtable 0x008ea6e0: 2 slots, installed by 6 functions
-class C_008ea6e0 {
+// vtable 0x008ea6e0: 2 slots, installed by 6 functions, base 0x008e84a8 (20 votes)
+// size 0x18 (6 allocation sites)
+class C_008ea6e0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004e4a0d
+    virtual void vf0();    // override 0x004e4a0d
     virtual void vf1();    // virtual 0x004e4b7d
 };
+typedef char size_check_C_008ea6e0[sizeof(C_008ea6e0) == 24 ? 1 : -1];
 
 // vtable 0x008ea6e8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x10
@@ -4857,15 +5197,15 @@ public:
 };
 
 // vtable 0x008ea778: 3 slots, installed by 3 functions
-// size 0x38 (1 allocation site), constructor touches up to +0x4
+// size 0x28 (1 allocation site), constructor touches up to +0x4
 class C_008ea778 {
 public:
     virtual void vf0();    // virtual 0x004f15cb
     virtual void vf1();    // virtual 0x004e52f0
     virtual void vf2();    // virtual 0x004e5310
-    unsigned char m_raw[52];    // opaque: fields not recovered
+    unsigned char m_raw[36];    // opaque: fields not recovered
 };
-typedef char size_check_C_008ea778[sizeof(C_008ea778) == 56 ? 1 : -1];
+typedef char size_check_C_008ea778[sizeof(C_008ea778) == 40 ? 1 : -1];
 
 // vtable 0x008ea784: 21 slots, installed by 1 function
 // role: shell-system (reaches kernel32.GetVersion); a role is not a name
@@ -5273,24 +5613,24 @@ public:
     virtual void vf20();    // virtual 0x004e512b
 };
 
-// vtable 0x008eac44: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008eac44 {
-public:
-    virtual void vf0();    // virtual 0x004f15a5
-};
-
-// vtable 0x008eac48: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008eac48 {
-public:
-    virtual void vf0();    // virtual 0x004f1530
-};
-
 // vtable 0x008eac4c: 1 slot, installed by 7 functions
 class C_008eac4c {
 public:
     virtual void vf0();    // virtual 0x004e5d52
+};
+
+// vtable 0x008eac44: 1 slot, installed by 4 functions, base 0x008eac4c (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008eac44 : public C_008eac4c {
+public:
+    virtual void vf0();    // override 0x004f15a5
+};
+
+// vtable 0x008eac48: 1 slot, installed by 4 functions, base 0x008eac4c (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008eac48 : public C_008eac4c {
+public:
+    virtual void vf0();    // override 0x004f1530
 };
 
 // vtable 0x008eac50: 1 slot, installed by 3 functions
@@ -5344,41 +5684,53 @@ public:
     virtual void vf12();    // virtual 0x00448140
 };
 
-// vtable 0x008eace0: 1 slot, installed by 12 functions
-class C_008eace0 {
+// vtable 0x008eace0: 1 slot, installed by 12 functions, base 0x008e84a8 (294 votes)
+// size 0x18 (12 allocation sites)
+class C_008eace0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f37c1
+    virtual void vf0();    // override 0x004f37c1
 };
+typedef char size_check_C_008eace0[sizeof(C_008eace0) == 24 ? 1 : -1];
 
-// vtable 0x008eace4: 1 slot, installed by 10 functions
-class C_008eace4 {
+// vtable 0x008eace4: 1 slot, installed by 10 functions, base 0x008e84a8 (275 votes)
+// size 0x18 (10 allocation sites)
+class C_008eace4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f37e1
+    virtual void vf0();    // override 0x004f37e1
 };
+typedef char size_check_C_008eace4[sizeof(C_008eace4) == 24 ? 1 : -1];
 
-// vtable 0x008eace8: 1 slot, installed by 10 functions
-class C_008eace8 {
+// vtable 0x008eace8: 1 slot, installed by 10 functions, base 0x008e84a8 (280 votes)
+// size 0x18 (10 allocation sites)
+class C_008eace8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f3801
+    virtual void vf0();    // override 0x004f3801
 };
+typedef char size_check_C_008eace8[sizeof(C_008eace8) == 24 ? 1 : -1];
 
-// vtable 0x008eacec: 1 slot, installed by 12 functions
-class C_008eacec {
+// vtable 0x008eacec: 1 slot, installed by 12 functions, base 0x008e84a8 (441 votes)
+// size 0x18 (12 allocation sites)
+class C_008eacec : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f3821
+    virtual void vf0();    // override 0x004f3821
 };
+typedef char size_check_C_008eacec[sizeof(C_008eacec) == 24 ? 1 : -1];
 
-// vtable 0x008eacf0: 1 slot, installed by 10 functions
-class C_008eacf0 {
+// vtable 0x008eacf0: 1 slot, installed by 10 functions, base 0x008e84a8 (394 votes)
+// size 0x18 (10 allocation sites)
+class C_008eacf0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f3841
+    virtual void vf0();    // override 0x004f3841
 };
+typedef char size_check_C_008eacf0[sizeof(C_008eacf0) == 24 ? 1 : -1];
 
-// vtable 0x008eacf4: 1 slot, installed by 10 functions
-class C_008eacf4 {
+// vtable 0x008eacf4: 1 slot, installed by 10 functions, base 0x008e84a8 (419 votes)
+// size 0x18 (10 allocation sites)
+class C_008eacf4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f3861
+    virtual void vf0();    // override 0x004f3861
 };
+typedef char size_check_C_008eacf4[sizeof(C_008eacf4) == 24 ? 1 : -1];
 
 // vtable 0x008eacf8: 1 slot, installed by 1 function
 class C_008eacf8 {
@@ -5386,43 +5738,55 @@ public:
     virtual void vf0();    // virtual 0x004f3765
 };
 
-// vtable 0x008eacfc: 1 slot, installed by 3 functions
-class C_008eacfc {
+// vtable 0x008eacfc: 1 slot, installed by 3 functions, base 0x008e84a8 (74 votes)
+// size 0x18 (3 allocation sites)
+class C_008eacfc : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f55de
+    virtual void vf0();    // override 0x004f55de
 };
+typedef char size_check_C_008eacfc[sizeof(C_008eacfc) == 24 ? 1 : -1];
 
-// vtable 0x008ead00: 1 slot, installed by 3 functions
-class C_008ead00 {
+// vtable 0x008ead00: 1 slot, installed by 3 functions, base 0x008e84a8 (72 votes)
+// size 0x18 (3 allocation sites)
+class C_008ead00 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f55fe
+    virtual void vf0();    // override 0x004f55fe
 };
+typedef char size_check_C_008ead00[sizeof(C_008ead00) == 24 ? 1 : -1];
 
-// vtable 0x008ead04: 1 slot, installed by 9 functions
-class C_008ead04 {
+// vtable 0x008ead04: 1 slot, installed by 9 functions, base 0x008e84a8 (251 votes)
+// size 0x18 (9 allocation sites)
+class C_008ead04 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f561e
+    virtual void vf0();    // override 0x004f561e
 };
+typedef char size_check_C_008ead04[sizeof(C_008ead04) == 24 ? 1 : -1];
 
-// vtable 0x008ead08: 1 slot, installed by 7 functions
-class C_008ead08 {
+// vtable 0x008ead08: 1 slot, installed by 7 functions, base 0x008e84a8 (109 votes)
+// size 0x18 (7 allocation sites)
+class C_008ead08 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f563e
+    virtual void vf0();    // override 0x004f563e
 };
+typedef char size_check_C_008ead08[sizeof(C_008ead08) == 24 ? 1 : -1];
 
-// vtable 0x008ead0c: 1 slot, installed by 7 functions
-class C_008ead0c {
+// vtable 0x008ead0c: 1 slot, installed by 7 functions, base 0x008e84a8 (113 votes)
+// size 0x18 (7 allocation sites)
+class C_008ead0c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f565e
+    virtual void vf0();    // override 0x004f565e
 };
+typedef char size_check_C_008ead0c[sizeof(C_008ead0c) == 24 ? 1 : -1];
 
-// vtable 0x008ead10: 2 slots, installed by 11 functions
+// vtable 0x008ead10: 2 slots, installed by 11 functions, base 0x008e84a8 (24 votes)
 // role: shell-system (reaches kernel32.GetVersion); a role is not a name
-class C_008ead10 {
+// size 0x18 (11 allocation sites)
+class C_008ead10 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x004f567e
+    virtual void vf0();    // override 0x004f567e
     virtual void vf1();    // virtual 0x004f5b67
 };
+typedef char size_check_C_008ead10[sizeof(C_008ead10) == 24 ? 1 : -1];
 
 // vtable 0x008ead18: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x20
@@ -5630,12 +5994,14 @@ public:
     virtual void vf1();    // virtual 0x005188e2
 };
 
-// vtable 0x008eaf4c: 2 slots, installed by 1 function
-class C_008eaf4c {
+// vtable 0x008eaf4c: 2 slots, installed by 1 function, base 0x008e84a8 (1 vote)
+// size 0x18 (1 allocation site)
+class C_008eaf4c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0051a8e8
+    virtual void vf0();    // override 0x0051a8e8
     virtual void vf1();    // virtual 0x0051abe2
 };
+typedef char size_check_C_008eaf4c[sizeof(C_008eaf4c) == 24 ? 1 : -1];
 
 // vtable 0x008eaf54: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x10
@@ -6552,17 +6918,17 @@ public:
     virtual void vf0();    // virtual 0x00559592
 };
 
-// vtable 0x008eba54: 1 slot, installed by 1 function
-class C_008eba54 {
-public:
-    virtual void vf0();    // virtual 0x0055be82
-};
-
 // vtable 0x008eba58: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008eba58 {
 public:
     virtual void vf0();    // virtual 0x00559b3a
+};
+
+// vtable 0x008eba54: 1 slot, installed by 1 function, base 0x008eba58 (1 vote)
+class C_008eba54 : public C_008eba58 {
+public:
+    virtual void vf0();    // override 0x0055be82
 };
 
 // vtable 0x008eba5c: 1 slot, installed by 2 functions
@@ -6578,12 +6944,6 @@ public:
     virtual void vf0();    // virtual 0x00559d8a
 };
 
-// vtable 0x008eba64: 1 slot, installed by 1 function
-class C_008eba64 {
-public:
-    virtual void vf0();    // virtual 0x0055bf06
-};
-
 // vtable 0x008eba68: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008eba68 {
@@ -6591,10 +6951,10 @@ public:
     virtual void vf0();    // virtual 0x0055a2a3
 };
 
-// vtable 0x008eba6c: 1 slot, installed by 1 function
-class C_008eba6c {
+// vtable 0x008eba64: 1 slot, installed by 1 function, base 0x008eba68 (1 vote)
+class C_008eba64 : public C_008eba68 {
 public:
-    virtual void vf0();    // virtual 0x0055bf27
+    virtual void vf0();    // override 0x0055bf06
 };
 
 // vtable 0x008eba70: 1 slot, installed by 3 functions
@@ -6604,10 +6964,10 @@ public:
     virtual void vf0();    // virtual 0x0055a38d
 };
 
-// vtable 0x008eba74: 1 slot, installed by 1 function
-class C_008eba74 {
+// vtable 0x008eba6c: 1 slot, installed by 1 function, base 0x008eba70 (1 vote)
+class C_008eba6c : public C_008eba70 {
 public:
-    virtual void vf0();    // virtual 0x0055bf48
+    virtual void vf0();    // override 0x0055bf27
 };
 
 // vtable 0x008eba78: 1 slot, installed by 3 functions
@@ -6617,10 +6977,10 @@ public:
     virtual void vf0();    // virtual 0x0055a477
 };
 
-// vtable 0x008eba7c: 1 slot, installed by 1 function
-class C_008eba7c {
+// vtable 0x008eba74: 1 slot, installed by 1 function, base 0x008eba78 (1 vote)
+class C_008eba74 : public C_008eba78 {
 public:
-    virtual void vf0();    // virtual 0x0055bf69
+    virtual void vf0();    // override 0x0055bf48
 };
 
 // vtable 0x008eba80: 1 slot, installed by 3 functions
@@ -6630,10 +6990,10 @@ public:
     virtual void vf0();    // virtual 0x0055a5aa
 };
 
-// vtable 0x008eba84: 1 slot, installed by 1 function
-class C_008eba84 {
+// vtable 0x008eba7c: 1 slot, installed by 1 function, base 0x008eba80 (1 vote)
+class C_008eba7c : public C_008eba80 {
 public:
-    virtual void vf0();    // virtual 0x0055bf8a
+    virtual void vf0();    // override 0x0055bf69
 };
 
 // vtable 0x008eba88: 1 slot, installed by 2 functions
@@ -6643,18 +7003,28 @@ public:
     virtual void vf0();    // virtual 0x0055a706
 };
 
-// vtable 0x008eba8c: 1 slot, installed by 2 functions
-class C_008eba8c {
+// vtable 0x008eba84: 1 slot, installed by 1 function, base 0x008eba88 (1 vote)
+class C_008eba84 : public C_008eba88 {
 public:
-    virtual void vf0();    // virtual 0x0055bfab
+    virtual void vf0();    // override 0x0055bf8a
 };
 
-// vtable 0x008eba90: 2 slots, installed by 6 functions
-class C_008eba90 {
+// vtable 0x008eba8c: 1 slot, installed by 2 functions, base 0x008e84a8 (45 votes)
+// size 0x18 (2 allocation sites)
+class C_008eba8c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0055bfcb
+    virtual void vf0();    // override 0x0055bfab
+};
+typedef char size_check_C_008eba8c[sizeof(C_008eba8c) == 24 ? 1 : -1];
+
+// vtable 0x008eba90: 2 slots, installed by 6 functions, base 0x008e84a8 (170 votes)
+// size 0x18 (6 allocation sites)
+class C_008eba90 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x0055bfcb
     virtual void vf1();    // virtual 0x0055e0a2
 };
+typedef char size_check_C_008eba90[sizeof(C_008eba90) == 24 ? 1 : -1];
 
 // vtable 0x008eba98: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x28
@@ -6678,11 +7048,18 @@ public:
     virtual void vf0();    // override 0x0055bb18
 };
 
-// vtable 0x008ebaa8: 1 slot, installed by 5 functions
+// vtable 0x008ecb28: 1 slot, installed by 4 functions
 // size unknown; constructor touches up to +0x4
-class C_008ebaa8 {
+class C_008ecb28 {
 public:
-    virtual void vf0();    // virtual 0x0055b925
+    virtual void vf0();    // virtual 0x005d0d7c
+};
+
+// vtable 0x008ebaa8: 1 slot, installed by 5 functions, base 0x008ecb28 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008ebaa8 : public C_008ecb28 {
+public:
+    virtual void vf0();    // override 0x0055b925
 };
 
 // vtable 0x008ebaac: 2 slots, installed by 2 functions
@@ -7911,60 +8288,53 @@ public:
     virtual void vf0();    // virtual 0x005c8974
 };
 
-// vtable 0x008ecb0c: 1 slot, installed by 11 functions
+// vtable 0x008ecb0c: 1 slot, installed by 11 functions, base 0x008f2f74 (2 votes)
 // size unknown; constructor touches up to +0x4
-class C_008ecb0c {
+class C_008ecb0c : public C_008f2f74 {
 public:
-    virtual void vf0();    // virtual 0x005d0d0a
+    virtual void vf0();    // override 0x005d0d0a
 };
 
-// vtable 0x008ecb10: 1 slot, installed by 4 functions
+// vtable 0x008ecb10: 1 slot, installed by 4 functions, base 0x008ecb28 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ecb10 {
+class C_008ecb10 : public C_008ecb28 {
 public:
-    virtual void vf0();    // virtual 0x005d0e3a
+    virtual void vf0();    // override 0x005d0e3a
 };
 
-// vtable 0x008ecb14: 1 slot, installed by 4 functions
+// vtable 0x008ecb14: 1 slot, installed by 4 functions, base 0x008ecb28 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ecb14 {
+class C_008ecb14 : public C_008ecb28 {
 public:
-    virtual void vf0();    // virtual 0x005d0e14
+    virtual void vf0();    // override 0x005d0e14
 };
 
-// vtable 0x008ecb18: 1 slot, installed by 4 functions
+// vtable 0x008ecb18: 1 slot, installed by 4 functions, base 0x008ecb28 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ecb18 {
+class C_008ecb18 : public C_008ecb28 {
 public:
-    virtual void vf0();    // virtual 0x005d0dee
+    virtual void vf0();    // override 0x005d0dee
 };
 
-// vtable 0x008ecb1c: 1 slot, installed by 4 functions
+// vtable 0x008ecb1c: 1 slot, installed by 4 functions, base 0x008ecb28 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ecb1c {
+class C_008ecb1c : public C_008ecb28 {
 public:
-    virtual void vf0();    // virtual 0x005d0d56
+    virtual void vf0();    // override 0x005d0d56
 };
 
-// vtable 0x008ecb20: 1 slot, installed by 4 functions
+// vtable 0x008ecb20: 1 slot, installed by 4 functions, base 0x008ecb28 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ecb20 {
+class C_008ecb20 : public C_008ecb28 {
 public:
-    virtual void vf0();    // virtual 0x005d0dc8
+    virtual void vf0();    // override 0x005d0dc8
 };
 
-// vtable 0x008ecb24: 1 slot, installed by 4 functions
+// vtable 0x008ecb24: 1 slot, installed by 4 functions, base 0x008ecb28 (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008ecb24 {
+class C_008ecb24 : public C_008ecb28 {
 public:
-    virtual void vf0();    // virtual 0x005d0da2
-};
-
-// vtable 0x008ecb28: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008ecb28 {
-public:
-    virtual void vf0();    // virtual 0x005d0d7c
+    virtual void vf0();    // override 0x005d0da2
 };
 
 // vtable 0x008ecb48: 1 slot, installed by 2 functions
@@ -8227,12 +8597,6 @@ public:
     virtual void vf0();    // virtual 0x0061d231
 };
 
-// vtable 0x008ed13c: 1 slot, installed by 1 function
-class C_008ed13c {
-public:
-    virtual void vf0();    // virtual 0x0061e935
-};
-
 // vtable 0x008ed140: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ed140 {
@@ -8240,12 +8604,20 @@ public:
     virtual void vf0();    // virtual 0x0061d699
 };
 
-// vtable 0x008ed144: 2 slots, installed by 2 functions
-class C_008ed144 {
+// vtable 0x008ed13c: 1 slot, installed by 1 function, base 0x008ed140 (1 vote)
+class C_008ed13c : public C_008ed140 {
 public:
-    virtual void vf0();    // virtual 0x0061e956
+    virtual void vf0();    // override 0x0061e935
+};
+
+// vtable 0x008ed144: 2 slots, installed by 2 functions, base 0x008e84a8 (59 votes)
+// size 0x18 (2 allocation sites)
+class C_008ed144 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x0061e956
     virtual void vf1();    // virtual 0x006205c3
 };
+typedef char size_check_C_008ed144[sizeof(C_008ed144) == 24 ? 1 : -1];
 
 // vtable 0x008ed14c: 1 slot, installed by 1 function
 class C_008ed14c {
@@ -8267,12 +8639,14 @@ public:
     virtual void vf0();    // virtual 0x00620619
 };
 
-// vtable 0x008ed164: 2 slots, installed by 4 functions
-class C_008ed164 {
+// vtable 0x008ed164: 2 slots, installed by 4 functions, base 0x008e84a8 (140 votes)
+// size 0x18 (4 allocation sites)
+class C_008ed164 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00623367
+    virtual void vf0();    // override 0x00623367
     virtual void vf1();    // virtual 0x00624754
 };
+typedef char size_check_C_008ed164[sizeof(C_008ed164) == 24 ? 1 : -1];
 
 // vtable 0x008ed16c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x3c
@@ -8314,11 +8688,11 @@ public:
     virtual void vf0();    // virtual 0x0062f0f8
 };
 
-// vtable 0x008ed1ac: 1 slot, installed by 5 functions
+// vtable 0x008ed1ac: 1 slot, installed by 5 functions, base 0x008f2f74 (4 votes)
 // size unknown; constructor touches up to +0x4
-class C_008ed1ac {
+class C_008ed1ac : public C_008f2f74 {
 public:
-    virtual void vf0();    // virtual 0x0062f0d2
+    virtual void vf0();    // override 0x0062f0d2
 };
 
 // vtable 0x008ed1b0: 1 slot, installed by 3 functions
@@ -8369,12 +8743,6 @@ public:
     virtual void vf0();    // virtual 0x0062f5c2
 };
 
-// vtable 0x008ed1cc: 1 slot, installed by 1 function
-class C_008ed1cc {
-public:
-    virtual void vf0();    // virtual 0x0063176b
-};
-
 // vtable 0x008ed1d0: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ed1d0 {
@@ -8382,10 +8750,10 @@ public:
     virtual void vf0();    // virtual 0x0062f7f1
 };
 
-// vtable 0x008ed1d4: 1 slot, installed by 1 function
-class C_008ed1d4 {
+// vtable 0x008ed1cc: 1 slot, installed by 1 function, base 0x008ed1d0 (1 vote)
+class C_008ed1cc : public C_008ed1d0 {
 public:
-    virtual void vf0();    // virtual 0x0063178c
+    virtual void vf0();    // override 0x0063176b
 };
 
 // vtable 0x008ed1d8: 1 slot, installed by 3 functions
@@ -8395,10 +8763,10 @@ public:
     virtual void vf0();    // virtual 0x0062f9a4
 };
 
-// vtable 0x008ed1dc: 1 slot, installed by 1 function
-class C_008ed1dc {
+// vtable 0x008ed1d4: 1 slot, installed by 1 function, base 0x008ed1d8 (1 vote)
+class C_008ed1d4 : public C_008ed1d8 {
 public:
-    virtual void vf0();    // virtual 0x006317ad
+    virtual void vf0();    // override 0x0063178c
 };
 
 // vtable 0x008ed1e0: 1 slot, installed by 3 functions
@@ -8408,10 +8776,10 @@ public:
     virtual void vf0();    // virtual 0x0062fb57
 };
 
-// vtable 0x008ed1e4: 1 slot, installed by 1 function
-class C_008ed1e4 {
+// vtable 0x008ed1dc: 1 slot, installed by 1 function, base 0x008ed1e0 (1 vote)
+class C_008ed1dc : public C_008ed1e0 {
 public:
-    virtual void vf0();    // virtual 0x006317ce
+    virtual void vf0();    // override 0x006317ad
 };
 
 // vtable 0x008ed1e8: 1 slot, installed by 2 functions
@@ -8421,10 +8789,10 @@ public:
     virtual void vf0();    // virtual 0x0062fd5d
 };
 
-// vtable 0x008ed1ec: 1 slot, installed by 1 function
-class C_008ed1ec {
+// vtable 0x008ed1e4: 1 slot, installed by 1 function, base 0x008ed1e8 (1 vote)
+class C_008ed1e4 : public C_008ed1e8 {
 public:
-    virtual void vf0();    // virtual 0x006317ef
+    virtual void vf0();    // override 0x006317ce
 };
 
 // vtable 0x008ed1f0: 1 slot, installed by 2 functions
@@ -8434,10 +8802,10 @@ public:
     virtual void vf0();    // virtual 0x0062fef8
 };
 
-// vtable 0x008ed1f4: 1 slot, installed by 1 function
-class C_008ed1f4 {
+// vtable 0x008ed1ec: 1 slot, installed by 1 function, base 0x008ed1f0 (1 vote)
+class C_008ed1ec : public C_008ed1f0 {
 public:
-    virtual void vf0();    // virtual 0x00631810
+    virtual void vf0();    // override 0x006317ef
 };
 
 // vtable 0x008ed1f8: 1 slot, installed by 2 functions
@@ -8447,12 +8815,20 @@ public:
     virtual void vf0();    // virtual 0x0063008b
 };
 
-// vtable 0x008ed1fc: 2 slots, installed by 9 functions
-class C_008ed1fc {
+// vtable 0x008ed1f4: 1 slot, installed by 1 function, base 0x008ed1f8 (1 vote)
+class C_008ed1f4 : public C_008ed1f8 {
 public:
-    virtual void vf0();    // virtual 0x00631831
+    virtual void vf0();    // override 0x00631810
+};
+
+// vtable 0x008ed1fc: 2 slots, installed by 9 functions, base 0x008e84a8 (344 votes)
+// size 0x18 (9 allocation sites)
+class C_008ed1fc : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x00631831
     virtual void vf1();    // virtual 0x00633954
 };
+typedef char size_check_C_008ed1fc[sizeof(C_008ed1fc) == 24 ? 1 : -1];
 
 // vtable 0x008ed204: 1 slot, installed by 1 function
 class C_008ed204 {
@@ -8467,12 +8843,6 @@ public:
     virtual void vf0();    // virtual 0x0063156a
 };
 
-// vtable 0x008ed218: 1 slot, installed by 1 function
-class C_008ed218 {
-public:
-    virtual void vf0();    // virtual 0x00636cb5
-};
-
 // vtable 0x008ed21c: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ed21c {
@@ -8480,12 +8850,20 @@ public:
     virtual void vf0();    // virtual 0x00635a0b
 };
 
-// vtable 0x008ed220: 2 slots, installed by 4 functions
-class C_008ed220 {
+// vtable 0x008ed218: 1 slot, installed by 1 function, base 0x008ed21c (1 vote)
+class C_008ed218 : public C_008ed21c {
 public:
-    virtual void vf0();    // virtual 0x00636cd6
+    virtual void vf0();    // override 0x00636cb5
+};
+
+// vtable 0x008ed220: 2 slots, installed by 4 functions, base 0x008e84a8 (86 votes)
+// size 0x18 (4 allocation sites)
+class C_008ed220 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x00636cd6
     virtual void vf1();    // virtual 0x006383e5
 };
+typedef char size_check_C_008ed220[sizeof(C_008ed220) == 24 ? 1 : -1];
 
 // vtable 0x008ed228: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x50
@@ -8523,17 +8901,17 @@ public:
     virtual void vf0();    // virtual 0x006398a2
 };
 
-// vtable 0x008ed240: 1 slot, installed by 1 function
-class C_008ed240 {
-public:
-    virtual void vf0();    // virtual 0x0063a56d
-};
-
 // vtable 0x008ed244: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ed244 {
 public:
     virtual void vf0();    // virtual 0x00639b30
+};
+
+// vtable 0x008ed240: 1 slot, installed by 1 function, base 0x008ed244 (1 vote)
+class C_008ed240 : public C_008ed244 {
+public:
+    virtual void vf0();    // override 0x0063a56d
 };
 
 // vtable 0x008ed248: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
@@ -8629,12 +9007,6 @@ public:
     virtual void vf0();    // virtual 0x0064bb70
 };
 
-// vtable 0x008ed3b8: 1 slot, installed by 1 function
-class C_008ed3b8 {
-public:
-    virtual void vf0();    // virtual 0x00656433
-};
-
 // vtable 0x008ed3bc: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ed3bc {
@@ -8642,10 +9014,10 @@ public:
     virtual void vf0();    // virtual 0x00654a7b
 };
 
-// vtable 0x008ed3c0: 1 slot, installed by 1 function
-class C_008ed3c0 {
+// vtable 0x008ed3b8: 1 slot, installed by 1 function, base 0x008ed3bc (1 vote)
+class C_008ed3b8 : public C_008ed3bc {
 public:
-    virtual void vf0();    // virtual 0x00656454
+    virtual void vf0();    // override 0x00656433
 };
 
 // vtable 0x008ed3c4: 1 slot, installed by 3 functions
@@ -8655,10 +9027,10 @@ public:
     virtual void vf0();    // virtual 0x00654bb9
 };
 
-// vtable 0x008ed3c8: 1 slot, installed by 1 function
-class C_008ed3c8 {
+// vtable 0x008ed3c0: 1 slot, installed by 1 function, base 0x008ed3c4 (1 vote)
+class C_008ed3c0 : public C_008ed3c4 {
 public:
-    virtual void vf0();    // virtual 0x00656475
+    virtual void vf0();    // override 0x00656454
 };
 
 // vtable 0x008ed3cc: 1 slot, installed by 3 functions
@@ -8668,10 +9040,10 @@ public:
     virtual void vf0();    // virtual 0x00654cf7
 };
 
-// vtable 0x008ed3d0: 1 slot, installed by 1 function
-class C_008ed3d0 {
+// vtable 0x008ed3c8: 1 slot, installed by 1 function, base 0x008ed3cc (1 vote)
+class C_008ed3c8 : public C_008ed3cc {
 public:
-    virtual void vf0();    // virtual 0x00656496
+    virtual void vf0();    // override 0x00656475
 };
 
 // vtable 0x008ed3d4: 1 slot, installed by 3 functions
@@ -8681,10 +9053,10 @@ public:
     virtual void vf0();    // virtual 0x00654e35
 };
 
-// vtable 0x008ed3d8: 1 slot, installed by 1 function
-class C_008ed3d8 {
+// vtable 0x008ed3d0: 1 slot, installed by 1 function, base 0x008ed3d4 (1 vote)
+class C_008ed3d0 : public C_008ed3d4 {
 public:
-    virtual void vf0();    // virtual 0x006564b7
+    virtual void vf0();    // override 0x00656496
 };
 
 // vtable 0x008ed3dc: 1 slot, installed by 3 functions
@@ -8694,36 +9066,52 @@ public:
     virtual void vf0();    // virtual 0x00654f73
 };
 
-// vtable 0x008ed3e0: 1 slot, installed by 7 functions
-class C_008ed3e0 {
+// vtable 0x008ed3d8: 1 slot, installed by 1 function, base 0x008ed3dc (1 vote)
+class C_008ed3d8 : public C_008ed3dc {
 public:
-    virtual void vf0();    // virtual 0x006564d8
+    virtual void vf0();    // override 0x006564b7
 };
 
-// vtable 0x008ed3e4: 1 slot, installed by 2 functions
-class C_008ed3e4 {
+// vtable 0x008ed3e0: 1 slot, installed by 7 functions, base 0x008e84a8 (137 votes)
+// size 0x18 (7 allocation sites)
+class C_008ed3e0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x006564f8
+    virtual void vf0();    // override 0x006564d8
 };
+typedef char size_check_C_008ed3e0[sizeof(C_008ed3e0) == 24 ? 1 : -1];
 
-// vtable 0x008ed3e8: 1 slot, installed by 2 functions
-class C_008ed3e8 {
+// vtable 0x008ed3e4: 1 slot, installed by 2 functions, base 0x008e84a8 (35 votes)
+// size 0x18 (2 allocation sites)
+class C_008ed3e4 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00656518
+    virtual void vf0();    // override 0x006564f8
 };
+typedef char size_check_C_008ed3e4[sizeof(C_008ed3e4) == 24 ? 1 : -1];
 
-// vtable 0x008ed3ec: 1 slot, installed by 2 functions
-class C_008ed3ec {
+// vtable 0x008ed3e8: 1 slot, installed by 2 functions, base 0x008e84a8 (36 votes)
+// size 0x18 (2 allocation sites)
+class C_008ed3e8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00656538
+    virtual void vf0();    // override 0x00656518
 };
+typedef char size_check_C_008ed3e8[sizeof(C_008ed3e8) == 24 ? 1 : -1];
 
-// vtable 0x008ed3f0: 2 slots, installed by 2 functions
-class C_008ed3f0 {
+// vtable 0x008ed3ec: 1 slot, installed by 2 functions, base 0x008e84a8 (37 votes)
+// size 0x18 (2 allocation sites)
+class C_008ed3ec : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00656558
+    virtual void vf0();    // override 0x00656538
+};
+typedef char size_check_C_008ed3ec[sizeof(C_008ed3ec) == 24 ? 1 : -1];
+
+// vtable 0x008ed3f0: 2 slots, installed by 2 functions, base 0x008e84a8 (38 votes)
+// size 0x18 (2 allocation sites)
+class C_008ed3f0 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x00656558
     virtual void vf1();    // virtual 0x00657820
 };
+typedef char size_check_C_008ed3f0[sizeof(C_008ed3f0) == 24 ? 1 : -1];
 
 // vtable 0x008ed3f8: 1 slot, installed by 1 function
 class C_008ed3f8 {
@@ -8876,53 +9264,53 @@ public:
     virtual void vf0();    // virtual 0x0065e269
 };
 
-// vtable 0x008ed4ec: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008ed4ec {
-public:
-    virtual void vf0();    // virtual 0x0065e55f
-};
-
-// vtable 0x008ed4f0: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008ed4f0 {
-public:
-    virtual void vf0();    // virtual 0x0065e539
-};
-
-// vtable 0x008ed4f4: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008ed4f4 {
-public:
-    virtual void vf0();    // virtual 0x0065e513
-};
-
-// vtable 0x008ed4f8: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008ed4f8 {
-public:
-    virtual void vf0();    // virtual 0x0065e4ed
-};
-
-// vtable 0x008ed4fc: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008ed4fc {
-public:
-    virtual void vf0();    // virtual 0x0065e4c7
-};
-
-// vtable 0x008ed500: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008ed500 {
-public:
-    virtual void vf0();    // virtual 0x0065e4a1
-};
-
 // vtable 0x008ed504: 1 slot, installed by 4 functions
 // size unknown; constructor touches up to +0x4
 class C_008ed504 {
 public:
     virtual void vf0();    // virtual 0x0065e47b
+};
+
+// vtable 0x008ed4ec: 1 slot, installed by 4 functions, base 0x008ed504 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008ed4ec : public C_008ed504 {
+public:
+    virtual void vf0();    // override 0x0065e55f
+};
+
+// vtable 0x008ed4f0: 1 slot, installed by 4 functions, base 0x008ed504 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008ed4f0 : public C_008ed504 {
+public:
+    virtual void vf0();    // override 0x0065e539
+};
+
+// vtable 0x008ed4f4: 1 slot, installed by 4 functions, base 0x008ed504 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008ed4f4 : public C_008ed504 {
+public:
+    virtual void vf0();    // override 0x0065e513
+};
+
+// vtable 0x008ed4f8: 1 slot, installed by 4 functions, base 0x008ed504 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008ed4f8 : public C_008ed504 {
+public:
+    virtual void vf0();    // override 0x0065e4ed
+};
+
+// vtable 0x008ed4fc: 1 slot, installed by 4 functions, base 0x008ed504 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008ed4fc : public C_008ed504 {
+public:
+    virtual void vf0();    // override 0x0065e4c7
+};
+
+// vtable 0x008ed500: 1 slot, installed by 4 functions, base 0x008ed504 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008ed500 : public C_008ed504 {
+public:
+    virtual void vf0();    // override 0x0065e4a1
 };
 
 // vtable 0x008ed508: 7 slots, installed by 1 function
@@ -9145,12 +9533,6 @@ public:
     virtual void vf0();    // virtual 0x00661930
 };
 
-// vtable 0x008ed888: 1 slot, installed by 1 function
-class C_008ed888 {
-public:
-    virtual void vf0();    // virtual 0x006723f8
-};
-
 // vtable 0x008ed88c: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ed88c {
@@ -9158,12 +9540,20 @@ public:
     virtual void vf0();    // virtual 0x00671ab2
 };
 
-// vtable 0x008ed890: 2 slots, installed by 4 functions
-class C_008ed890 {
+// vtable 0x008ed888: 1 slot, installed by 1 function, base 0x008ed88c (1 vote)
+class C_008ed888 : public C_008ed88c {
 public:
-    virtual void vf0();    // virtual 0x00672419
+    virtual void vf0();    // override 0x006723f8
+};
+
+// vtable 0x008ed890: 2 slots, installed by 4 functions, base 0x008e84a8 (103 votes)
+// size 0x18 (4 allocation sites)
+class C_008ed890 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x00672419
     virtual void vf1();    // virtual 0x00672ac0
 };
+typedef char size_check_C_008ed890[sizeof(C_008ed890) == 24 ? 1 : -1];
 
 // vtable 0x008ed898: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x10
@@ -9253,17 +9643,17 @@ public:
     virtual void vf0();    // virtual 0x0067f5d9
 };
 
-// vtable 0x008ee97c: 1 slot, installed by 1 function
-class C_008ee97c {
-public:
-    virtual void vf0();    // virtual 0x00680bfa
-};
-
 // vtable 0x008ee980: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008ee980 {
 public:
     virtual void vf0();    // virtual 0x0067fa02
+};
+
+// vtable 0x008ee97c: 1 slot, installed by 1 function, base 0x008ee980 (1 vote)
+class C_008ee97c : public C_008ee980 {
+public:
+    virtual void vf0();    // override 0x00680bfa
 };
 
 // vtable 0x008ee984: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
@@ -9295,12 +9685,6 @@ public:
     virtual void vf0();    // virtual 0x00682e2d
 };
 
-// vtable 0x008ee998: 1 slot, installed by 2 functions
-class C_008ee998 {
-public:
-    virtual void vf0();    // virtual 0x006838a8
-};
-
 // vtable 0x008ee99c: 1 slot, installed by 4 functions
 // size unknown; constructor touches up to +0x4
 class C_008ee99c {
@@ -9308,11 +9692,19 @@ public:
     virtual void vf0();    // virtual 0x00682fdb
 };
 
-// vtable 0x008ee9a0: 1 slot, installed by 8 functions
-class C_008ee9a0 {
+// vtable 0x008ee998: 1 slot, installed by 2 functions, base 0x008ee99c (2 votes)
+class C_008ee998 : public C_008ee99c {
 public:
-    virtual void vf0();    // virtual 0x006838c9
+    virtual void vf0();    // override 0x006838a8
 };
+
+// vtable 0x008ee9a0: 1 slot, installed by 8 functions, base 0x008e84a8 (200 votes)
+// size 0x18 (8 allocation sites)
+class C_008ee9a0 : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x006838c9
+};
+typedef char size_check_C_008ee9a0[sizeof(C_008ee9a0) == 24 ? 1 : -1];
 
 // vtable 0x008ee9a4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size 0x30 (1 allocation site), constructor touches up to +0x14
@@ -11145,12 +11537,6 @@ public:
     virtual void vf0();    // virtual 0x006def37
 };
 
-// vtable 0x008f0058: 1 slot, installed by 1 function
-class C_008f0058 {
-public:
-    virtual void vf0();    // virtual 0x006e04ce
-};
-
 // vtable 0x008f005c: 1 slot, installed by 2 functions
 // size unknown; constructor touches up to +0x4
 class C_008f005c {
@@ -11158,10 +11544,10 @@ public:
     virtual void vf0();    // virtual 0x006df0a7
 };
 
-// vtable 0x008f0060: 1 slot, installed by 1 function
-class C_008f0060 {
+// vtable 0x008f0058: 1 slot, installed by 1 function, base 0x008f005c (1 vote)
+class C_008f0058 : public C_008f005c {
 public:
-    virtual void vf0();    // virtual 0x006e04ef
+    virtual void vf0();    // override 0x006e04ce
 };
 
 // vtable 0x008f0064: 1 slot, installed by 3 functions
@@ -11169,6 +11555,12 @@ public:
 class C_008f0064 {
 public:
     virtual void vf0();    // virtual 0x006df26f
+};
+
+// vtable 0x008f0060: 1 slot, installed by 1 function, base 0x008f0064 (1 vote)
+class C_008f0060 : public C_008f0064 {
+public:
+    virtual void vf0();    // override 0x006e04ef
 };
 
 // vtable 0x008f0070: 20 slots, installed by 1 function
@@ -11287,7 +11679,6 @@ public:
 };
 
 // vtable 0x008f01d4: 30 slots, installed by 1 function
-// size 0x48 (1 allocation site)
 class C_008f01d4 {
 public:
     virtual void vf0();    // virtual 0x00456330
@@ -11320,9 +11711,7 @@ public:
     virtual void vf27();    // virtual 0x00449988
     virtual void vf28();    // virtual 0x004b37f2
     virtual void vf29();    // virtual 0x004b37f8
-    unsigned char m_raw[68];    // opaque: fields not recovered
 };
-typedef char size_check_C_008f01d4[sizeof(C_008f01d4) == 72 ? 1 : -1];
 
 // vtable 0x008f024c: 10 slots, installed by 1 function
 class C_008f024c {
@@ -11387,11 +11776,13 @@ public:
     virtual void vf0();    // virtual 0x006eb845
 };
 
-// vtable 0x008f02f0: 1 slot, installed by 4 functions
-class C_008f02f0 {
+// vtable 0x008f02f0: 1 slot, installed by 4 functions, base 0x008e84a8 (63 votes)
+// size 0x18 (4 allocation sites)
+class C_008f02f0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x006ecd03
+    virtual void vf0();    // override 0x006ecd03
 };
+typedef char size_check_C_008f02f0[sizeof(C_008f02f0) == 24 ? 1 : -1];
 
 // vtable 0x008f02f4: 2 slots, installed by 1 function
 class C_008f02f4 {
@@ -11420,12 +11811,14 @@ public:
     virtual void vf0();    // override 0x006ecb2b
 };
 
-// vtable 0x008f0308: 2 slots, installed by 2 functions
-class C_008f0308 {
+// vtable 0x008f0308: 2 slots, installed by 2 functions, base 0x008e84a8 (78 votes)
+// size 0x18 (2 allocation sites)
+class C_008f0308 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x006eebf0
+    virtual void vf0();    // override 0x006eebf0
     virtual void vf1();    // virtual 0x006eedac
 };
+typedef char size_check_C_008f0308[sizeof(C_008f0308) == 24 ? 1 : -1];
 
 // vtable 0x008f0310: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x18
@@ -11487,11 +11880,13 @@ public:
 };
 
 // vtable 0x008f03ac: 1 slot, installed by 2 functions
-// size unknown; constructor touches up to +0x4
+// size 0xc (1 allocation site), constructor touches up to +0x4
 class C_008f03ac {
 public:
     virtual void vf0();    // virtual 0x006f1656
+    unsigned char m_raw[8];    // opaque: fields not recovered
 };
+typedef char size_check_C_008f03ac[sizeof(C_008f03ac) == 12 ? 1 : -1];
 
 // vtable 0x008f03b0: 33 slots, installed by 1 function
 class C_008f03b0 {
@@ -12029,17 +12424,17 @@ public:
     virtual void vf0();    // virtual 0x0070ed7f
 };
 
-// vtable 0x008f098c: 1 slot, installed by 1 function
-class C_008f098c {
-public:
-    virtual void vf0();    // virtual 0x0070f9b0
-};
-
 // vtable 0x008f0990: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008f0990 {
 public:
     virtual void vf0();    // virtual 0x0070ef6f
+};
+
+// vtable 0x008f098c: 1 slot, installed by 1 function, base 0x008f0990 (1 vote)
+class C_008f098c : public C_008f0990 {
+public:
+    virtual void vf0();    // override 0x0070f9b0
 };
 
 // vtable 0x008f09a0: 20 slots, installed by 1 function
@@ -12177,11 +12572,11 @@ public:
     virtual void vf12();    // virtual 0x00448140
 };
 
-// vtable 0x008f0b48: 1 slot, installed by 6 functions
+// vtable 0x008f0b48: 1 slot, installed by 6 functions, base 0x008ecb4c (1 vote)
 // size unknown; constructor touches up to +0x4
-class C_008f0b48 {
+class C_008f0b48 : public C_008ecb4c {
 public:
-    virtual void vf0();    // virtual 0x0071b968
+    virtual void vf0();    // override 0x0071b968
 };
 
 // vtable 0x008f0b4c: 20 slots, installed by 1 function
@@ -13243,27 +13638,6 @@ public:
     virtual void vf14();    // virtual 0x0048bef1
 };
 
-// vtable 0x008f187c: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008f187c {
-public:
-    virtual void vf0();    // virtual 0x0079d685
-};
-
-// vtable 0x008f1880: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008f1880 {
-public:
-    virtual void vf0();    // virtual 0x0079d65f
-};
-
-// vtable 0x008f1884: 1 slot, installed by 4 functions
-// size unknown; constructor touches up to +0x4
-class C_008f1884 {
-public:
-    virtual void vf0();    // virtual 0x0079d639
-};
-
 // vtable 0x008f1888: 1 slot, installed by 4 functions
 // size unknown; constructor touches up to +0x4
 class C_008f1888 {
@@ -13271,10 +13645,25 @@ public:
     virtual void vf0();    // virtual 0x0079d613
 };
 
-// vtable 0x008f18a0: 1 slot, installed by 1 function
-class C_008f18a0 {
+// vtable 0x008f187c: 1 slot, installed by 4 functions, base 0x008f1888 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008f187c : public C_008f1888 {
 public:
-    virtual void vf0();    // virtual 0x0079f630
+    virtual void vf0();    // override 0x0079d685
+};
+
+// vtable 0x008f1880: 1 slot, installed by 4 functions, base 0x008f1888 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008f1880 : public C_008f1888 {
+public:
+    virtual void vf0();    // override 0x0079d65f
+};
+
+// vtable 0x008f1884: 1 slot, installed by 4 functions, base 0x008f1888 (1 vote)
+// size unknown; constructor touches up to +0x4
+class C_008f1884 : public C_008f1888 {
+public:
+    virtual void vf0();    // override 0x0079d639
 };
 
 // vtable 0x008f18a4: 1 slot, installed by 3 functions
@@ -13282,6 +13671,12 @@ public:
 class C_008f18a4 {
 public:
     virtual void vf0();    // virtual 0x0079dbe9
+};
+
+// vtable 0x008f18a0: 1 slot, installed by 1 function, base 0x008f18a4 (1 vote)
+class C_008f18a0 : public C_008f18a4 {
+public:
+    virtual void vf0();    // override 0x0079f630
 };
 
 // vtable 0x008f18a8: 9 slots, installed by 1 function
@@ -13304,12 +13699,14 @@ public:
     virtual void vf0();    // virtual 0x0079e3c5
 };
 
-// vtable 0x008f18d0: 2 slots, installed by 2 functions
-class C_008f18d0 {
+// vtable 0x008f18d0: 2 slots, installed by 2 functions, base 0x008e84a8 (64 votes)
+// size 0x18 (2 allocation sites)
+class C_008f18d0 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0079f651
+    virtual void vf0();    // override 0x0079f651
     virtual void vf1();    // virtual 0x007a13d0
 };
+typedef char size_check_C_008f18d0[sizeof(C_008f18d0) == 24 ? 1 : -1];
 
 // vtable 0x008f18d8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x24
@@ -14973,19 +15370,11 @@ public:
     virtual void vf0();    // virtual 0x0082f96f
 };
 
-// vtable 0x008f2f70: 1 slot, installed by 5 functions
-// size 0x3c (2 allocation sites), constructor touches up to +0x4
-class C_008f2f70 {
+// vtable 0x008f2f70: 1 slot, installed by 5 functions, base 0x008f2f74 (2 votes)
+// size unknown; constructor touches up to +0x4
+class C_008f2f70 : public C_008f2f74 {
 public:
-    virtual void vf0();    // virtual 0x0083dc2c
-    unsigned char m_raw[56];    // opaque: fields not recovered
-};
-typedef char size_check_C_008f2f70[sizeof(C_008f2f70) == 60 ? 1 : -1];
-
-// vtable 0x008f2f74: 1 slot, installed by 3 functions
-class C_008f2f74 {
-public:
-    virtual void vf0();    // virtual 0x0082f862
+    virtual void vf0();    // override 0x0083dc2c
 };
 
 // vtable 0x008f2f78: 1 slot, installed by 4 functions
@@ -15279,72 +15668,94 @@ public:
     virtual void vf11();    // override 0x007297da
 };
 
-// vtable 0x008f3334: 1 slot, installed by 2 functions
-class C_008f3334 {
+// vtable 0x008f3334: 1 slot, installed by 2 functions, base 0x008e84a8 (84 votes)
+// size 0x18 (2 allocation sites)
+class C_008f3334 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00841f7f
+    virtual void vf0();    // override 0x00841f7f
 };
+typedef char size_check_C_008f3334[sizeof(C_008f3334) == 24 ? 1 : -1];
 
-// vtable 0x008f3338: 1 slot, installed by 2 functions
-class C_008f3338 {
+// vtable 0x008f3338: 1 slot, installed by 2 functions, base 0x008e84a8 (85 votes)
+// size 0x18 (2 allocation sites)
+class C_008f3338 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00841f9f
+    virtual void vf0();    // override 0x00841f9f
 };
+typedef char size_check_C_008f3338[sizeof(C_008f3338) == 24 ? 1 : -1];
 
-// vtable 0x008f333c: 1 slot, installed by 2 functions
-class C_008f333c {
+// vtable 0x008f333c: 1 slot, installed by 2 functions, base 0x008e84a8 (86 votes)
+// size 0x18 (2 allocation sites)
+class C_008f333c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00841fbf
+    virtual void vf0();    // override 0x00841fbf
 };
+typedef char size_check_C_008f333c[sizeof(C_008f333c) == 24 ? 1 : -1];
 
-// vtable 0x008f3340: 1 slot, installed by 2 functions
-class C_008f3340 {
+// vtable 0x008f3340: 1 slot, installed by 2 functions, base 0x008e84a8 (87 votes)
+// size 0x18 (2 allocation sites)
+class C_008f3340 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00841fdf
+    virtual void vf0();    // override 0x00841fdf
 };
+typedef char size_check_C_008f3340[sizeof(C_008f3340) == 24 ? 1 : -1];
 
-// vtable 0x008f3344: 1 slot, installed by 2 functions
-class C_008f3344 {
+// vtable 0x008f3344: 1 slot, installed by 2 functions, base 0x008e84a8 (88 votes)
+// size 0x18 (2 allocation sites)
+class C_008f3344 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x00841fff
+    virtual void vf0();    // override 0x00841fff
 };
+typedef char size_check_C_008f3344[sizeof(C_008f3344) == 24 ? 1 : -1];
 
-// vtable 0x008f3348: 1 slot, installed by 2 functions
-class C_008f3348 {
+// vtable 0x008f3348: 1 slot, installed by 2 functions, base 0x008e84a8 (89 votes)
+// size 0x18 (2 allocation sites)
+class C_008f3348 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0084201f
+    virtual void vf0();    // override 0x0084201f
 };
+typedef char size_check_C_008f3348[sizeof(C_008f3348) == 24 ? 1 : -1];
 
-// vtable 0x008f334c: 1 slot, installed by 2 functions
-class C_008f334c {
+// vtable 0x008f334c: 1 slot, installed by 2 functions, base 0x008e84a8 (90 votes)
+// size 0x18 (2 allocation sites)
+class C_008f334c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0084203f
+    virtual void vf0();    // override 0x0084203f
 };
+typedef char size_check_C_008f334c[sizeof(C_008f334c) == 24 ? 1 : -1];
 
-// vtable 0x008f3350: 1 slot, installed by 2 functions
-class C_008f3350 {
+// vtable 0x008f3350: 1 slot, installed by 2 functions, base 0x008e84a8 (91 votes)
+// size 0x18 (2 allocation sites)
+class C_008f3350 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0084205f
+    virtual void vf0();    // override 0x0084205f
 };
+typedef char size_check_C_008f3350[sizeof(C_008f3350) == 24 ? 1 : -1];
 
-// vtable 0x008f3354: 1 slot, installed by 2 functions
-class C_008f3354 {
+// vtable 0x008f3354: 1 slot, installed by 2 functions, base 0x008e84a8 (92 votes)
+// size 0x18 (2 allocation sites)
+class C_008f3354 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0084207f
+    virtual void vf0();    // override 0x0084207f
 };
+typedef char size_check_C_008f3354[sizeof(C_008f3354) == 24 ? 1 : -1];
 
-// vtable 0x008f3358: 1 slot, installed by 2 functions
-class C_008f3358 {
+// vtable 0x008f3358: 1 slot, installed by 2 functions, base 0x008e84a8 (93 votes)
+// size 0x18 (2 allocation sites)
+class C_008f3358 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0084209f
+    virtual void vf0();    // override 0x0084209f
 };
+typedef char size_check_C_008f3358[sizeof(C_008f3358) == 24 ? 1 : -1];
 
-// vtable 0x008f335c: 2 slots, installed by 2 functions
-class C_008f335c {
+// vtable 0x008f335c: 2 slots, installed by 2 functions, base 0x008e84a8 (94 votes)
+// size 0x18 (2 allocation sites)
+class C_008f335c : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x008420bf
+    virtual void vf0();    // override 0x008420bf
     virtual void vf1();    // virtual 0x008441e8
 };
+typedef char size_check_C_008f335c[sizeof(C_008f335c) == 24 ? 1 : -1];
 
 // vtable 0x008f3364: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x20
@@ -15800,12 +16211,6 @@ public:
     virtual void vf0();    // virtual 0x0086201e
 };
 
-// vtable 0x008f36a0: 1 slot, installed by 1 function
-class C_008f36a0 {
-public:
-    virtual void vf0();    // virtual 0x0086431a
-};
-
 // vtable 0x008f36a4: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008f36a4 {
@@ -15813,18 +16218,28 @@ public:
     virtual void vf0();    // virtual 0x0086307c
 };
 
-// vtable 0x008f36a8: 1 slot, installed by 2 functions
-class C_008f36a8 {
+// vtable 0x008f36a0: 1 slot, installed by 1 function, base 0x008f36a4 (1 vote)
+class C_008f36a0 : public C_008f36a4 {
 public:
-    virtual void vf0();    // virtual 0x0086433b
+    virtual void vf0();    // override 0x0086431a
 };
 
-// vtable 0x008f36ac: 2 slots, installed by 2 functions
-class C_008f36ac {
+// vtable 0x008f36a8: 1 slot, installed by 2 functions, base 0x008e84a8 (53 votes)
+// size 0x18 (2 allocation sites)
+class C_008f36a8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x0086435b
+    virtual void vf0();    // override 0x0086433b
+};
+typedef char size_check_C_008f36a8[sizeof(C_008f36a8) == 24 ? 1 : -1];
+
+// vtable 0x008f36ac: 2 slots, installed by 2 functions, base 0x008e84a8 (55 votes)
+// size 0x18 (2 allocation sites)
+class C_008f36ac : public C_008e84a8 {
+public:
+    virtual void vf0();    // override 0x0086435b
     virtual void vf1();    // virtual 0x00865dad
 };
+typedef char size_check_C_008f36ac[sizeof(C_008f36ac) == 24 ? 1 : -1];
 
 // vtable 0x008f36b4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x10
@@ -15854,12 +16269,14 @@ public:
     virtual void vf0();    // virtual 0x0086420c
 };
 
-// vtable 0x008f36c8: 2 slots, installed by 2 functions
-class C_008f36c8 {
+// vtable 0x008f36c8: 2 slots, installed by 2 functions, base 0x008e84a8 (140 votes)
+// size 0x18 (2 allocation sites)
+class C_008f36c8 : public C_008e84a8 {
 public:
-    virtual void vf0();    // virtual 0x008658d5
+    virtual void vf0();    // override 0x008658d5
     virtual void vf1();    // virtual 0x00865d9d
 };
+typedef char size_check_C_008f36c8[sizeof(C_008f36c8) == 24 ? 1 : -1];
 
 // vtable 0x008f36d0: 1 slot, installed by 1 function
 class C_008f36d0 {
@@ -15868,12 +16285,14 @@ public:
 };
 
 // vtable 0x008f36d4: 2 slots, installed by 2 functions
-// size unknown; constructor touches up to +0x4
+// size 0x1c (1 allocation site), constructor touches up to +0x4
 class C_008f36d4 {
 public:
     virtual void vf0();    // virtual 0x00865aad
     virtual void vf1();    // virtual 0x00865da5
+    unsigned char m_raw[24];    // opaque: fields not recovered
 };
+typedef char size_check_C_008f36d4[sizeof(C_008f36d4) == 28 ? 1 : -1];
 
 // vtable 0x008f36dc: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
 // size unknown; constructor touches up to +0x18

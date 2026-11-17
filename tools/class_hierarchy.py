@@ -35,6 +35,7 @@ def main(pe_path, progress, module, vt_csv, out):
         n = int(r["size"])
         this_regs = set(); ecx_this = True
         stores, calls = [], []                       # (order, vtable) and (order, callee)
+        fresh = []                                   # vtables stored into a fresh allocation (eax after a call)
         for k, ins in enumerate(md.disasm(img[f - base:f - base + n], f)):
             m, o = ins.mnemonic, ins.op_str
             if m == "mov":
@@ -49,6 +50,8 @@ def main(pe_path, progress, module, vt_csv, out):
                     else:
                         this_regs.discard(dst)
                 st = STORE.match(o)
+                if st and st.group(1) == "eax" and int(st.group(2), 16) in vts and "eax" not in this_regs:
+                    fresh.append((k, int(st.group(2), 16)))
                 if st and int(st.group(2), 16) in vts and (st.group(1) in this_regs or (st.group(1) == "ecx" and ecx_this)):
                     stores.append((k, int(st.group(2), 16)))
                 elif o.startswith("ecx,") and not mm:
@@ -59,6 +62,11 @@ def main(pe_path, progress, module, vt_csv, out):
                 if o.startswith("0x") and ecx_this:
                     calls.append((k, int(o, 16)))
                 ecx_this = False
+                fresh = fresh[:0] if not fresh else fresh   # kept: the allocator call precedes the stores
+        for i, (_, later) in enumerate(fresh):           # inlined construction of a new object: base first
+            for _, earlier in fresh[:i]:
+                if earlier != later:
+                    votes[(later, earlier)] += 1
         own = [v for _, v in stores]
         for i, (_, later) in enumerate(stores):          # inlined base: an earlier store to this
             for _, earlier in stores[:i]:

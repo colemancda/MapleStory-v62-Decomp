@@ -53,7 +53,12 @@ def main(pe_path, progress, module, vt_csv, out):
                         break
                 callsites[tgt].append(size)
                 flush()
-                pending = size if size is not None and 4 <= size <= 0x100000 else None
+                # inline construction: this call is the allocator, its size is the push just before it
+                own = None
+                for pm, po in reversed(list(window)[-4:]):
+                    if pm == "push" and re.fullmatch(r"0x[0-9a-f]+", po):
+                        own = int(po, 16); break
+                pending = own if own is not None and 4 <= own <= 0x100000 else None
             window.append((m, o))
             if pending is not None and m == "mov" and (st0 := STORE.match(o)) and st0.group(1) == "eax" \
                     and int(st0.group(2), 16) in vts:

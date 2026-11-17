@@ -55,9 +55,11 @@ addresses and branch targets masked), so a family is written once.
 | `DUP` (same shape as a representative) | 28,707 | 2,227 |
 | **`TODO` (unique, to decompile)** | **9,212** | **3,643** |
 
-The biggest exe family is 20,105 identical 63-byte stubs (allocate a 0x18-byte
-object, set one vtable) laid out back to back across about 1.2 MB: filler, not
-logic. The 4,248 vtable methods found by the code-pointer scan had no size;
+The biggest exe family is 20,105 identical 63-byte functions. They are not filler: they are 250 distinct
+singleton creators (allocate a 24-byte node from the pool, link it into a global list, store the pointer in
+its own global), and the same creator is emitted once per translation unit that uses it, so copies of
+one creator (up to 218) are scattered through the whole code range. See `docs/classes/README.md`.
+The 4,248 vtable methods found by the code-pointer scan had no size;
 `collapse_families.py` estimates one by scanning to the first `ret` past every
 forward branch.
 
@@ -95,7 +97,7 @@ See `docs/PILOT-ZLZ.md` for the pipeline and the kinds of failures. Everything i
 
 First class promoted: `src/cxx/ComError.{h,cpp}` (`_com_error`; destructor instruction-identical to the
 original under MSVC 7.1, constructors same behaviour). Classes are recovered from vtables (`docs/classes/README.md`). `src/cxx/GMSv62_classes.h`
-has 1,318 generated class declarations (202 with an inferred base, 11 with size asserts, 56 with role tags,
+has 1,318 generated class declarations (513 with an inferred base, 220 with size asserts, 56 with role tags,
 one real name, `_com_error`; no signatures yet), plus `src/cxx/GMSv62_exceptions.h` with the exception
 types from the binary's own exception tables and compiles under MSVC in C++ mode. Tools: `tools/find_vtables.py`, `class_hierarchy.py`,
 `gen_classes.py`.
