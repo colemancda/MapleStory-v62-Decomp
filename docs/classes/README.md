@@ -81,6 +81,42 @@ have been applied. Two cautions from checking against the earlier reverse engine
 - `0x59c145` (the worker loop) is a slot of class `8ec6b8`, tagged `file-io network shell-system`:
   consistent with a web-request worker, which is still a guess.
 
+## First promotion: `_com_error`
+
+`src/cxx/ComError.{h,cpp}` is the first class rewritten as real C++ from the raw ports. It is MSVC's own
+`_com_error` (comdef.h; Ghidra tags the destructor "Library: Visual Studio 2003"): vptr, `HRESULT
+m_hresult` (+4), `IErrorInfo *m_perrinfo` (+8), `char *m_pszMsg` (+0xc, `LocalFree`d), 16 bytes, matching the
+exception tables. Verified against the original by compiling with MSVC 7.1 and comparing the listing:
+
+| Function | Original | Result |
+|---|---|---|
+| `0x4038ff` `~_com_error` | `Release` through slot +8, `LocalFree(m_pszMsg)` | **instruction-for-instruction identical** |
+| `0x403880` `_com_error(hr, perrinfo, fAddRef)` | stores, `AddRef` (slot +4) when asked | same behaviour; 7.1 writes `mov [esi+12],0` where MSVC 6 used `and [esi+0xc],0` and orders two stores differently |
+| `0x4038d2` `_com_error(const _com_error&)` | copies hresult and perrinfo, `AddRef` | same behaviour, same kind of difference |
+| `0x4038b2` scalar deleting destructor | `~_com_error`, then free through the pool | **not reproduced**: needs the client's replacement `operator delete` (below) |
+
+The first three are marked `PARITY-cxx-ComError.cpp` in `PROGRESS.csv`. They are behavioural parity, not byte
+matches: the exe was built with MSVC 6, which is not available here. `GMSv62_promoted.csv` lists promoted
+classes; the generator omits their generated declarations and includes the hand-written header.
+
+### The client's allocator (found while checking)
+
+The deleting destructor frees with `mov ecx, 0x97bac0; call 0x402b41`: the client replaces global
+`new`/`delete` with a small-block pool allocator. Measured over all non-excluded functions:
+
+| | |
+|---|---|
+| Calls to `0x4029b9` (allocate, size on the stack, pool in `ecx`) | 41,450 |
+| Calls to `0x402b41` (free) | 1,485 |
+| Allocations of exactly 0x18 (24) bytes | 39,643 (96%) |
+| Other common sizes | 0x578 (402), 0x69c (94), 0x110 (45) |
+| Pools loaded into `ecx` | `0x97bac0` (42,263 uses), `0x97bc68` (3,192) |
+
+So the 20,105 identical 63-byte stubs (`push 0x18; mov ecx, 0x97bac0; call 0x4029b9; … mov [eax], 0x8e84a8`) are
+`new` of one 24-byte, one-slot class, not 20,000 distinct things, and most allocations in the client are
+that same kind of object. Reproducing the byte-identical deleting destructor means defining that
+`operator new`/`operator delete` pair on the pool; not done yet.
+
 ## Limits (read before trusting)
 
 - **Almost no names.** One vtable class (`_com_error`) is named from the binary; the rest are

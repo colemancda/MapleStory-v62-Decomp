@@ -4,6 +4,8 @@
 #ifndef GMSV62_CLASSES_H
 #define GMSV62_CLASSES_H
 
+#include "ComError.h"        // hand-written classes replace their generated declarations
+
 // vtable 0x008e848c: 1 slot, installed by 3 functions
 // size unknown; constructor touches up to +0x4
 class C_008e848c {
@@ -15915,14 +15917,7 @@ public:
     virtual void vf0();    // virtual 0x00868fc0
 };
 
-// vtable 0x008f3e88: 1 slot, installed by 3 functions
-// size 0x10 (from the exception tables), constructor touches up to +0x10
-class _com_error {
-public:
-    virtual void vf0();    // virtual 0x004038b2
-    unsigned char m_raw[12];    // opaque: fields not recovered
-};
-typedef char size_check__com_error[sizeof(_com_error) == 16 ? 1 : -1];
+// vtable 0x008f3e88: _com_error, promoted (see ComError.h)
 
 // vtable 0x008f3e90: 1 slot, installed by 1 function
 // role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name

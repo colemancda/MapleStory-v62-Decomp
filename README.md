@@ -93,7 +93,8 @@ See `docs/PILOT-ZLZ.md` for the pipeline and the kinds of failures. Everything i
 
 ## C++ tier
 
-Started: classes are recovered from vtables (`docs/classes/README.md`). `src/cxx/GMSv62_classes.h`
+First class promoted: `src/cxx/ComError.{h,cpp}` (`_com_error`; destructor instruction-identical to the
+original under MSVC 7.1, constructors same behaviour). Classes are recovered from vtables (`docs/classes/README.md`). `src/cxx/GMSv62_classes.h`
 has 1,318 generated class declarations (202 with an inferred base, 11 with size asserts, 56 with role tags,
 one real name, `_com_error`; no signatures yet), plus `src/cxx/GMSv62_exceptions.h` with the exception
 types from the binary's own exception tables and compiles under MSVC in C++ mode. Tools: `tools/find_vtables.py`, `class_hierarchy.py`,

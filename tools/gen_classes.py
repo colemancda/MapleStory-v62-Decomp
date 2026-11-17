@@ -14,7 +14,7 @@ where vtables are packed, so such edges are flagged, not trusted).
 import csv, sys
 csv.field_size_limit(1 << 30)
 
-def main(vt_csv, hier_csv, out, module, layouts_csv=None, names_csv=None, roles_csv=None):
+def main(vt_csv, hier_csv, out, module, layouts_csv=None, names_csv=None, roles_csv=None, promoted_csv=None):
     vt = {r["vtable"]: r for r in csv.DictReader(open(vt_csv))}
     slots = {v: r["slot_addrs"].split() for v, r in vt.items()}
     ninst = {v: len(r["installers"].split()) for v, r in vt.items()}
@@ -34,6 +34,9 @@ def main(vt_csv, hier_csv, out, module, layouts_csv=None, names_csv=None, roles_
     roles = {}
     if roles_csv:
         roles = {r["vtable"]: r for r in csv.DictReader(open(roles_csv))}
+    promoted = {}
+    if promoted_csv:
+        promoted = {r["vtable"]: r["header"] for r in csv.DictReader(open(promoted_csv))}
     cname = lambda v: names.get(v, "C_" + v)
     base = {}; dropped = []
     for r in csv.DictReader(open(hier_csv)):
@@ -64,7 +67,14 @@ def main(vt_csv, hier_csv, out, module, layouts_csv=None, names_csv=None, roles_
                 " * One class per vtable (C_<vtable VA>); methods are vf<slot>, signatures unknown.\n"
                 " * Bases are inferred from constructor call chains (docs/classes/*_hierarchy.csv). */\n"
                 "#ifndef %s_CLASSES_H\n#define %s_CLASSES_H\n\n" % (module, module.upper(), module.upper()))
+        for h in sorted(set(promoted.values())):
+            f.write('#include "%s"        // hand-written classes replace their generated declarations\n' % h)
+        f.write("\n")
         for v in order:
+            if v in promoted:
+                f.write("// vtable 0x%s: %s, promoted (see %s)\n\n" % (v, cname(v), promoted[v]))
+                if v in size: known[v] = size[v]
+                continue
             s = slots[v]
             b = base.get(v)
             head = "class %s" % cname(v)
@@ -104,4 +114,4 @@ def main(vt_csv, hier_csv, out, module, layouts_csv=None, names_csv=None, roles_
     for d, b, why in dropped: print("  dropped %s -> %s: %s" % (d, b, why))
 
 if __name__ == "__main__":
-    main(*sys.argv[1:8])
+    main(*sys.argv[1:9])
