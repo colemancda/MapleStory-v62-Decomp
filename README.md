@@ -90,3 +90,10 @@ Caveats on the exe row:
 
 See `docs/PILOT-ZLZ.md` for the pipeline and the kinds of failures. Everything is produced by
 `tools/run_module.sh MODULE` (Ghidra and the `ms-check` MSVC container required).
+
+## C++ tier
+
+Started: classes are recovered from vtables (`docs/classes/README.md`). `src/cxx/GMSv62_classes.h`
+has 1,318 generated class declarations (202 with an inferred base, no names, signatures or layouts
+yet) and compiles under MSVC in C++ mode. Tools: `tools/find_vtables.py`, `class_hierarchy.py`,
+`gen_classes.py`.

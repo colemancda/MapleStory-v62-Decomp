@@ -139,6 +139,12 @@ so the client stays runnable throughout.
 - The MSVC 6.0 toolchain is proprietary and must be supplied locally.
 - The repo publishes code derived from a proprietary binary.
 
+## C++ tier status
+
+Phase 3 steps 1-2 done for the exe: 1,318 vtables, 202 inferred base classes, generated declarations that
+compile (`docs/classes/README.md`). Next: names, signatures from promoted raw ports, field layouts
+from constructors, then the DLLs.
+
 ## Pilot result
 
 The exe and all eight DLLs are decompiled to the raw C tier: 9840 of 12494 unique functions compile with no hand edits (78%); see the README table. 1,904 exe callees are declared with unspecified arguments to get there (listed in `src/c/gmsv62/gmsv62_relaxed.txt`) and are not verified. Next: the register-argument audit, then the C++ tier.
