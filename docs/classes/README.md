@@ -48,10 +48,44 @@ padding and base-size consistency, not the fields.
 | Most subclassed | `8e84a0` (175 subclasses, one slot: a common root), `8eac20` (8), `8ea1c8` (4) |
 | Vtable with most installers | `8e84a8`, 20,854: the one-slot class behind the 20,105 identical 63-byte stubs |
 
+## Naming
+
+**What the binary contains.** No `CFoo::Bar` strings, no source file names, no assert text: only 10 RTTI
+type names, all exception types (`tools/name_rtti.py`, `GMSv62_rtti.csv`). MSVC links each thrown type
+to a `ThrowInfo`, whose `CatchableTypeArray` gives its base types, size and copy constructor.
+
+| Type | Size | Bases | Mapped to |
+|---|---|---|---|
+| `ZException` | 4 | none | plain data (an integer code) |
+| `CMSException` | n/a (never thrown directly) | `ZException` | plain data |
+| `CDisconnectException`, `CTerminateException` | 4 | `CMSException`, `ZException` | plain data |
+| `CPatchException` | 1,288 | `CMSException`, `ZException` | plain data |
+| `CSecurityInitFailed`, `...KeyCryptInitFailed`, `...ThreatDetected` | 4 | none | plain data |
+| `_com_error` | 16 | none | vtable `8f3e88` (12 of 12 throw sites) |
+
+Seven of the eight are thrown by value as a 4-byte code (`mov eax, 0x21000001`), with no vtable. They
+are written as real structs with compiler-recorded sizes in `src/cxx/GMSv62_exceptions.h`. Only
+`_com_error` is a polymorphic class, and it is the only vtable class with a name from the binary
+(`GMSv62_names.csv`; its size, 16, also matches the extent its constructor touches, `+0x10`).
+
+**Roles, not names.** `tools/class_roles.py` tags a class with what its methods reach (imports through
+3 levels of calls): `network`, `window`, `file-io`, `registry`, `anti-tamper`, `gdi-text`, ... 56
+classes get a distinctive tag (`GMSv62_roles.csv`, shown as `// role:` comments in the header).
+`com-ole` is reached by 502 classes (string/variant helpers) and is suppressed as uninformative.
+Imports resolved with `GetProcAddress` are invisible to it.
+
+**What this did not do.** The other 1,317 classes remain `C_<address>`. No community or later-version names
+have been applied. Two cautions from checking against the earlier reverse engineering:
+- The socket read/send paths (`0x474f28`, `0x4752f8`) are not vtable methods, so the `network`-tagged
+  class `8e96d0` is not shown to be the client socket class. No name is claimed.
+- `0x59c145` (the worker loop) is a slot of class `8ec6b8`, tagged `file-io network shell-system`:
+  consistent with a web-request worker, which is still a guess.
+
 ## Limits (read before trusting)
 
-- **No names.** Classes are `C_<address>`. Names have to come from strings, assert text, the ten RTTI
-  names, or later-version symbol lists (which must be marked as borrowed).
+- **Almost no names.** One vtable class (`_com_error`) is named from the binary; the rest are
+  `C_<address>`. More names would have to be borrowed from later-version symbol lists and marked
+  as unverified for v62.
 - **No signatures.** Every method is `virtual void vfN();`. Real signatures come from promoting the raw C
   ports (`src/c/gmsv62`) one function at a time.
 - **Almost no layouts.** 83 classes have an allocation-size estimate, 10 have a size assert, none has

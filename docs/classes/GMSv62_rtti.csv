@@ -1,0 +1,11 @@
+name,size,copy_ctor,vtable,throw_sites,bases,evidence
+CDisconnectException,4,,,39,CMSException ZException,thrown by value without a constructor call (no vtable evidence)
+CMSException,,,,0,,no throw site found
+CPatchException,1288,,,2,CMSException ZException,thrown by value without a constructor call (no vtable evidence)
+CSecurityInitFailed,4,,,2,,thrown by value without a constructor call (no vtable evidence)
+CSecurityKeyCryptInitFailed,4,,,2,,thrown by value without a constructor call (no vtable evidence)
+CSecurityThreatDetected,4,,,2,,thrown by value without a constructor call (no vtable evidence)
+CTerminateException,4,,,50,CMSException ZException,thrown by value without a constructor call (no vtable evidence)
+ZException,4,,,70,,thrown by value without a constructor call (no vtable evidence)
+_com_error,16,004038d2,008f3e88,12,,12 of 12 sites build this vtable
+type_info,,,,0,,no throw site found

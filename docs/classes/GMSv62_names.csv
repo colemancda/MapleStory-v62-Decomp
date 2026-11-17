@@ -1,0 +1,2 @@
+vtable,name,source,size,evidence
+008f3e88,_com_error,rtti,16,type name from the exception tables; 12 of 12 sites build this vtable

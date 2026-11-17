@@ -4,7 +4,7 @@
 usage: gen_classes.py VTABLES.csv HIERARCHY.csv OUT_HEADER MODULE [LAYOUTS.csv]
 With LAYOUTS.csv, classes whose allocation size is known (one size at every site, a multiple of 4,
 not below the constructor's extent) get an opaque tail and a compile-time size check.
-One class per vtable, named C_<vtable address>. Virtual methods are named vf<slot> so a derived
+One class per vtable, named C_<vtable address> unless NAMES.csv gives a name. Virtual methods are named vf<slot> so a derived
 class's override of slot N has the same name as the base's. Slots a derived class shares with its
 base are not repeated; changed slots are declared as overrides, extra slots as new virtuals.
 Bases come first. An inferred base is dropped (class becomes a root) if it would create a cycle or
@@ -14,7 +14,7 @@ where vtables are packed, so such edges are flagged, not trusted).
 import csv, sys
 csv.field_size_limit(1 << 30)
 
-def main(vt_csv, hier_csv, out, module, layouts_csv=None):
+def main(vt_csv, hier_csv, out, module, layouts_csv=None, names_csv=None, roles_csv=None):
     vt = {r["vtable"]: r for r in csv.DictReader(open(vt_csv))}
     slots = {v: r["slot_addrs"].split() for v, r in vt.items()}
     ninst = {v: len(r["installers"].split()) for v, r in vt.items()}
@@ -25,6 +25,16 @@ def main(vt_csv, hier_csv, out, module, layouts_csv=None):
             votes = [tuple(map(int, x.split(":"))) for x in r["size_votes"].split()]
             if len(votes) == 1 and votes[0][0] >= int(r["extent"]) and votes[0][0] % 4 == 0:
                 size[r["vtable"]] = votes[0][0]; nsites[r["vtable"]] = votes[0][1]
+    names = {}
+    if names_csv:
+        for r in csv.DictReader(open(names_csv)):
+            names[r["vtable"]] = r["name"]
+            if r.get("size"):                                   # authoritative (exception tables): overrides allocation votes
+                size[r["vtable"]] = int(r["size"]); nsites[r["vtable"]] = 0
+    roles = {}
+    if roles_csv:
+        roles = {r["vtable"]: r for r in csv.DictReader(open(roles_csv))}
+    cname = lambda v: names.get(v, "C_" + v)
     base = {}; dropped = []
     for r in csv.DictReader(open(hier_csv)):
         if r["base"] and r["base"] in vt:
@@ -57,14 +67,17 @@ def main(vt_csv, hier_csv, out, module, layouts_csv=None):
         for v in order:
             s = slots[v]
             b = base.get(v)
-            head = "class C_%s" % v
+            head = "class %s" % cname(v)
             if b:
-                head += " : public C_%s" % b[0]
+                head += " : public %s" % cname(b[0])
             f.write("// vtable 0x%s: %d slot%s, installed by %d function%s%s\n" % (
                 v, len(s), "" if len(s) == 1 else "s", ninst[v], "" if ninst[v] == 1 else "s",
                 (", base 0x%s (%s vote%s)" % (b[0], b[1], "" if b[1] == "1" else "s")) if b else ""))
+            if v in roles:
+                f.write("// role: %s (reaches %s); a role is not a name\n" % (roles[v]["roles"], roles[v]["imports_sample"].replace(" ", ", ")))
             if v in size:
-                f.write("// size 0x%x (%d allocation site%s)%s\n" % (size[v], nsites[v], "" if nsites[v] == 1 else "s",
+                f.write("// size 0x%x (%s)%s\n" % (size[v], "from the exception tables" if nsites[v] == 0 else
+                        "%d allocation site%s" % (nsites[v], "" if nsites[v] == 1 else "s"),
                         ", constructor touches up to +0x%x" % extent[v] if extent.get(v) else ""))
             elif extent.get(v):
                 f.write("// size unknown; constructor touches up to +0x%x\n" % extent[v])
@@ -83,7 +96,7 @@ def main(vt_csv, hier_csv, out, module, layouts_csv=None):
                 known[v] = size[v]
             f.write("};\n")
             if v in known:
-                f.write("typedef char size_check_C_%s[sizeof(C_%s) == %d ? 1 : -1];\n" % (v, v, known[v])); checks += 1
+                f.write("typedef char size_check_%s[sizeof(%s) == %d ? 1 : -1];\n" % (cname(v), cname(v), known[v])); checks += 1
             f.write("\n")
         f.write("#endif\n")
     roots = sum(1 for v in vt if v not in base)
@@ -91,4 +104,4 @@ def main(vt_csv, hier_csv, out, module, layouts_csv=None):
     for d, b, why in dropped: print("  dropped %s -> %s: %s" % (d, b, why))
 
 if __name__ == "__main__":
-    main(*sys.argv[1:6])
+    main(*sys.argv[1:8])

@@ -1,0 +1,57 @@
+vtable,roles,imports_sample
+008e89a0,gdi-text,gdi32.SelectObject
+008e9168,anti-tamper,kernel32.GetModuleFileNameA
+008e9378,anti-tamper,kernel32.GetModuleFileNameA
+008e957c,shell-system,kernel32.GetVersion
+008e96d0,network,ws2_32.closesocket ws2_32.ntohl ws2_32.ntohs
+008e96d8,network,ws2_32.closesocket
+008e96dc,file-io,kernel32.SetFilePointer
+008e9764,network,ws2_32.ntohl ws2_32.ntohs
+008ea100,anti-tamper file-io,kernel32.GetModuleFileNameA kernel32.WriteFile
+008ea700,shell-system,kernel32.GetVersion
+008ea784,shell-system,kernel32.GetVersion
+008ea800,shell-system,kernel32.GetVersion
+008ea878,shell-system,kernel32.GetVersion
+008ea8f4,shell-system,kernel32.GetVersion
+008ea974,shell-system,kernel32.GetVersion
+008ea9ec,shell-system,kernel32.GetVersion
+008eaa64,shell-system,kernel32.GetVersion
+008eaadc,shell-system,kernel32.GetVersion
+008eab54,shell-system,kernel32.GetVersion
+008eabcc,shell-system,kernel32.GetVersion
+008ead10,shell-system,kernel32.GetVersion
+008ead1c,shell-system,kernel32.GetVersion
+008ead28,shell-system,kernel32.GetVersion
+008ead98,shell-system,kernel32.GetVersion
+008eae38,shell-system,kernel32.GetVersion
+008eaeb8,shell-system,kernel32.GetVersion
+008eb134,shell-system,kernel32.GetVersion
+008ebbe4,anti-tamper file-io,kernel32.GetModuleFileNameA kernel32.WriteFile
+008ebc10,network shell-system,kernel32.GetVersion ws2_32.closesocket ws2_32.ntohl ws2_32.ntohs
+008ebc64,anti-tamper network registry shell-system,advapi32.RegCloseKey advapi32.RegOpenKeyExA advapi32.RegQueryValueExA advapi32.RegSetValueExA kernel32.CreateToolhelp32Snapshot kernel32.GetModuleFileNameA
+008ebc74,anti-tamper,kernel32.GetModuleFileNameA
+008ebc80,network,ws2_32.WSAGetLastError ws2_32.closesocket ws2_32.getpeername
+008ebd20,anti-tamper shell-system,kernel32.GetVolumeInformationA kernel32.GetWindowsDirectoryA netapi32.Netbios
+008ebe38,anti-tamper network shell-system,kernel32.GetVolumeInformationA kernel32.GetWindowsDirectoryA netapi32.Netbios ws2_32.WSAGetLastError ws2_32.closesocket ws2_32.getpeername
+008ebf50,anti-tamper shell-system,kernel32.GetVolumeInformationA kernel32.GetWindowsDirectoryA netapi32.Netbios
+008ebfa0,anti-tamper shell-system,kernel32.GetVolumeInformationA kernel32.GetWindowsDirectoryA netapi32.Netbios
+008ec074,network,ws2_32.WSAGetLastError ws2_32.closesocket ws2_32.getpeername
+008ec400,anti-tamper registry shell-system,advapi32.RegCloseKey advapi32.RegOpenKeyExA advapi32.RegQueryValueExA advapi32.RegSetValueExA kernel32.CreateToolhelp32Snapshot kernel32.GetVolumeInformationA
+008ec634,shell-system,kernel32.GetVersion
+008ec688,anti-tamper,kernel32.GetModuleFileNameA
+008ec6ac,shell-system,shell32.SHGetSpecialFolderPathA
+008ec6b8,file-io network shell-system,kernel32.DeleteFileA kernel32.FindFirstFileA kernel32.FindNextFileA shell32.SHGetSpecialFolderPathA wininet.FtpGetFileA wininet.FtpGetFileSize
+008ed540,anti-tamper file-io,kernel32.GetModuleFileNameA kernel32.WriteFile
+008f02c4,anti-tamper file-io,kernel32.GetModuleFileNameA kernel32.WriteFile
+008f0778,anti-tamper file-io,kernel32.GetModuleFileNameA kernel32.WriteFile
+008f1558,gdi-text window,gdi32.SelectObject user32.MoveWindow
+008f16c0,gdi-text window,gdi32.CreateCompatibleDC gdi32.CreateDIBSection gdi32.SelectObject user32.SendMessageA
+008f1840,anti-tamper file-io,kernel32.GetModuleFileNameA kernel32.WriteFile
+008f20e8,anti-tamper file-io,kernel32.GetModuleFileNameA kernel32.WriteFile
+008f2908,gdi-text window,gdi32.SelectObject user32.MoveWindow
+008f29e8,anti-tamper file-io gdi-text window,gdi32.CreateCompatibleDC gdi32.CreateDIBSection gdi32.SelectObject kernel32.GetModuleFileNameA kernel32.WriteFile user32.SendMessageA
+008f2a78,gdi-text,gdi32.SelectObject
+008f2ae8,gdi-text,gdi32.SelectObject
+008f2ee8,file-io network,kernel32.DeleteFileA kernel32.FindFirstFileA kernel32.FindNextFileA kernel32.GetTempPathA ws2_32.closesocket
+008f36f0,anti-tamper crypto file-io network registry shell-system threads-sync,advapi32.CryptAcquireContextA advapi32.CryptReleaseContext advapi32.RegCloseKey advapi32.RegCreateKeyExA advapi32.RegDeleteValueA advapi32.RegOpenKeyExA
+008f3e90,anti-tamper file-io,kernel32.GetModuleFileNameA kernel32.WriteFile

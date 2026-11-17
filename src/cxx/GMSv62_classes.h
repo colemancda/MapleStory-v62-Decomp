@@ -1770,6 +1770,7 @@ public:
 };
 
 // vtable 0x008e89a0: 2 slots, installed by 5 functions
+// role: gdi-text (reaches gdi32.SelectObject); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008e89a0 {
 public:
@@ -2465,6 +2466,7 @@ public:
 };
 
 // vtable 0x008e9168: 13 slots, installed by 1 function
+// role: anti-tamper (reaches kernel32.GetModuleFileNameA); a role is not a name
 class C_008e9168 {
 public:
     virtual void vf0();    // virtual 0x008162ff
@@ -2638,6 +2640,7 @@ public:
 };
 
 // vtable 0x008e9378: 13 slots, installed by 1 function
+// role: anti-tamper (reaches kernel32.GetModuleFileNameA); a role is not a name
 class C_008e9378 {
 public:
     virtual void vf0();    // virtual 0x00490bc5
@@ -2808,6 +2811,7 @@ public:
 };
 
 // vtable 0x008e957c: 15 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008e957c {
 public:
     virtual void vf0();    // virtual 0x0045bf3b
@@ -2999,6 +3003,7 @@ public:
 };
 
 // vtable 0x008e96d0: 1 slot, installed by 2 functions
+// role: network (reaches ws2_32.closesocket, ws2_32.ntohl, ws2_32.ntohs); a role is not a name
 class C_008e96d0 {
 public:
     virtual void vf0();    // virtual 0x0047393e
@@ -3012,6 +3017,7 @@ public:
 };
 
 // vtable 0x008e96d8: 1 slot, installed by 4 functions
+// role: network (reaches ws2_32.closesocket); a role is not a name
 // size unknown; constructor touches up to +0x14
 class C_008e96d8 {
 public:
@@ -3019,6 +3025,7 @@ public:
 };
 
 // vtable 0x008e96dc: 17 slots, installed by 1 function
+// role: file-io (reaches kernel32.SetFilePointer); a role is not a name
 class C_008e96dc {
 public:
     virtual void vf0();    // virtual 0x004744b2
@@ -3097,6 +3104,7 @@ public:
 };
 
 // vtable 0x008e9764: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// role: network (reaches ws2_32.ntohl, ws2_32.ntohs); a role is not a name
 // size unknown; constructor touches up to +0x10
 class C_008e9764 : public C_008e84a0 {
 public:
@@ -4097,6 +4105,7 @@ public:
 };
 
 // vtable 0x008ea100: 18 slots, installed by 1 function
+// role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name
 class C_008ea100 {
 public:
     virtual void vf0();    // virtual 0x004baab3
@@ -4805,6 +4814,7 @@ public:
 };
 
 // vtable 0x008ea700: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ea700 {
 public:
     virtual void vf0();    // virtual 0x004e514c
@@ -4856,6 +4866,7 @@ public:
 typedef char size_check_C_008ea778[sizeof(C_008ea778) == 56 ? 1 : -1];
 
 // vtable 0x008ea784: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ea784 {
 public:
     virtual void vf0();    // virtual 0x004e5382
@@ -4903,6 +4914,7 @@ public:
 };
 
 // vtable 0x008ea800: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ea800 {
 public:
     virtual void vf0();    // virtual 0x004e5506
@@ -4943,6 +4955,7 @@ public:
 };
 
 // vtable 0x008ea878: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ea878 {
 public:
     virtual void vf0();    // virtual 0x004e55e9
@@ -5001,6 +5014,7 @@ public:
 };
 
 // vtable 0x008ea8f4: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ea8f4 {
 public:
     virtual void vf0();    // virtual 0x004e56ef
@@ -5055,6 +5069,7 @@ public:
 };
 
 // vtable 0x008ea974: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ea974 {
 public:
     virtual void vf0();    // virtual 0x004e58de
@@ -5089,6 +5104,7 @@ public:
 };
 
 // vtable 0x008ea9ec: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ea9ec {
 public:
     virtual void vf0();    // virtual 0x004e59f9
@@ -5124,6 +5140,7 @@ public:
 };
 
 // vtable 0x008eaa64: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008eaa64 {
 public:
     virtual void vf0();    // virtual 0x004e5a48
@@ -5158,6 +5175,7 @@ public:
 };
 
 // vtable 0x008eaadc: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008eaadc {
 public:
     virtual void vf0();    // virtual 0x004e5ab1
@@ -5192,6 +5210,7 @@ public:
 };
 
 // vtable 0x008eab54: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008eab54 {
 public:
@@ -5226,6 +5245,7 @@ public:
 };
 
 // vtable 0x008eabcc: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008eabcc {
 public:
     virtual void vf0();    // virtual 0x004e5d72
@@ -5395,6 +5415,7 @@ public:
 };
 
 // vtable 0x008ead10: 2 slots, installed by 11 functions
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ead10 {
 public:
     virtual void vf0();    // virtual 0x004f567e
@@ -5409,6 +5430,7 @@ public:
 };
 
 // vtable 0x008ead1c: 2 slots, installed by 2 functions
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008ead1c {
 public:
@@ -5424,6 +5446,7 @@ public:
 };
 
 // vtable 0x008ead28: 2 slots, installed by 2 functions
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008ead28 {
 public:
@@ -5459,6 +5482,7 @@ public:
 };
 
 // vtable 0x008ead98: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008ead98 {
 public:
@@ -5506,6 +5530,7 @@ public:
 };
 
 // vtable 0x008eae38: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008eae38 {
 public:
@@ -5540,6 +5565,7 @@ public:
 };
 
 // vtable 0x008eaeb8: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008eaeb8 {
 public:
     virtual void vf0();    // virtual 0x005148e4
@@ -5799,6 +5825,7 @@ public:
 };
 
 // vtable 0x008eb134: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008eb134 {
 public:
@@ -6851,6 +6878,7 @@ public:
 };
 
 // vtable 0x008ebbe4: 9 slots, installed by 1 function
+// role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name
 class C_008ebbe4 {
 public:
     virtual void vf0();    // virtual 0x0087baec
@@ -6865,6 +6893,7 @@ public:
 };
 
 // vtable 0x008ebc10: 21 slots, installed by 1 function
+// role: network shell-system (reaches kernel32.GetVersion, ws2_32.closesocket, ws2_32.ntohl, ws2_32.ntohs); a role is not a name
 class C_008ebc10 {
 public:
     virtual void vf0();    // virtual 0x00563899
@@ -6891,6 +6920,7 @@ public:
 };
 
 // vtable 0x008ebc64: 4 slots, installed by 1 function
+// role: anti-tamper network registry shell-system (reaches advapi32.RegCloseKey, advapi32.RegOpenKeyExA, advapi32.RegQueryValueExA, advapi32.RegSetValueExA, kernel32.CreateToolhelp32Snapshot, kernel32.GetModuleFileNameA); a role is not a name
 class C_008ebc64 {
 public:
     virtual void vf0();    // virtual 0x00564511
@@ -6900,6 +6930,7 @@ public:
 };
 
 // vtable 0x008ebc74: 1 slot, installed by 4 functions
+// role: anti-tamper (reaches kernel32.GetModuleFileNameA); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008ebc74 {
 public:
@@ -6907,6 +6938,7 @@ public:
 };
 
 // vtable 0x008ebc80: 35 slots, installed by 1 function
+// role: network (reaches ws2_32.WSAGetLastError, ws2_32.closesocket, ws2_32.getpeername); a role is not a name
 class C_008ebc80 {
 public:
     virtual void vf0();    // virtual 0x0056636b
@@ -6960,6 +6992,7 @@ public:
 };
 
 // vtable 0x008ebd20: 33 slots, installed by 1 function
+// role: anti-tamper shell-system (reaches kernel32.GetVolumeInformationA, kernel32.GetWindowsDirectoryA, netapi32.Netbios); a role is not a name
 class C_008ebd20 {
 public:
     virtual void vf0();    // virtual 0x0056d4b1
@@ -7045,6 +7078,7 @@ public:
 };
 
 // vtable 0x008ebe38: 20 slots, installed by 1 function
+// role: anti-tamper network shell-system (reaches kernel32.GetVolumeInformationA, kernel32.GetWindowsDirectoryA, netapi32.Netbios, ws2_32.WSAGetLastError, ws2_32.closesocket, ws2_32.getpeername); a role is not a name
 class C_008ebe38 {
 public:
     virtual void vf0();    // virtual 0x005701d1
@@ -7135,6 +7169,7 @@ public:
 };
 
 // vtable 0x008ebf50: 20 slots, installed by 1 function
+// role: anti-tamper shell-system (reaches kernel32.GetVolumeInformationA, kernel32.GetWindowsDirectoryA, netapi32.Netbios); a role is not a name
 class C_008ebf50 {
 public:
     virtual void vf0();    // virtual 0x00574a6b
@@ -7160,6 +7195,7 @@ public:
 };
 
 // vtable 0x008ebfa0: 13 slots, installed by 2 functions
+// role: anti-tamper shell-system (reaches kernel32.GetVolumeInformationA, kernel32.GetWindowsDirectoryA, netapi32.Netbios); a role is not a name
 class C_008ebfa0 {
 public:
     virtual void vf0();    // virtual 0x00575368
@@ -7225,6 +7261,7 @@ public:
 };
 
 // vtable 0x008ec074: 34 slots, installed by 1 function
+// role: network (reaches ws2_32.WSAGetLastError, ws2_32.closesocket, ws2_32.getpeername); a role is not a name
 class C_008ec074 {
 public:
     virtual void vf0();    // virtual 0x00579898
@@ -7477,6 +7514,7 @@ public:
 };
 
 // vtable 0x008ec400: 34 slots, installed by 1 function
+// role: anti-tamper registry shell-system (reaches advapi32.RegCloseKey, advapi32.RegOpenKeyExA, advapi32.RegQueryValueExA, advapi32.RegSetValueExA, kernel32.CreateToolhelp32Snapshot, kernel32.GetVolumeInformationA); a role is not a name
 class C_008ec400 {
 public:
     virtual void vf0();    // virtual 0x0058a047
@@ -7651,6 +7689,7 @@ public:
 };
 
 // vtable 0x008ec634: 21 slots, installed by 1 function
+// role: shell-system (reaches kernel32.GetVersion); a role is not a name
 class C_008ec634 {
 public:
     virtual void vf0();    // virtual 0x005968fc
@@ -7677,6 +7716,7 @@ public:
 };
 
 // vtable 0x008ec688: 3 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// role: anti-tamper (reaches kernel32.GetModuleFileNameA); a role is not a name
 // size unknown; constructor touches up to +0x38
 class C_008ec688 : public C_008e84a0 {
 public:
@@ -7700,6 +7740,7 @@ public:
 };
 
 // vtable 0x008ec6ac: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// role: shell-system (reaches shell32.SHGetSpecialFolderPathA); a role is not a name
 // size unknown; constructor touches up to +0x10
 class C_008ec6ac : public C_008e84a0 {
 public:
@@ -7715,6 +7756,7 @@ public:
 };
 
 // vtable 0x008ec6b8: 7 slots, installed by 1 function
+// role: file-io network shell-system (reaches kernel32.DeleteFileA, kernel32.FindFirstFileA, kernel32.FindNextFileA, shell32.SHGetSpecialFolderPathA, wininet.FtpGetFileA, wininet.FtpGetFileSize); a role is not a name
 class C_008ec6b8 {
 public:
     virtual void vf0();    // virtual 0x0059b70c
@@ -8906,6 +8948,7 @@ public:
 };
 
 // vtable 0x008ed540: 7 slots, installed by 8 functions
+// role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name
 // size unknown; constructor touches up to +0x14
 class C_008ed540 {
 public:
@@ -11320,6 +11363,7 @@ public:
 };
 
 // vtable 0x008f02c4: 10 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name
 // size 0x48 (2 allocation sites), constructor touches up to +0x48
 class C_008f02c4 : public C_008e84a0 {
 public:
@@ -11760,6 +11804,7 @@ public:
 };
 
 // vtable 0x008f0778: 4 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name
 // size 0x18 (2 allocation sites), constructor touches up to +0x4
 class C_008f0778 : public C_008e84a0 {
 public:
@@ -12968,6 +13013,7 @@ public:
 typedef char size_check_C_008f1554[sizeof(C_008f1554) == 24 ? 1 : -1];
 
 // vtable 0x008f1558: 90 slots, installed by 1 function
+// role: gdi-text window (reaches gdi32.SelectObject, user32.MoveWindow); a role is not a name
 class C_008f1558 {
 public:
     virtual void vf0();    // virtual 0x0077fb94
@@ -13063,6 +13109,7 @@ public:
 };
 
 // vtable 0x008f16c0: 36 slots, installed by 1 function
+// role: gdi-text window (reaches gdi32.CreateCompatibleDC, gdi32.CreateDIBSection, gdi32.SelectObject, user32.SendMessageA); a role is not a name
 class C_008f16c0 {
 public:
     virtual void vf0();    // virtual 0x00780bb9
@@ -13174,6 +13221,7 @@ public:
 };
 
 // vtable 0x008f1840: 15 slots, installed by 1 function
+// role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name
 class C_008f1840 {
 public:
     virtual void vf0();    // virtual 0x0078ded5
@@ -14028,6 +14076,7 @@ public:
 };
 
 // vtable 0x008f20e8: 59 slots, installed by 2 functions
+// role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name
 class C_008f20e8 {
 public:
     virtual void vf0();    // virtual 0x007f1054
@@ -14247,6 +14296,7 @@ public:
 };
 
 // vtable 0x008f2908: 56 slots, installed by 1 function
+// role: gdi-text window (reaches gdi32.SelectObject, user32.MoveWindow); a role is not a name
 class C_008f2908 {
 public:
     virtual void vf0();    // virtual 0x0080dd86
@@ -14308,6 +14358,7 @@ public:
 };
 
 // vtable 0x008f29e8: 36 slots, installed by 1 function
+// role: anti-tamper file-io gdi-text window (reaches gdi32.CreateCompatibleDC, gdi32.CreateDIBSection, gdi32.SelectObject, kernel32.GetModuleFileNameA, kernel32.WriteFile, user32.SendMessageA); a role is not a name
 class C_008f29e8 {
 public:
     virtual void vf0();    // virtual 0x0080b87d
@@ -14349,6 +14400,7 @@ public:
 };
 
 // vtable 0x008f2a78: 2 slots, installed by 3 functions
+// role: gdi-text (reaches gdi32.SelectObject); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008f2a78 {
 public:
@@ -14396,6 +14448,7 @@ public:
 };
 
 // vtable 0x008f2ae8: 15 slots, installed by 3 functions
+// role: gdi-text (reaches gdi32.SelectObject); a role is not a name
 class C_008f2ae8 {
 public:
     virtual void vf0();    // virtual 0x0080e8e2
@@ -14732,6 +14785,7 @@ public:
 };
 
 // vtable 0x008f2ee8: 1 slot, installed by 2 functions
+// role: file-io network (reaches kernel32.DeleteFileA, kernel32.FindFirstFileA, kernel32.FindNextFileA, kernel32.GetTempPathA, ws2_32.closesocket); a role is not a name
 class C_008f2ee8 {
 public:
     virtual void vf0();    // virtual 0x00826009
@@ -15848,6 +15902,7 @@ public:
 };
 
 // vtable 0x008f36f0: 1 slot, installed by 2 functions
+// role: anti-tamper crypto file-io network registry shell-system threads-sync (reaches advapi32.CryptAcquireContextA, advapi32.CryptReleaseContext, advapi32.RegCloseKey, advapi32.RegCreateKeyExA, advapi32.RegDeleteValueA, advapi32.RegOpenKeyExA); a role is not a name
 class C_008f36f0 {
 public:
     virtual void vf0();    // virtual 0x00866a1a
@@ -15861,13 +15916,16 @@ public:
 };
 
 // vtable 0x008f3e88: 1 slot, installed by 3 functions
-// size unknown; constructor touches up to +0x10
-class C_008f3e88 {
+// size 0x10 (from the exception tables), constructor touches up to +0x10
+class _com_error {
 public:
     virtual void vf0();    // virtual 0x004038b2
+    unsigned char m_raw[12];    // opaque: fields not recovered
 };
+typedef char size_check__com_error[sizeof(_com_error) == 16 ? 1 : -1];
 
 // vtable 0x008f3e90: 1 slot, installed by 1 function
+// role: anti-tamper file-io (reaches kernel32.GetModuleFileNameA, kernel32.WriteFile); a role is not a name
 // size unknown; constructor touches up to +0x4
 class C_008f3e90 {
 public:
