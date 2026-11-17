@@ -94,6 +94,6 @@ See `docs/PILOT-ZLZ.md` for the pipeline and the kinds of failures. Everything i
 ## C++ tier
 
 Started: classes are recovered from vtables (`docs/classes/README.md`). `src/cxx/GMSv62_classes.h`
-has 1,318 generated class declarations (202 with an inferred base, no names, signatures or layouts
-yet) and compiles under MSVC in C++ mode. Tools: `tools/find_vtables.py`, `class_hierarchy.py`,
+has 1,318 generated class declarations (202 with an inferred base, 10 with size asserts, no names or
+signatures yet) and compiles under MSVC in C++ mode. Tools: `tools/find_vtables.py`, `class_hierarchy.py`,
 `gen_classes.py`.

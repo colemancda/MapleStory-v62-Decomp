@@ -5,12 +5,14 @@
 #define GMSV62_CLASSES_H
 
 // vtable 0x008e848c: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e848c {
 public:
     virtual void vf0();    // virtual 0x00402767
 };
 
 // vtable 0x008e8490: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8490 {
 public:
     virtual void vf0();    // virtual 0x0040278d
@@ -23,6 +25,7 @@ public:
 };
 
 // vtable 0x008e8498: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8498 {
 public:
     virtual void vf0();    // virtual 0x004037a8
@@ -35,12 +38,14 @@ public:
 };
 
 // vtable 0x008e84a0: 1 slot, installed by 526 functions, base 0x008e8580 (1 vote)
+// size unknown; constructor touches up to +0x84
 class C_008e84a0 : public C_008e8580 {
 public:
     virtual void vf0();    // override 0x00403a51
 };
 
 // vtable 0x008e849c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x24 (1 allocation site), constructor touches up to +0x24
 class C_008e849c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004039ea
@@ -53,6 +58,7 @@ public:
 };
 
 // vtable 0x008e84a8: 1 slot, installed by 20854 functions
+// size unknown; constructor touches up to +0x4
 class C_008e84a8 {
 public:
     virtual void vf0();    // virtual 0x00403ba9
@@ -221,6 +227,7 @@ public:
 };
 
 // vtable 0x008e8518: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x34 (1 allocation site), constructor touches up to +0x34
 class C_008e8518 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00404301
@@ -228,12 +235,14 @@ public:
 };
 
 // vtable 0x008e8520: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x24
 class C_008e8520 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00404321
 };
 
 // vtable 0x008e8524: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8524 {
 public:
     virtual void vf0();    // virtual 0x004042df
@@ -325,12 +334,14 @@ public:
 };
 
 // vtable 0x008e8564: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8564 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004057a5
 };
 
 // vtable 0x008e8568: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8568 {
 public:
     virtual void vf0();    // virtual 0x004056db
@@ -338,12 +349,14 @@ public:
 };
 
 // vtable 0x008e8570: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8570 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004057c6
 };
 
 // vtable 0x008e8574: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8574 {
 public:
     virtual void vf0();    // virtual 0x0040572f
@@ -351,6 +364,7 @@ public:
 };
 
 // vtable 0x008e857c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e857c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004057e7
@@ -363,12 +377,14 @@ public:
 };
 
 // vtable 0x008e8594: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8594 {
 public:
     virtual void vf0();    // virtual 0x0041230f
 };
 
 // vtable 0x008e8598: 2 slots, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8598 {
 public:
     virtual void vf0();    // virtual 0x004122e9
@@ -376,342 +392,401 @@ public:
 };
 
 // vtable 0x008e85a0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85a0 {
 public:
     virtual void vf0();    // virtual 0x0041229d
 };
 
 // vtable 0x008e85a4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85a4 {
 public:
     virtual void vf0();    // virtual 0x00412277
 };
 
 // vtable 0x008e85a8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85a8 {
 public:
     virtual void vf0();    // virtual 0x00412251
 };
 
 // vtable 0x008e85ac: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85ac {
 public:
     virtual void vf0();    // virtual 0x0041222b
 };
 
 // vtable 0x008e85b0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85b0 {
 public:
     virtual void vf0();    // virtual 0x00412205
 };
 
 // vtable 0x008e85b4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85b4 {
 public:
     virtual void vf0();    // virtual 0x004121df
 };
 
 // vtable 0x008e85b8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85b8 {
 public:
     virtual void vf0();    // virtual 0x004121b9
 };
 
 // vtable 0x008e85bc: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85bc {
 public:
     virtual void vf0();    // virtual 0x00412193
 };
 
 // vtable 0x008e85c0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85c0 {
 public:
     virtual void vf0();    // virtual 0x0041216d
 };
 
 // vtable 0x008e85c4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85c4 {
 public:
     virtual void vf0();    // virtual 0x00412147
 };
 
 // vtable 0x008e85c8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85c8 {
 public:
     virtual void vf0();    // virtual 0x00412121
 };
 
 // vtable 0x008e85cc: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85cc {
 public:
     virtual void vf0();    // virtual 0x004120fb
 };
 
 // vtable 0x008e85d0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85d0 {
 public:
     virtual void vf0();    // virtual 0x004120d5
 };
 
 // vtable 0x008e85d4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85d4 {
 public:
     virtual void vf0();    // virtual 0x004120af
 };
 
 // vtable 0x008e85d8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85d8 {
 public:
     virtual void vf0();    // virtual 0x00412089
 };
 
 // vtable 0x008e85dc: 1 slot, installed by 4 functions
+// size 0x64 (1 allocation site), constructor touches up to +0x4
 class C_008e85dc {
 public:
     virtual void vf0();    // virtual 0x00412063
+    unsigned char m_raw[96];    // opaque: fields not recovered
 };
+typedef char size_check_C_008e85dc[sizeof(C_008e85dc) == 100 ? 1 : -1];
 
 // vtable 0x008e85e0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85e0 {
 public:
     virtual void vf0();    // virtual 0x0041203d
 };
 
 // vtable 0x008e85e4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85e4 {
 public:
     virtual void vf0();    // virtual 0x00412017
 };
 
 // vtable 0x008e85e8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85e8 {
 public:
     virtual void vf0();    // virtual 0x00411ff1
 };
 
 // vtable 0x008e85ec: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85ec {
 public:
     virtual void vf0();    // virtual 0x00411fcb
 };
 
 // vtable 0x008e85f0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85f0 {
 public:
     virtual void vf0();    // virtual 0x00411fa5
 };
 
 // vtable 0x008e85f4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85f4 {
 public:
     virtual void vf0();    // virtual 0x00411f7f
 };
 
 // vtable 0x008e85f8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85f8 {
 public:
     virtual void vf0();    // virtual 0x00411db7
 };
 
 // vtable 0x008e85fc: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e85fc {
 public:
     virtual void vf0();    // virtual 0x00411f59
 };
 
 // vtable 0x008e8600: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8600 {
 public:
     virtual void vf0();    // virtual 0x00411f33
 };
 
 // vtable 0x008e8604: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8604 {
 public:
     virtual void vf0();    // virtual 0x00411f0d
 };
 
 // vtable 0x008e8608: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8608 {
 public:
     virtual void vf0();    // virtual 0x00411ee7
 };
 
 // vtable 0x008e860c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x30 (1 allocation site), constructor touches up to +0x20
 class C_008e860c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040815e
 };
 
 // vtable 0x008e8610: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8610 {
 public:
     virtual void vf0();    // virtual 0x00411ddd
 };
 
 // vtable 0x008e8614: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x3c (2 allocation sites), constructor touches up to +0x3c
 class C_008e8614 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00408431
 };
 
 // vtable 0x008e8618: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x18 (2 allocation sites), constructor touches up to +0x10
 class C_008e8618 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004097ed
 };
 
 // vtable 0x008e861c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x24 (1 allocation site), constructor touches up to +0x18
 class C_008e861c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00409ffd
 };
 
 // vtable 0x008e8620: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x2c (1 allocation site), constructor touches up to +0x10
 class C_008e8620 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040a01d
 };
 
 // vtable 0x008e8624: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x18 (2 allocation sites), constructor touches up to +0x10
 class C_008e8624 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040a618
 };
 
 // vtable 0x008e8628: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x34 (1 allocation site), constructor touches up to +0x28
 class C_008e8628 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040b280
 };
 
 // vtable 0x008e862c: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e862c {
 public:
     virtual void vf0();    // virtual 0x00411e03
 };
 
 // vtable 0x008e8630: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x58 (3 allocation sites), constructor touches up to +0x44
 class C_008e8630 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040b2a0
 };
 
 // vtable 0x008e8634: 1 slot, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x18 (1 allocation site), constructor touches up to +0x10
 class C_008e8634 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040b8b0
 };
 
 // vtable 0x008e8638: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x34 (1 allocation site), constructor touches up to +0x28
 class C_008e8638 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040bf25
 };
 
 // vtable 0x008e863c: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e863c {
 public:
     virtual void vf0();    // virtual 0x00411e29
 };
 
 // vtable 0x008e8640: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x14 (1 allocation site), constructor touches up to +0x10
 class C_008e8640 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040bf45
 };
 
 // vtable 0x008e8644: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x38 (1 allocation site), constructor touches up to +0x2c
 class C_008e8644 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040cfcb
 };
 
 // vtable 0x008e8648: 1 slot, installed by 6 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8648 {
 public:
     virtual void vf0();    // virtual 0x00411e4f
 };
 
 // vtable 0x008e864c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x44 (4 allocation sites), constructor touches up to +0x10
 class C_008e864c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040cfeb
 };
 
 // vtable 0x008e8650: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x18 (2 allocation sites), constructor touches up to +0x10
 class C_008e8650 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040d317
 };
 
 // vtable 0x008e8654: 1 slot, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x38 (1 allocation site), constructor touches up to +0x2c
 class C_008e8654 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040d8bd
 };
 
 // vtable 0x008e8658: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8658 {
 public:
     virtual void vf0();    // virtual 0x00411e75
 };
 
 // vtable 0x008e865c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x44 (3 allocation sites), constructor touches up to +0x10
 class C_008e865c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040d8dd
 };
 
 // vtable 0x008e8660: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x18 (1 allocation site), constructor touches up to +0x10
 class C_008e8660 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040dc10
 };
 
 // vtable 0x008e8664: 1 slot, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x3c (1 allocation site), constructor touches up to +0x30
 class C_008e8664 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040e46b
 };
 
 // vtable 0x008e8668: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8668 {
 public:
     virtual void vf0();    // virtual 0x00411e9b
 };
 
 // vtable 0x008e866c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x4c (2 allocation sites), constructor touches up to +0x10
 class C_008e866c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040e4b2
 };
 
 // vtable 0x008e8670: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x38 (1 allocation site), constructor touches up to +0x2c
 class C_008e8670 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040ef4e
 };
 
 // vtable 0x008e8674: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8674 {
 public:
     virtual void vf0();    // virtual 0x00411ec1
 };
 
 // vtable 0x008e8678: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x18 (1 allocation site), constructor touches up to +0x10
 class C_008e8678 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040ef6e
 };
 
 // vtable 0x008e867c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x2c (1 allocation site), constructor touches up to +0x14
 class C_008e867c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040f9ea
 };
 
 // vtable 0x008e8680: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x38 (1 allocation site), constructor touches up to +0x14
 class C_008e8680 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0040fb89
@@ -724,6 +799,7 @@ public:
 };
 
 // vtable 0x008e8688: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8688 {
 public:
     virtual void vf0();    // virtual 0x00413dd5
@@ -736,6 +812,7 @@ public:
 };
 
 // vtable 0x008e8690: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8690 {
 public:
     virtual void vf0();    // virtual 0x004140a0
@@ -748,6 +825,7 @@ public:
 };
 
 // vtable 0x008e8698: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8698 {
 public:
     virtual void vf0();    // virtual 0x004142cb
@@ -760,6 +838,7 @@ public:
 };
 
 // vtable 0x008e86a0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86a0 {
 public:
     virtual void vf0();    // virtual 0x004144f6
@@ -772,6 +851,7 @@ public:
 };
 
 // vtable 0x008e86a8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86a8 {
 public:
     virtual void vf0();    // virtual 0x00414833
@@ -784,6 +864,7 @@ public:
 };
 
 // vtable 0x008e86b0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86b0 {
 public:
     virtual void vf0();    // virtual 0x00414bde
@@ -796,6 +877,7 @@ public:
 };
 
 // vtable 0x008e86b8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86b8 {
 public:
     virtual void vf0();    // virtual 0x00414f59
@@ -808,6 +890,7 @@ public:
 };
 
 // vtable 0x008e86c0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86c0 {
 public:
     virtual void vf0();    // virtual 0x00415409
@@ -820,6 +903,7 @@ public:
 };
 
 // vtable 0x008e86c8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86c8 {
 public:
     virtual void vf0();    // virtual 0x004157b4
@@ -832,6 +916,7 @@ public:
 };
 
 // vtable 0x008e86d0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86d0 {
 public:
     virtual void vf0();    // virtual 0x00415b5f
@@ -844,6 +929,7 @@ public:
 };
 
 // vtable 0x008e86d8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86d8 {
 public:
     virtual void vf0();    // virtual 0x00415f0a
@@ -856,6 +942,7 @@ public:
 };
 
 // vtable 0x008e86e0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86e0 {
 public:
     virtual void vf0();    // virtual 0x004162b5
@@ -868,6 +955,7 @@ public:
 };
 
 // vtable 0x008e86e8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86e8 {
 public:
     virtual void vf0();    // virtual 0x00416660
@@ -880,6 +968,7 @@ public:
 };
 
 // vtable 0x008e86f0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86f0 {
 public:
     virtual void vf0();    // virtual 0x00416a3d
@@ -892,6 +981,7 @@ public:
 };
 
 // vtable 0x008e86f8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e86f8 {
 public:
     virtual void vf0();    // virtual 0x00416e03
@@ -1066,24 +1156,28 @@ public:
 };
 
 // vtable 0x008e876c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x14 (1 allocation site), constructor touches up to +0x14
 class C_008e876c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041846b
 };
 
 // vtable 0x008e8770: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x50
 class C_008e8770 {
 public:
     virtual void vf0();    // virtual 0x0041ab26
 };
 
 // vtable 0x008e8774: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8774 {
 public:
     virtual void vf0();    // virtual 0x0041abed
 };
 
 // vtable 0x008e8778: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8778 {
 public:
     virtual void vf0();    // virtual 0x0041abc7
@@ -1355,12 +1449,14 @@ public:
 };
 
 // vtable 0x008e8830: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e8830 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d4d6
 };
 
 // vtable 0x008e8834: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8834 {
 public:
     virtual void vf0();    // virtual 0x0041ce24
@@ -1368,12 +1464,14 @@ public:
 };
 
 // vtable 0x008e883c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e883c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d4f7
 };
 
 // vtable 0x008e8840: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8840 {
 public:
     virtual void vf0();    // virtual 0x0041ce78
@@ -1381,12 +1479,14 @@ public:
 };
 
 // vtable 0x008e8848: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8848 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d518
 };
 
 // vtable 0x008e884c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e884c {
 public:
     virtual void vf0();    // virtual 0x0041cecc
@@ -1394,12 +1494,14 @@ public:
 };
 
 // vtable 0x008e8854: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8854 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d539
 };
 
 // vtable 0x008e8858: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8858 {
 public:
     virtual void vf0();    // virtual 0x0041cf20
@@ -1407,12 +1509,14 @@ public:
 };
 
 // vtable 0x008e8860: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8860 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d55a
 };
 
 // vtable 0x008e8864: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8864 {
 public:
     virtual void vf0();    // virtual 0x0041cf74
@@ -1420,12 +1524,14 @@ public:
 };
 
 // vtable 0x008e886c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e886c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d57b
 };
 
 // vtable 0x008e8870: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8870 {
 public:
     virtual void vf0();    // virtual 0x0041cfc8
@@ -1433,12 +1539,14 @@ public:
 };
 
 // vtable 0x008e8878: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8878 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d59c
 };
 
 // vtable 0x008e887c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e887c {
 public:
     virtual void vf0();    // virtual 0x0041d01c
@@ -1446,12 +1554,14 @@ public:
 };
 
 // vtable 0x008e8884: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8884 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d5bd
 };
 
 // vtable 0x008e8888: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8888 {
 public:
     virtual void vf0();    // virtual 0x0041d070
@@ -1459,12 +1569,14 @@ public:
 };
 
 // vtable 0x008e8890: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8890 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d5de
 };
 
 // vtable 0x008e8894: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8894 {
 public:
     virtual void vf0();    // virtual 0x0041d0c4
@@ -1472,12 +1584,14 @@ public:
 };
 
 // vtable 0x008e889c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e889c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d5ff
 };
 
 // vtable 0x008e88a0: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e88a0 {
 public:
     virtual void vf0();    // virtual 0x0041d118
@@ -1485,12 +1599,14 @@ public:
 };
 
 // vtable 0x008e88a8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e88a8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d620
 };
 
 // vtable 0x008e88ac: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e88ac {
 public:
     virtual void vf0();    // virtual 0x0041d16c
@@ -1498,12 +1614,14 @@ public:
 };
 
 // vtable 0x008e88b4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e88b4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d641
 };
 
 // vtable 0x008e88b8: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e88b8 {
 public:
     virtual void vf0();    // virtual 0x0041d1c0
@@ -1511,12 +1629,14 @@ public:
 };
 
 // vtable 0x008e88c0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e88c0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d662
 };
 
 // vtable 0x008e88c4: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e88c4 {
 public:
     virtual void vf0();    // virtual 0x0041d214
@@ -1524,12 +1644,14 @@ public:
 };
 
 // vtable 0x008e88cc: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e88cc : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d683
 };
 
 // vtable 0x008e88d0: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e88d0 {
 public:
     virtual void vf0();    // virtual 0x0041d268
@@ -1537,12 +1659,14 @@ public:
 };
 
 // vtable 0x008e88d8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e88d8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d6a4
 };
 
 // vtable 0x008e88dc: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e88dc {
 public:
     virtual void vf0();    // virtual 0x0041d2bc
@@ -1550,12 +1674,14 @@ public:
 };
 
 // vtable 0x008e88e4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e88e4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d6c5
 };
 
 // vtable 0x008e88e8: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e88e8 {
 public:
     virtual void vf0();    // virtual 0x0041d310
@@ -1563,12 +1689,14 @@ public:
 };
 
 // vtable 0x008e88f0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e88f0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d6e6
 };
 
 // vtable 0x008e88f4: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e88f4 {
 public:
     virtual void vf0();    // virtual 0x0041d364
@@ -1576,12 +1704,14 @@ public:
 };
 
 // vtable 0x008e88fc: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e88fc : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d707
 };
 
 // vtable 0x008e8900: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8900 {
 public:
     virtual void vf0();    // virtual 0x0041d3b8
@@ -1589,12 +1719,14 @@ public:
 };
 
 // vtable 0x008e8908: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8908 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d728
 };
 
 // vtable 0x008e890c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e890c {
 public:
     virtual void vf0();    // virtual 0x0041d40c
@@ -1602,12 +1734,14 @@ public:
 };
 
 // vtable 0x008e8914: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8914 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d749
 };
 
 // vtable 0x008e8918: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8918 {
 public:
     virtual void vf0();    // virtual 0x0041d460
@@ -1615,12 +1749,14 @@ public:
 };
 
 // vtable 0x008e8920: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8920 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0041d76a
 };
 
 // vtable 0x008e8924: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8924 {
 public:
     virtual void vf0();    // virtual 0x0041d4b4
@@ -1634,6 +1770,7 @@ public:
 };
 
 // vtable 0x008e89a0: 2 slots, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e89a0 {
 public:
     virtual void vf0();    // virtual 0x0041f507
@@ -1647,18 +1784,21 @@ public:
 };
 
 // vtable 0x008e89bc: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x30
 class C_008e89bc {
 public:
     virtual void vf0();    // virtual 0x004235b4
 };
 
 // vtable 0x008e89c0: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e89c0 {
 public:
     virtual void vf0();    // virtual 0x00424eae
 };
 
 // vtable 0x008e89c4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e89c4 {
 public:
     virtual void vf0();    // virtual 0x00424e88
@@ -1671,6 +1811,7 @@ public:
 };
 
 // vtable 0x008e89dc: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e89dc {
 public:
     virtual void vf0();    // virtual 0x00425500
@@ -1696,12 +1837,14 @@ public:
 };
 
 // vtable 0x008e89f0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x50
 class C_008e89f0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00426064
 };
 
 // vtable 0x008e89f4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e89f4 {
 public:
     virtual void vf0();    // virtual 0x00426042
@@ -1733,12 +1876,14 @@ public:
 };
 
 // vtable 0x008e8a0c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e8a0c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00427044
 };
 
 // vtable 0x008e8a10: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a10 {
 public:
     virtual void vf0();    // virtual 0x00427022
@@ -1752,78 +1897,91 @@ public:
 };
 
 // vtable 0x008e8a2c: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a2c {
 public:
     virtual void vf0();    // virtual 0x00434b30
 };
 
 // vtable 0x008e8a30: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a30 {
 public:
     virtual void vf0();    // virtual 0x00434b0a
 };
 
 // vtable 0x008e8a34: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a34 {
 public:
     virtual void vf0();    // virtual 0x00434ae4
 };
 
 // vtable 0x008e8a38: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a38 {
 public:
     virtual void vf0();    // virtual 0x00434abe
 };
 
 // vtable 0x008e8a3c: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a3c {
 public:
     virtual void vf0();    // virtual 0x00434a98
 };
 
 // vtable 0x008e8a40: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a40 {
 public:
     virtual void vf0();    // virtual 0x00434a72
 };
 
 // vtable 0x008e8a44: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a44 {
 public:
     virtual void vf0();    // virtual 0x00434a4c
 };
 
 // vtable 0x008e8a48: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a48 {
 public:
     virtual void vf0();    // virtual 0x00434a26
 };
 
 // vtable 0x008e8a4c: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a4c {
 public:
     virtual void vf0();    // virtual 0x00434a00
 };
 
 // vtable 0x008e8a50: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a50 {
 public:
     virtual void vf0();    // virtual 0x004349da
 };
 
 // vtable 0x008e8a54: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a54 {
 public:
     virtual void vf0();    // virtual 0x004349b4
 };
 
 // vtable 0x008e8a58: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a58 {
 public:
     virtual void vf0();    // virtual 0x0043498e
 };
 
 // vtable 0x008e8a5c: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8a5c {
 public:
     virtual void vf0();    // virtual 0x00434968
@@ -1836,24 +1994,28 @@ public:
 };
 
 // vtable 0x008e8a64: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x14
 class C_008e8a64 {
 public:
     virtual void vf0();    // virtual 0x00434b56
 };
 
 // vtable 0x008e8a68: 1 slot, installed by 5 functions, base 0x008e8a64 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e8a68 : public C_008e8a64 {
 public:
     virtual void vf0();    // override 0x00434b7c
 };
 
 // vtable 0x008e8a6c: 1 slot, installed by 5 functions, base 0x008e8a64 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e8a6c : public C_008e8a64 {
 public:
     virtual void vf0();    // override 0x00434ba2
 };
 
 // vtable 0x008e8a70: 1 slot, installed by 5 functions, base 0x008e8a64 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e8a70 : public C_008e8a64 {
 public:
     virtual void vf0();    // override 0x00434bc8
@@ -1870,6 +2032,7 @@ public:
 };
 
 // vtable 0x008e8cd8: 1 slot, installed by 7 functions, base 0x008e84a0 (4 votes)
+// size unknown; constructor touches up to +0x19
 class C_008e8cd8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0044595a
@@ -1900,6 +2063,7 @@ public:
 };
 
 // vtable 0x008e8cf8: 20 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x250
 class C_008e8cf8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0044816c
@@ -1956,6 +2120,7 @@ public:
 };
 
 // vtable 0x008e8d94: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e8d94 {
 public:
     virtual void vf0();    // virtual 0x0044a9bd
@@ -2068,6 +2233,7 @@ public:
 };
 
 // vtable 0x008e8ea8: 46 slots, installed by 17 functions
+// size 0x14 (7 allocation sites)
 class C_008e8ea8 {
 public:
     virtual void vf0();    // virtual 0x00450130
@@ -2116,7 +2282,9 @@ public:
     virtual void vf43();    // virtual 0x00452e09
     virtual void vf44();    // virtual 0x00452e52
     virtual void vf45();    // virtual 0x00452e9b
+    unsigned char m_raw[16];    // opaque: fields not recovered
 };
+typedef char size_check_C_008e8ea8[sizeof(C_008e8ea8) == 20 ? 1 : -1];
 
 // vtable 0x008e8f60: 13 slots, installed by 2 functions
 class C_008e8f60 {
@@ -2171,6 +2339,7 @@ public:
 };
 
 // vtable 0x008e9008: 20 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008e9008 {
 public:
     virtual void vf0();    // virtual 0x00454e58
@@ -2214,6 +2383,7 @@ public:
 };
 
 // vtable 0x008e908c: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008e908c {
 public:
     virtual void vf0();    // virtual 0x0045e2a6
@@ -2263,6 +2433,7 @@ public:
 };
 
 // vtable 0x008e9114: 1 slot, installed by 9 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9114 {
 public:
     virtual void vf0();    // virtual 0x0045e280
@@ -2380,6 +2551,7 @@ public:
 };
 
 // vtable 0x008e9270: 13 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x78
 class C_008e9270 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x008162ff
@@ -2509,6 +2681,7 @@ public:
 };
 
 // vtable 0x008e93fc: 13 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x84
 class C_008e93fc : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x008162ff
@@ -2679,6 +2852,7 @@ public:
 };
 
 // vtable 0x008e9604: 3 slots, installed by 1 function, base 0x008e8a60 (1 vote)
+// size unknown; constructor touches up to +0x4
 class C_008e9604 : public C_008e8a60 {
 public:
     virtual void vf1();    // virtual 0x0045cf0f
@@ -2731,12 +2905,14 @@ public:
 };
 
 // vtable 0x008e9674: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e9674 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00461f2e
 };
 
 // vtable 0x008e9678: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9678 {
 public:
     virtual void vf0();    // virtual 0x00461f0c
@@ -2749,6 +2925,7 @@ public:
 };
 
 // vtable 0x008e968c: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e968c {
 public:
     virtual void vf0();    // virtual 0x00469956
@@ -2773,6 +2950,7 @@ public:
 };
 
 // vtable 0x008e969c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e969c {
 public:
     virtual void vf0();    // virtual 0x0046fcef
@@ -2786,6 +2964,7 @@ public:
 };
 
 // vtable 0x008e96a8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e96a8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00470e10
@@ -2798,6 +2977,7 @@ public:
 };
 
 // vtable 0x008e96b8: 2 slots, installed by 9 functions
+// size unknown; constructor touches up to +0x4
 class C_008e96b8 {
 public:
     virtual void vf0();    // virtual 0x00473022
@@ -2805,12 +2985,14 @@ public:
 };
 
 // vtable 0x008e96c0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e96c0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00473676
 };
 
 // vtable 0x008e96c4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e96c4 {
 public:
     virtual void vf0();    // virtual 0x00473654
@@ -2823,12 +3005,14 @@ public:
 };
 
 // vtable 0x008e96d4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e96d4 {
 public:
     virtual void vf0();    // virtual 0x00475a51
 };
 
 // vtable 0x008e96d8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x14
 class C_008e96d8 {
 public:
     virtual void vf0();    // virtual 0x00475a77
@@ -2857,6 +3041,7 @@ public:
 };
 
 // vtable 0x008e9720: 9 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9720 {
 public:
     virtual void vf0();    // virtual 0x0047430c
@@ -2883,6 +3068,7 @@ public:
 };
 
 // vtable 0x008e974c: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008e974c {
 public:
     virtual void vf0();    // virtual 0x00475b67
@@ -2896,12 +3082,14 @@ public:
 };
 
 // vtable 0x008e9758: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e9758 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0047859c
 };
 
 // vtable 0x008e975c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e975c {
 public:
     virtual void vf0();    // virtual 0x0047851e
@@ -2909,6 +3097,7 @@ public:
 };
 
 // vtable 0x008e9764: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008e9764 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004785bd
@@ -2957,6 +3146,7 @@ public:
 };
 
 // vtable 0x008e9798: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9798 {
 public:
     virtual void vf0();    // virtual 0x00483cc9
@@ -3005,6 +3195,7 @@ public:
 };
 
 // vtable 0x008e9850: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9850 {
 public:
     virtual void vf0();    // virtual 0x0048d0d4
@@ -3012,12 +3203,14 @@ public:
 };
 
 // vtable 0x008e9858: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e9858 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0048e992
 };
 
 // vtable 0x008e985c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e985c {
 public:
     virtual void vf0();    // virtual 0x0048e970
@@ -3088,6 +3281,7 @@ public:
 };
 
 // vtable 0x008ea1c8: 14 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x74
 class C_008ea1c8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x008162ff
@@ -3107,6 +3301,7 @@ public:
 };
 
 // vtable 0x008e9940: 14 slots, installed by 1 function, base 0x008ea1c8 (1 vote)
+// size 0x7c (1 allocation site), constructor touches up to +0x7c
 class C_008e9940 : public C_008ea1c8 {
 public:
     virtual void vf3();    // override 0x00490aa0
@@ -3138,6 +3333,7 @@ public:
 };
 
 // vtable 0x008e99e0: 8 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x54
 class C_008e99e0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00456330
@@ -3190,6 +3386,7 @@ public:
 };
 
 // vtable 0x008e9a74: 2 slots, installed by 5 functions
+// size unknown; constructor touches up to +0x14
 class C_008e9a74 {
 public:
     virtual void vf0();    // virtual 0x0049e72d
@@ -3197,12 +3394,14 @@ public:
 };
 
 // vtable 0x008e9a7c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e9a7c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0049f76d
 };
 
 // vtable 0x008e9a80: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9a80 {
 public:
     virtual void vf0();    // virtual 0x0049f74b
@@ -3234,6 +3433,7 @@ public:
 };
 
 // vtable 0x008e9ae0: 9 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0xb8 (61 allocation sites), constructor touches up to +0xb8
 class C_008e9ae0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004a0cd1
@@ -3273,6 +3473,7 @@ public:
 };
 
 // vtable 0x008e9b54: 13 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x90 (1 allocation site), constructor touches up to +0x90
 class C_008e9b54 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x008162ff
@@ -3291,6 +3492,7 @@ public:
 };
 
 // vtable 0x008e9b88: 20 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008e9b88 {
 public:
     virtual void vf0();    // virtual 0x004a55e5
@@ -3316,6 +3518,7 @@ public:
 };
 
 // vtable 0x008e9bd8: 9 slots, installed by 1 function, base 0x008e9ae0 (1 vote)
+// size 0xc0 (1 allocation site), constructor touches up to +0xc0
 class C_008e9bd8 : public C_008e9ae0 {
 public:
     virtual void vf0();    // override 0x004a5622
@@ -3348,6 +3551,7 @@ public:
 };
 
 // vtable 0x008e9c4c: 8 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x60
 class C_008e9c4c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00456330
@@ -3361,6 +3565,7 @@ public:
 };
 
 // vtable 0x008e9c6c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9c6c {
 public:
     virtual void vf0();    // virtual 0x004a6af6
@@ -3374,12 +3579,14 @@ public:
 };
 
 // vtable 0x008e9c78: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008e9c78 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004a7716
 };
 
 // vtable 0x008e9c7c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9c7c {
 public:
     virtual void vf0();    // virtual 0x004a76f4
@@ -3411,6 +3618,7 @@ public:
 };
 
 // vtable 0x008e9cd0: 8 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0xcc (7 allocation sites), constructor touches up to +0xcc
 class C_008e9cd0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004a8c19
@@ -3487,6 +3695,7 @@ public:
 };
 
 // vtable 0x008e9dc4: 9 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x74 (74 allocation sites), constructor touches up to +0x74
 class C_008e9dc4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004ad218
@@ -3526,6 +3735,7 @@ public:
 };
 
 // vtable 0x008e9e38: 9 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x68 (4 allocation sites), constructor touches up to +0x68
 class C_008e9e38 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00456330
@@ -3617,6 +3827,7 @@ public:
 };
 
 // vtable 0x008e9f40: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9f40 {
 public:
     virtual void vf0();    // virtual 0x004b2a0e
@@ -3624,12 +3835,14 @@ public:
 };
 
 // vtable 0x008e9f48: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x2c
 class C_008e9f48 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004b3665
 };
 
 // vtable 0x008e9f4c: 20 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9f4c {
 public:
     virtual void vf0();    // virtual 0x004b3643
@@ -3655,6 +3868,7 @@ public:
 };
 
 // vtable 0x008e9f9c: 8 slots, installed by 1 function, base 0x008e8a60 (1 vote)
+// size unknown; constructor touches up to +0x34
 class C_008e9f9c : public C_008e8a60 {
 public:
     virtual void vf0();    // override 0x00456330
@@ -3675,12 +3889,14 @@ public:
 };
 
 // vtable 0x008e9fc4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008e9fc4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004b4dcf
 };
 
 // vtable 0x008e9fc8: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008e9fc8 {
 public:
     virtual void vf0();    // virtual 0x004b4dad
@@ -3764,6 +3980,7 @@ public:
 };
 
 // vtable 0x008ea0b0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea0b0 {
 public:
     virtual void vf0();    // virtual 0x004b9021
@@ -3776,6 +3993,7 @@ public:
 };
 
 // vtable 0x008ea0b8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea0b8 {
 public:
     virtual void vf0();    // virtual 0x004b9156
@@ -3788,6 +4006,7 @@ public:
 };
 
 // vtable 0x008ea0c0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea0c0 {
 public:
     virtual void vf0();    // virtual 0x004b92eb
@@ -3800,6 +4019,7 @@ public:
 };
 
 // vtable 0x008ea0c8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea0c8 {
 public:
     virtual void vf0();    // virtual 0x004b9490
@@ -3812,6 +4032,7 @@ public:
 };
 
 // vtable 0x008ea0d0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea0d0 {
 public:
     virtual void vf0();    // virtual 0x004b96f7
@@ -3849,6 +4070,7 @@ public:
 };
 
 // vtable 0x008ea0ec: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ea0ec : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004ba522
@@ -3862,6 +4084,7 @@ public:
 };
 
 // vtable 0x008ea0f8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ea0f8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004ba543
@@ -3904,6 +4127,7 @@ public:
 };
 
 // vtable 0x008ea150: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ea150 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004bbfa6
@@ -3917,6 +4141,7 @@ public:
 };
 
 // vtable 0x008ea15c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ea15c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004bbfc7
@@ -3930,6 +4155,7 @@ public:
 };
 
 // vtable 0x008ea168: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ea168 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004bbfe8
@@ -3967,6 +4193,7 @@ public:
 };
 
 // vtable 0x008ea200: 35 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ea200 {
 public:
     virtual void vf0();    // virtual 0x004bc98d
@@ -4019,6 +4246,7 @@ public:
 };
 
 // vtable 0x008ea2a8: 3 slots, installed by 7 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea2a8 {
 public:
     virtual void vf0();    // virtual 0x004bd69a
@@ -4053,36 +4281,42 @@ public:
 };
 
 // vtable 0x008ea2e4: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea2e4 {
 public:
     virtual void vf0();    // virtual 0x004cd401
 };
 
 // vtable 0x008ea2e8: 1 slot, installed by 6 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea2e8 {
 public:
     virtual void vf0();    // virtual 0x004cd3db
 };
 
 // vtable 0x008ea2ec: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea2ec {
 public:
     virtual void vf0();    // virtual 0x004cd3b5
 };
 
 // vtable 0x008ea2f0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea2f0 {
 public:
     virtual void vf0();    // virtual 0x004cd38f
 };
 
 // vtable 0x008ea328: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea328 {
 public:
     virtual void vf0();    // virtual 0x004cd427
 };
 
 // vtable 0x008ea348: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea348 {
 public:
     virtual void vf0();    // virtual 0x004cd44d
@@ -4095,6 +4329,7 @@ public:
 };
 
 // vtable 0x008ea350: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea350 {
 public:
     virtual void vf0();    // virtual 0x004cd7da
@@ -4107,6 +4342,7 @@ public:
 };
 
 // vtable 0x008ea358: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea358 {
 public:
     virtual void vf0();    // virtual 0x004cdb53
@@ -4132,6 +4368,7 @@ public:
 };
 
 // vtable 0x008ea36c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea36c {
 public:
     virtual void vf0();    // virtual 0x004cf0f9
@@ -4151,12 +4388,14 @@ public:
 };
 
 // vtable 0x008ea37c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ea37c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004d1101
 };
 
 // vtable 0x008ea380: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea380 {
 public:
     virtual void vf0();    // virtual 0x004d0feb
@@ -4164,6 +4403,7 @@ public:
 };
 
 // vtable 0x008ea388: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ea388 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004d1122
@@ -4177,12 +4417,14 @@ public:
 };
 
 // vtable 0x008ea394: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ea394 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004d1143
 };
 
 // vtable 0x008ea398: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea398 {
 public:
     virtual void vf0();    // virtual 0x004d108f
@@ -4190,6 +4432,7 @@ public:
 };
 
 // vtable 0x008ea3a0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ea3a0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004d1164
@@ -4223,6 +4466,7 @@ public:
 };
 
 // vtable 0x008ea3dc: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x30
 class C_008ea3dc {
 public:
     virtual void vf0();    // virtual 0x004d47c9
@@ -4230,12 +4474,14 @@ public:
 };
 
 // vtable 0x008ea3e4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea3e4 {
 public:
     virtual void vf0();    // virtual 0x004d4a20
 };
 
 // vtable 0x008ea3e8: 1 slot, installed by 8 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea3e8 {
 public:
     virtual void vf0();    // virtual 0x004d49fa
@@ -4248,18 +4494,21 @@ public:
 };
 
 // vtable 0x008ea3f0: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea3f0 {
 public:
     virtual void vf0();    // virtual 0x004d4b75
 };
 
 // vtable 0x008ea3f4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x1c (1 allocation site), constructor touches up to +0x14
 class C_008ea3f4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004d6493
 };
 
 // vtable 0x008ea3f8: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ea3f8 {
 public:
     virtual void vf0();    // virtual 0x004d6c73
@@ -4272,6 +4521,7 @@ public:
 };
 
 // vtable 0x008ea400: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea400 {
 public:
     virtual void vf0();    // virtual 0x004d6ea9
@@ -4285,12 +4535,14 @@ public:
 };
 
 // vtable 0x008ea40c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ea40c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004d7bd7
 };
 
 // vtable 0x008ea410: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea410 {
 public:
     virtual void vf0();    // virtual 0x004d7bb5
@@ -4426,6 +4678,7 @@ public:
 };
 
 // vtable 0x008ea5e0: 17 slots, installed by 1 function, base 0x008ea1c8 (1 vote)
+// size unknown; constructor touches up to +0xc4
 class C_008ea5e0 : public C_008ea1c8 {
 public:
     virtual void vf0();    // override 0x004de7fb
@@ -4461,6 +4714,7 @@ public:
 };
 
 // vtable 0x008ea674: 17 slots, installed by 1 function, base 0x008ea5e0 (1 vote)
+// size 0x110 (43 allocation sites), constructor touches up to +0x110
 class C_008ea674 : public C_008ea5e0 {
 public:
     virtual void vf3();    // override 0x004df130
@@ -4470,6 +4724,7 @@ public:
 };
 
 // vtable 0x008ea6b8: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea6b8 {
 public:
     virtual void vf0();    // virtual 0x004e21f1
@@ -4537,6 +4792,7 @@ public:
 };
 
 // vtable 0x008ea6e8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ea6e8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004e4af0
@@ -4589,12 +4845,15 @@ public:
 };
 
 // vtable 0x008ea778: 3 slots, installed by 3 functions
+// size 0x38 (1 allocation site), constructor touches up to +0x4
 class C_008ea778 {
 public:
     virtual void vf0();    // virtual 0x004f15cb
     virtual void vf1();    // virtual 0x004e52f0
     virtual void vf2();    // virtual 0x004e5310
+    unsigned char m_raw[52];    // opaque: fields not recovered
 };
+typedef char size_check_C_008ea778[sizeof(C_008ea778) == 56 ? 1 : -1];
 
 // vtable 0x008ea784: 21 slots, installed by 1 function
 class C_008ea784 {
@@ -4637,6 +4896,7 @@ public:
 };
 
 // vtable 0x008ea7fc: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x48
 class C_008ea7fc : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004e547e
@@ -4723,6 +4983,7 @@ public:
 };
 
 // vtable 0x008ea8cc: 9 slots, installed by 2 functions, base 0x008eac20 (2 votes)
+// size 0xa68 (2 allocation sites), constructor touches up to +0xa68
 class C_008ea8cc : public C_008eac20 {
 public:
     virtual void vf0();    // override 0x004fa622
@@ -4733,6 +4994,7 @@ public:
 };
 
 // vtable 0x008ea8f0: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008ea8f0 {
 public:
     virtual void vf0();    // virtual 0x004f15f1
@@ -4779,12 +5041,14 @@ public:
 };
 
 // vtable 0x008ea96c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008ea96c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004e5842
 };
 
 // vtable 0x008ea970: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x24
 class C_008ea970 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004e5862
@@ -4817,6 +5081,7 @@ public:
 };
 
 // vtable 0x008ea9c8: 9 slots, installed by 1 function, base 0x008eac20 (1 vote)
+// size 0x750 (2 allocation sites), constructor touches up to +0x750
 class C_008ea9c8 : public C_008eac20 {
 public:
     virtual void vf0();    // override 0x0050353e
@@ -4850,6 +5115,7 @@ public:
 };
 
 // vtable 0x008eaa40: 9 slots, installed by 1 function, base 0x008eac20 (1 vote)
+// size 0x740 (2 allocation sites), constructor touches up to +0x73c
 class C_008eaa40 : public C_008eac20 {
 public:
     virtual void vf1();    // override 0x00505f83
@@ -4884,6 +5150,7 @@ public:
 };
 
 // vtable 0x008eaab8: 9 slots, installed by 1 function, base 0x008eac20 (1 vote)
+// size 0x728 (2 allocation sites), constructor touches up to +0x10
 class C_008eaab8 : public C_008eac20 {
 public:
     virtual void vf5();    // override 0x00507147
@@ -4917,6 +5184,7 @@ public:
 };
 
 // vtable 0x008eab30: 9 slots, installed by 1 function, base 0x008eac20 (1 vote)
+// size 0x738 (2 allocation sites), constructor touches up to +0x738
 class C_008eab30 : public C_008eac20 {
 public:
     virtual void vf0();    // override 0x004f66b1
@@ -4924,6 +5192,7 @@ public:
 };
 
 // vtable 0x008eab54: 21 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008eab54 {
 public:
     virtual void vf0();    // virtual 0x004e5b92
@@ -4950,6 +5219,7 @@ public:
 };
 
 // vtable 0x008eaba8: 9 slots, installed by 1 function, base 0x008eac20 (1 vote)
+// size 0x728 (2 allocation sites), constructor touches up to +0x10
 class C_008eaba8 : public C_008eac20 {
 public:
     virtual void vf7();    // override 0x004e5b8e
@@ -4982,12 +5252,14 @@ public:
 };
 
 // vtable 0x008eac44: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008eac44 {
 public:
     virtual void vf0();    // virtual 0x004f15a5
 };
 
 // vtable 0x008eac48: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008eac48 {
 public:
     virtual void vf0();    // virtual 0x004f1530
@@ -5000,6 +5272,7 @@ public:
 };
 
 // vtable 0x008eac50: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008eac50 {
 public:
     virtual void vf0();    // virtual 0x004f157f
@@ -5031,6 +5304,7 @@ public:
 };
 
 // vtable 0x008eaca4: 13 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0xa8 (1 allocation site), constructor touches up to +0xa8
 class C_008eaca4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0047961e
@@ -5128,12 +5402,14 @@ public:
 };
 
 // vtable 0x008ead18: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x20
 class C_008ead18 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004f5908
 };
 
 // vtable 0x008ead1c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ead1c {
 public:
     virtual void vf0();    // virtual 0x004f583e
@@ -5141,12 +5417,14 @@ public:
 };
 
 // vtable 0x008ead24: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ead24 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004f5929
 };
 
 // vtable 0x008ead28: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ead28 {
 public:
     virtual void vf0();    // virtual 0x004f5892
@@ -5154,18 +5432,21 @@ public:
 };
 
 // vtable 0x008ead30: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ead30 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004f594a
 };
 
 // vtable 0x008ead34: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ead34 {
 public:
     virtual void vf0();    // virtual 0x004f58e6
 };
 
 // vtable 0x008ead64: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ead64 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004fd2d2
@@ -5178,6 +5459,7 @@ public:
 };
 
 // vtable 0x008ead98: 21 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ead98 {
 public:
     virtual void vf0();    // virtual 0x00509b75
@@ -5204,12 +5486,14 @@ public:
 };
 
 // vtable 0x008eadec: 9 slots, installed by 1 function, base 0x008eac20 (1 vote)
+// size 0x728 (2 allocation sites), constructor touches up to +0x10
 class C_008eadec : public C_008eac20 {
 public:
     virtual void vf5();    // override 0x00509be0
 };
 
 // vtable 0x008eae1c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008eae1c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0050fba5
@@ -5222,6 +5506,7 @@ public:
 };
 
 // vtable 0x008eae38: 21 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008eae38 {
 public:
     virtual void vf0();    // virtual 0x0051269a
@@ -5248,6 +5533,7 @@ public:
 };
 
 // vtable 0x008eae8c: 9 slots, installed by 1 function, base 0x008eac20 (1 vote)
+// size 0x728 (2 allocation sites), constructor touches up to +0x10
 class C_008eae8c : public C_008eac20 {
 public:
     virtual void vf5();    // override 0x00512705
@@ -5294,12 +5580,14 @@ public:
 };
 
 // vtable 0x008eaf38: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008eaf38 {
 public:
     virtual void vf0();    // virtual 0x00518996
 };
 
 // vtable 0x008eaf3c: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x10 (1 allocation site), constructor touches up to +0x10
 class C_008eaf3c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00518c3e
@@ -5307,6 +5595,7 @@ public:
 };
 
 // vtable 0x008eaf44: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x10 (1 allocation site), constructor touches up to +0x10
 class C_008eaf44 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00518cbf
@@ -5321,6 +5610,7 @@ public:
 };
 
 // vtable 0x008eaf54: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008eaf54 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0051aa8b
@@ -5334,12 +5624,14 @@ public:
 };
 
 // vtable 0x008eaf60: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008eaf60 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0051aaac
 };
 
 // vtable 0x008eaf64: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008eaf64 {
 public:
     virtual void vf0();    // virtual 0x0051aa69
@@ -5352,10 +5644,13 @@ public:
 };
 
 // vtable 0x008eaf78: 1 slot, installed by 2 functions
+// size 0x388 (1 allocation site), constructor touches up to +0x388
 class C_008eaf78 {
 public:
     virtual void vf0();    // virtual 0x0051bfcc
+    unsigned char m_raw[900];    // opaque: fields not recovered
 };
+typedef char size_check_C_008eaf78[sizeof(C_008eaf78) == 904 ? 1 : -1];
 
 // vtable 0x008eaf90: 20 slots, installed by 1 function
 class C_008eaf90 {
@@ -5491,6 +5786,7 @@ public:
 };
 
 // vtable 0x008eb12c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008eb12c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x005288f8
@@ -5503,6 +5799,7 @@ public:
 };
 
 // vtable 0x008eb134: 21 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008eb134 {
 public:
     virtual void vf0();    // virtual 0x005289e8
@@ -5529,6 +5826,7 @@ public:
 };
 
 // vtable 0x008eb188: 3 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x18 (7 allocation sites), constructor touches up to +0x10
 class C_008eb188 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x004343d8
@@ -5806,6 +6104,7 @@ public:
 };
 
 // vtable 0x008eb4e4: 13 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x7c
 class C_008eb4e4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x008162ff
@@ -5867,6 +6166,7 @@ public:
 };
 
 // vtable 0x008eb5b0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x110 (1 allocation site), constructor touches up to +0x110
 class C_008eb5b0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0052de39
@@ -6217,6 +6517,7 @@ public:
 };
 
 // vtable 0x008eba50: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba50 {
 public:
     virtual void vf0();    // virtual 0x00559592
@@ -6229,6 +6530,7 @@ public:
 };
 
 // vtable 0x008eba58: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba58 {
 public:
     virtual void vf0();    // virtual 0x00559b3a
@@ -6241,6 +6543,7 @@ public:
 };
 
 // vtable 0x008eba60: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba60 {
 public:
     virtual void vf0();    // virtual 0x00559d8a
@@ -6253,6 +6556,7 @@ public:
 };
 
 // vtable 0x008eba68: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba68 {
 public:
     virtual void vf0();    // virtual 0x0055a2a3
@@ -6265,6 +6569,7 @@ public:
 };
 
 // vtable 0x008eba70: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba70 {
 public:
     virtual void vf0();    // virtual 0x0055a38d
@@ -6277,6 +6582,7 @@ public:
 };
 
 // vtable 0x008eba78: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba78 {
 public:
     virtual void vf0();    // virtual 0x0055a477
@@ -6289,6 +6595,7 @@ public:
 };
 
 // vtable 0x008eba80: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba80 {
 public:
     virtual void vf0();    // virtual 0x0055a5aa
@@ -6301,6 +6608,7 @@ public:
 };
 
 // vtable 0x008eba88: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba88 {
 public:
     virtual void vf0();    // virtual 0x0055a706
@@ -6320,12 +6628,14 @@ public:
 };
 
 // vtable 0x008eba98: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x28
 class C_008eba98 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0055baf7
 };
 
 // vtable 0x008eba9c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008eba9c {
 public:
     virtual void vf0();    // virtual 0x0055b8c2
@@ -6333,18 +6643,21 @@ public:
 };
 
 // vtable 0x008ebaa4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x2c
 class C_008ebaa4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0055bb18
 };
 
 // vtable 0x008ebaa8: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebaa8 {
 public:
     virtual void vf0();    // virtual 0x0055b925
 };
 
 // vtable 0x008ebaac: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebaac {
 public:
     virtual void vf0();    // virtual 0x0055b94b
@@ -6352,12 +6665,14 @@ public:
 };
 
 // vtable 0x008ebab4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x48
 class C_008ebab4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0055bb39
 };
 
 // vtable 0x008ebab8: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebab8 {
 public:
     virtual void vf0();    // virtual 0x0055b9dd
@@ -6365,12 +6680,14 @@ public:
 };
 
 // vtable 0x008ebac0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008ebac0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0055bb5a
 };
 
 // vtable 0x008ebac4: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebac4 {
 public:
     virtual void vf0();    // virtual 0x0055ba31
@@ -6378,6 +6695,7 @@ public:
 };
 
 // vtable 0x008ebacc: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ebacc : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0055bb7b
@@ -6391,36 +6709,42 @@ public:
 };
 
 // vtable 0x008ebad8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008ebad8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0055bb9c
 };
 
 // vtable 0x008ebadc: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebadc {
 public:
     virtual void vf0();    // virtual 0x0055bad5
 };
 
 // vtable 0x008ebae4: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebae4 {
 public:
     virtual void vf0();    // virtual 0x0055bdca
 };
 
 // vtable 0x008ebae0: 1 slot, installed by 1 function, base 0x008ebae4 (1 vote)
+// size unknown; constructor touches up to +0x24
 class C_008ebae0 : public C_008ebae4 {
 public:
     virtual void vf0();    // override 0x0055bea3
 };
 
 // vtable 0x008ebae8: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x24
 class C_008ebae8 {
 public:
     virtual void vf0();    // virtual 0x0055bee5
 };
 
 // vtable 0x008ebaec: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebaec {
 public:
     virtual void vf0();    // virtual 0x0055be31
@@ -6428,6 +6752,7 @@ public:
 };
 
 // vtable 0x008ebaf4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ebaf4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0055de82
@@ -6447,6 +6772,7 @@ public:
 };
 
 // vtable 0x008ebb04: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebb04 {
 public:
     virtual void vf0();    // virtual 0x0055de0c
@@ -6454,12 +6780,14 @@ public:
 };
 
 // vtable 0x008ebb0c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ebb0c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0055dec4
 };
 
 // vtable 0x008ebb10: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebb10 {
 public:
     virtual void vf0();    // virtual 0x0055de60
@@ -6572,6 +6900,7 @@ public:
 };
 
 // vtable 0x008ebc74: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ebc74 {
 public:
     virtual void vf0();    // virtual 0x0056a76a
@@ -6618,6 +6947,7 @@ public:
 };
 
 // vtable 0x008ebd0c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ebd0c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0056d37f
@@ -6959,6 +7289,7 @@ public:
 };
 
 // vtable 0x008ec14c: 17 slots, installed by 1 function, base 0x008ea5e0 (1 vote)
+// size 0x104 (8 allocation sites), constructor touches up to +0x104
 class C_008ec14c : public C_008ea5e0 {
 public:
     virtual void vf3();    // override 0x0057ac7a
@@ -7133,6 +7464,7 @@ public:
 };
 
 // vtable 0x008ec3b0: 17 slots, installed by 1 function, base 0x008ea5e0 (1 vote)
+// size 0x114 (5 allocation sites), constructor touches up to +0x114
 class C_008ec3b0 : public C_008ea5e0 {
 public:
     virtual void vf3();    // override 0x00587f9c
@@ -7345,6 +7677,7 @@ public:
 };
 
 // vtable 0x008ec688: 3 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x38
 class C_008ec688 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00596e0d
@@ -7360,12 +7693,14 @@ public:
 };
 
 // vtable 0x008ec6a8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ec6a8 {
 public:
     virtual void vf0();    // virtual 0x005990b6
 };
 
 // vtable 0x008ec6ac: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ec6ac : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00598b98
@@ -7373,6 +7708,7 @@ public:
 };
 
 // vtable 0x008ec6b4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ec6b4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0059b72e
@@ -7391,18 +7727,21 @@ public:
 };
 
 // vtable 0x008ec9e8: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x34
 class C_008ec9e8 {
 public:
     virtual void vf0();    // virtual 0x005bd66f
 };
 
 // vtable 0x008ec9ec: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ec9ec {
 public:
     virtual void vf0();    // virtual 0x005be42f
 };
 
 // vtable 0x008ec9f0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ec9f0 {
 public:
     virtual void vf0();    // virtual 0x005be409
@@ -7415,6 +7754,7 @@ public:
 };
 
 // vtable 0x008ec9f8: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ec9f8 {
 public:
     virtual void vf0();    // virtual 0x005be635
@@ -7422,12 +7762,14 @@ public:
 };
 
 // vtable 0x008eca00: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x2c
 class C_008eca00 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x005bf29a
 };
 
 // vtable 0x008eca04: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008eca04 {
 public:
     virtual void vf0();    // virtual 0x005bf278
@@ -7435,12 +7777,14 @@ public:
 };
 
 // vtable 0x008eca0c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008eca0c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x005c0095
 };
 
 // vtable 0x008eca10: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008eca10 {
 public:
     virtual void vf0();    // virtual 0x005c0073
@@ -7524,48 +7868,56 @@ public:
 };
 
 // vtable 0x008ecb0c: 1 slot, installed by 11 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb0c {
 public:
     virtual void vf0();    // virtual 0x005d0d0a
 };
 
 // vtable 0x008ecb10: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb10 {
 public:
     virtual void vf0();    // virtual 0x005d0e3a
 };
 
 // vtable 0x008ecb14: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb14 {
 public:
     virtual void vf0();    // virtual 0x005d0e14
 };
 
 // vtable 0x008ecb18: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb18 {
 public:
     virtual void vf0();    // virtual 0x005d0dee
 };
 
 // vtable 0x008ecb1c: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb1c {
 public:
     virtual void vf0();    // virtual 0x005d0d56
 };
 
 // vtable 0x008ecb20: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb20 {
 public:
     virtual void vf0();    // virtual 0x005d0dc8
 };
 
 // vtable 0x008ecb24: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb24 {
 public:
     virtual void vf0();    // virtual 0x005d0da2
 };
 
 // vtable 0x008ecb28: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb28 {
 public:
     virtual void vf0();    // virtual 0x005d0d7c
@@ -7578,12 +7930,14 @@ public:
 };
 
 // vtable 0x008ecb4c: 1 slot, installed by 7 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecb4c {
 public:
     virtual void vf0();    // virtual 0x005d0d30
 };
 
 // vtable 0x008ecde0: 2 slots, installed by 6 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecde0 {
 public:
     virtual void vf0();    // virtual 0x005fed91
@@ -7591,12 +7945,14 @@ public:
 };
 
 // vtable 0x008ecde8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x20
 class C_008ecde8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00600d78
 };
 
 // vtable 0x008ecdec: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecdec {
 public:
     virtual void vf0();    // virtual 0x00600d56
@@ -7649,12 +8005,14 @@ public:
 };
 
 // vtable 0x008ecef8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x102
 class C_008ecef8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0060ad97
 };
 
 // vtable 0x008ecefc: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ecefc {
 public:
     virtual void vf0();    // virtual 0x0060ad75
@@ -7819,6 +8177,7 @@ public:
 };
 
 // vtable 0x008ed138: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ed138 {
 public:
     virtual void vf0();    // virtual 0x0061d231
@@ -7831,6 +8190,7 @@ public:
 };
 
 // vtable 0x008ed140: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed140 {
 public:
     virtual void vf0();    // virtual 0x0061d699
@@ -7850,12 +8210,14 @@ public:
 };
 
 // vtable 0x008ed150: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed150 {
 public:
     virtual void vf0();    // virtual 0x0061e7cd
 };
 
 // vtable 0x008ed160: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x40
 class C_008ed160 {
 public:
     virtual void vf0();    // virtual 0x00620619
@@ -7869,12 +8231,14 @@ public:
 };
 
 // vtable 0x008ed16c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x3c
 class C_008ed16c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0062328a
 };
 
 // vtable 0x008ed170: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed170 {
 public:
     virtual void vf0();    // virtual 0x00623268
@@ -7893,48 +8257,56 @@ public:
 };
 
 // vtable 0x008ed1a4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1a4 {
 public:
     virtual void vf0();    // virtual 0x0062f11e
 };
 
 // vtable 0x008ed1a8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1a8 {
 public:
     virtual void vf0();    // virtual 0x0062f0f8
 };
 
 // vtable 0x008ed1ac: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1ac {
 public:
     virtual void vf0();    // virtual 0x0062f0d2
 };
 
 // vtable 0x008ed1b0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1b0 {
 public:
     virtual void vf0();    // virtual 0x0062f0ac
 };
 
 // vtable 0x008ed1b4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1b4 {
 public:
     virtual void vf0();    // virtual 0x0062f086
 };
 
 // vtable 0x008ed1b8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1b8 {
 public:
     virtual void vf0();    // virtual 0x0062f060
 };
 
 // vtable 0x008ed1bc: 1 slot, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1bc {
 public:
     virtual void vf0();    // virtual 0x0062f014
 };
 
 // vtable 0x008ed1c0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1c0 {
 public:
     virtual void vf0();    // virtual 0x0062f03a
@@ -7947,6 +8319,7 @@ public:
 };
 
 // vtable 0x008ed1c8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1c8 {
 public:
     virtual void vf0();    // virtual 0x0062f5c2
@@ -7959,6 +8332,7 @@ public:
 };
 
 // vtable 0x008ed1d0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1d0 {
 public:
     virtual void vf0();    // virtual 0x0062f7f1
@@ -7971,6 +8345,7 @@ public:
 };
 
 // vtable 0x008ed1d8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1d8 {
 public:
     virtual void vf0();    // virtual 0x0062f9a4
@@ -7983,6 +8358,7 @@ public:
 };
 
 // vtable 0x008ed1e0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1e0 {
 public:
     virtual void vf0();    // virtual 0x0062fb57
@@ -7995,6 +8371,7 @@ public:
 };
 
 // vtable 0x008ed1e8: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1e8 {
 public:
     virtual void vf0();    // virtual 0x0062fd5d
@@ -8007,6 +8384,7 @@ public:
 };
 
 // vtable 0x008ed1f0: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1f0 {
 public:
     virtual void vf0();    // virtual 0x0062fef8
@@ -8019,6 +8397,7 @@ public:
 };
 
 // vtable 0x008ed1f8: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed1f8 {
 public:
     virtual void vf0();    // virtual 0x0063008b
@@ -8038,6 +8417,7 @@ public:
 };
 
 // vtable 0x008ed208: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed208 {
 public:
     virtual void vf0();    // virtual 0x0063156a
@@ -8050,6 +8430,7 @@ public:
 };
 
 // vtable 0x008ed21c: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed21c {
 public:
     virtual void vf0();    // virtual 0x00635a0b
@@ -8063,12 +8444,14 @@ public:
 };
 
 // vtable 0x008ed228: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x50
 class C_008ed228 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00636c09
 };
 
 // vtable 0x008ed22c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed22c {
 public:
     virtual void vf0();    // virtual 0x00636be7
@@ -8076,18 +8459,21 @@ public:
 };
 
 // vtable 0x008ed234: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ed234 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00638318
 };
 
 // vtable 0x008ed238: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed238 {
 public:
     virtual void vf0();    // virtual 0x006382f6
 };
 
 // vtable 0x008ed23c: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ed23c {
 public:
     virtual void vf0();    // virtual 0x006398a2
@@ -8100,12 +8486,14 @@ public:
 };
 
 // vtable 0x008ed244: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed244 {
 public:
     virtual void vf0();    // virtual 0x00639b30
 };
 
 // vtable 0x008ed248: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x20 (1 allocation site), constructor touches up to +0x20
 class C_008ed248 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0063a478
@@ -8113,12 +8501,14 @@ public:
 };
 
 // vtable 0x008ed250: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008ed250 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0063a498
 };
 
 // vtable 0x008ed254: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed254 {
 public:
     virtual void vf0();    // virtual 0x0063a456
@@ -8202,6 +8592,7 @@ public:
 };
 
 // vtable 0x008ed3bc: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed3bc {
 public:
     virtual void vf0();    // virtual 0x00654a7b
@@ -8214,6 +8605,7 @@ public:
 };
 
 // vtable 0x008ed3c4: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed3c4 {
 public:
     virtual void vf0();    // virtual 0x00654bb9
@@ -8226,6 +8618,7 @@ public:
 };
 
 // vtable 0x008ed3cc: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed3cc {
 public:
     virtual void vf0();    // virtual 0x00654cf7
@@ -8238,6 +8631,7 @@ public:
 };
 
 // vtable 0x008ed3d4: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed3d4 {
 public:
     virtual void vf0();    // virtual 0x00654e35
@@ -8250,6 +8644,7 @@ public:
 };
 
 // vtable 0x008ed3dc: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed3dc {
 public:
     virtual void vf0();    // virtual 0x00654f73
@@ -8293,6 +8688,7 @@ public:
 };
 
 // vtable 0x008ed3fc: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed3fc {
 public:
     virtual void vf0();    // virtual 0x00655cb5
@@ -8300,12 +8696,14 @@ public:
 };
 
 // vtable 0x008ed404: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x20
 class C_008ed404 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00655f5b
 };
 
 // vtable 0x008ed408: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed408 {
 public:
     virtual void vf0();    // virtual 0x00655d11
@@ -8313,12 +8711,14 @@ public:
 };
 
 // vtable 0x008ed410: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ed410 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00655f7c
 };
 
 // vtable 0x008ed414: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed414 {
 public:
     virtual void vf0();    // virtual 0x00655d65
@@ -8326,12 +8726,14 @@ public:
 };
 
 // vtable 0x008ed41c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ed41c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00655f9d
 };
 
 // vtable 0x008ed420: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed420 {
 public:
     virtual void vf0();    // virtual 0x00655dbd
@@ -8339,18 +8741,21 @@ public:
 };
 
 // vtable 0x008ed428: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ed428 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00655fbe
 };
 
 // vtable 0x008ed42c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed42c {
 public:
     virtual void vf0();    // virtual 0x00655e15
 };
 
 // vtable 0x008ed430: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed430 {
 public:
     virtual void vf0();    // virtual 0x00655efb
@@ -8358,6 +8763,7 @@ public:
 };
 
 // vtable 0x008ed438: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ed438 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00657776
@@ -8420,48 +8826,56 @@ public:
 };
 
 // vtable 0x008ed4e8: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed4e8 {
 public:
     virtual void vf0();    // virtual 0x0065e269
 };
 
 // vtable 0x008ed4ec: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed4ec {
 public:
     virtual void vf0();    // virtual 0x0065e55f
 };
 
 // vtable 0x008ed4f0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed4f0 {
 public:
     virtual void vf0();    // virtual 0x0065e539
 };
 
 // vtable 0x008ed4f4: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed4f4 {
 public:
     virtual void vf0();    // virtual 0x0065e513
 };
 
 // vtable 0x008ed4f8: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed4f8 {
 public:
     virtual void vf0();    // virtual 0x0065e4ed
 };
 
 // vtable 0x008ed4fc: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed4fc {
 public:
     virtual void vf0();    // virtual 0x0065e4c7
 };
 
 // vtable 0x008ed500: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed500 {
 public:
     virtual void vf0();    // virtual 0x0065e4a1
 };
 
 // vtable 0x008ed504: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed504 {
 public:
     virtual void vf0();    // virtual 0x0065e47b
@@ -8492,6 +8906,7 @@ public:
 };
 
 // vtable 0x008ed540: 7 slots, installed by 8 functions
+// size unknown; constructor touches up to +0x14
 class C_008ed540 {
 public:
     virtual void vf0();    // virtual 0x006715b2
@@ -8523,6 +8938,7 @@ public:
 };
 
 // vtable 0x008ed594: 15 slots, installed by 1 function, base 0x008ed540 (1 vote)
+// size unknown; constructor touches up to +0x1c
 class C_008ed594 : public C_008ed540 {
 public:
     virtual void vf0();    // override 0x00661622
@@ -8543,6 +8959,7 @@ public:
 };
 
 // vtable 0x008ed5d0: 7 slots, installed by 1 function, base 0x008ed540 (1 vote)
+// size 0x28 (1 allocation site), constructor touches up to +0x26
 class C_008ed5d0 : public C_008ed540 {
 public:
     virtual void vf0();    // override 0x00661764
@@ -8561,6 +8978,7 @@ public:
 };
 
 // vtable 0x008ed5f0: 7 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ed5f0 {
 public:
     virtual void vf0();    // virtual 0x0066184c
@@ -8604,6 +9022,7 @@ public:
 };
 
 // vtable 0x008ed634: 15 slots, installed by 1 function, base 0x008ed6b0 (1 vote)
+// size 0x2c (1 allocation site), constructor touches up to +0x28
 class C_008ed634 : public C_008ed6b0 {
 public:
     virtual void vf0();    // override 0x00661784
@@ -8624,6 +9043,7 @@ public:
 };
 
 // vtable 0x008ed670: 9 slots, installed by 1 function, base 0x008ed540 (1 vote)
+// size 0x28 (1 allocation site), constructor touches up to +0x26
 class C_008ed670 : public C_008ed540 {
 public:
     virtual void vf0();    // override 0x006617f3
@@ -8656,12 +9076,14 @@ public:
 };
 
 // vtable 0x008ed6cc: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ed6cc {
 public:
     virtual void vf0();    // virtual 0x0066198a
 };
 
 // vtable 0x008ed6d0: 6 slots, installed by 1 function
+// size unknown; constructor touches up to +0x12
 class C_008ed6d0 {
 public:
     virtual void vf0();    // virtual 0x006616eb
@@ -8685,6 +9107,7 @@ public:
 };
 
 // vtable 0x008ed88c: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ed88c {
 public:
     virtual void vf0();    // virtual 0x00671ab2
@@ -8698,6 +9121,7 @@ public:
 };
 
 // vtable 0x008ed898: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008ed898 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00672a16
@@ -8750,6 +9174,7 @@ public:
 };
 
 // vtable 0x008ee948: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ee948 {
 public:
     virtual void vf0();    // virtual 0x0067f5ff
@@ -8777,6 +9202,7 @@ public:
 };
 
 // vtable 0x008ee978: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee978 {
 public:
     virtual void vf0();    // virtual 0x0067f5d9
@@ -8789,12 +9215,14 @@ public:
 };
 
 // vtable 0x008ee980: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee980 {
 public:
     virtual void vf0();    // virtual 0x0067fa02
 };
 
 // vtable 0x008ee984: 2 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x80 (1 allocation site), constructor touches up to +0x7c
 class C_008ee984 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00680b76
@@ -8802,18 +9230,21 @@ public:
 };
 
 // vtable 0x008ee98c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x34
 class C_008ee98c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x006824ee
 };
 
 // vtable 0x008ee990: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee990 {
 public:
     virtual void vf0();    // virtual 0x006824cc
 };
 
 // vtable 0x008ee994: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee994 {
 public:
     virtual void vf0();    // virtual 0x00682e2d
@@ -8826,6 +9257,7 @@ public:
 };
 
 // vtable 0x008ee99c: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee99c {
 public:
     virtual void vf0();    // virtual 0x00682fdb
@@ -8838,6 +9270,7 @@ public:
 };
 
 // vtable 0x008ee9a4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x30 (1 allocation site), constructor touches up to +0x14
 class C_008ee9a4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0068381f
@@ -8851,18 +9284,21 @@ public:
 };
 
 // vtable 0x008ee9b8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ee9b8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00687a14
 };
 
 // vtable 0x008ee9bc: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee9bc {
 public:
     virtual void vf0();    // virtual 0x006879f2
 };
 
 // vtable 0x008ee9c0: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee9c0 {
 public:
     virtual void vf0();    // virtual 0x00687af6
@@ -8875,6 +9311,7 @@ public:
 };
 
 // vtable 0x008ee9d4: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee9d4 {
 public:
     virtual void vf0();    // virtual 0x0068a2cc
@@ -8882,12 +9319,14 @@ public:
 };
 
 // vtable 0x008ee9dc: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x2c
 class C_008ee9dc : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0068b433
 };
 
 // vtable 0x008ee9e0: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee9e0 {
 public:
     virtual void vf0();    // virtual 0x0068b411
@@ -8895,12 +9334,14 @@ public:
 };
 
 // vtable 0x008ee9e8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008ee9e8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0068cc6f
 };
 
 // vtable 0x008ee9ec: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008ee9ec {
 public:
     virtual void vf0();    // virtual 0x0068cc4d
@@ -9877,6 +10318,7 @@ public:
 };
 
 // vtable 0x008ef6a0: 20 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008ef6a0 {
 public:
     virtual void vf0();    // virtual 0x006ad91a
@@ -10130,18 +10572,21 @@ public:
 };
 
 // vtable 0x008ef9f0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x28 (2 allocation sites), constructor touches up to +0x14
 class C_008ef9f0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x006bd6ae
 };
 
 // vtable 0x008ef9f4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x2c (1 allocation site), constructor touches up to +0x2c
 class C_008ef9f4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x006bd966
 };
 
 // vtable 0x008ef9f8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x20 (1 allocation site), constructor touches up to +0x18
 class C_008ef9f8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x006bd986
@@ -10355,6 +10800,7 @@ public:
 };
 
 // vtable 0x008efcd0: 3 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008efcd0 {
 public:
     virtual void vf0();    // virtual 0x006c9354
@@ -10363,6 +10809,7 @@ public:
 };
 
 // vtable 0x008efcdc: 3 slots, installed by 6 functions
+// size unknown; constructor touches up to +0x4
 class C_008efcdc {
 public:
     virtual void vf0();    // virtual 0x006c937f
@@ -10640,12 +11087,14 @@ public:
 };
 
 // vtable 0x008f0050: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0050 {
 public:
     virtual void vf0();    // virtual 0x006def5d
 };
 
 // vtable 0x008f0054: 1 slot, installed by 6 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0054 {
 public:
     virtual void vf0();    // virtual 0x006def37
@@ -10658,6 +11107,7 @@ public:
 };
 
 // vtable 0x008f005c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f005c {
 public:
     virtual void vf0();    // virtual 0x006df0a7
@@ -10670,6 +11120,7 @@ public:
 };
 
 // vtable 0x008f0064: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0064 {
 public:
     virtual void vf0();    // virtual 0x006df26f
@@ -10720,6 +11171,7 @@ public:
 };
 
 // vtable 0x008f00f8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f00f8 {
 public:
     virtual void vf0();    // virtual 0x006eaa3f
@@ -10790,6 +11242,7 @@ public:
 };
 
 // vtable 0x008f01d4: 30 slots, installed by 1 function
+// size 0x48 (1 allocation site)
 class C_008f01d4 {
 public:
     virtual void vf0();    // virtual 0x00456330
@@ -10822,7 +11275,9 @@ public:
     virtual void vf27();    // virtual 0x00449988
     virtual void vf28();    // virtual 0x004b37f2
     virtual void vf29();    // virtual 0x004b37f8
+    unsigned char m_raw[68];    // opaque: fields not recovered
 };
+typedef char size_check_C_008f01d4[sizeof(C_008f01d4) == 72 ? 1 : -1];
 
 // vtable 0x008f024c: 10 slots, installed by 1 function
 class C_008f024c {
@@ -10865,6 +11320,7 @@ public:
 };
 
 // vtable 0x008f02c4: 10 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x48 (2 allocation sites), constructor touches up to +0x48
 class C_008f02c4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00456330
@@ -10905,12 +11361,14 @@ public:
 };
 
 // vtable 0x008f0300: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0300 {
 public:
     virtual void vf0();    // virtual 0x006ecaa0
 };
 
 // vtable 0x008f0304: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x18 (1 allocation site), constructor touches up to +0x18
 class C_008f0304 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x006ecb2b
@@ -10924,12 +11382,14 @@ public:
 };
 
 // vtable 0x008f0310: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f0310 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x006eecd7
 };
 
 // vtable 0x008f0314: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0314 {
 public:
     virtual void vf0();    // virtual 0x006eecb5
@@ -10981,6 +11441,7 @@ public:
 };
 
 // vtable 0x008f03ac: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f03ac {
 public:
     virtual void vf0();    // virtual 0x006f1656
@@ -11081,6 +11542,7 @@ public:
 };
 
 // vtable 0x008f04d0: 20 slots, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008f04d0 {
 public:
     virtual void vf0();    // virtual 0x006f9e1b
@@ -11167,6 +11629,7 @@ public:
 };
 
 // vtable 0x008f05ec: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f05ec {
 public:
     virtual void vf0();    // virtual 0x00705c99
@@ -11256,6 +11719,7 @@ public:
 };
 
 // vtable 0x008f0700: 21 slots, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0700 {
 public:
     virtual void vf0();    // virtual 0x00705cbf
@@ -11296,6 +11760,7 @@ public:
 };
 
 // vtable 0x008f0778: 4 slots, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x18 (2 allocation sites), constructor touches up to +0x4
 class C_008f0778 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00705462
@@ -11329,6 +11794,7 @@ public:
 };
 
 // vtable 0x008f07ac: 2 slots, installed by 5 functions
+// size unknown; constructor touches up to +0x4
 class C_008f07ac {
 public:
     virtual void vf0();    // virtual 0x0070625a
@@ -11342,6 +11808,7 @@ public:
 };
 
 // vtable 0x008f07b8: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f07b8 {
 public:
     virtual void vf0();    // virtual 0x00707886
@@ -11349,6 +11816,7 @@ public:
 };
 
 // vtable 0x008f07c0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f07c0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00709317
@@ -11450,6 +11918,7 @@ public:
 };
 
 // vtable 0x008f08ec: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f08ec : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0070bd9f
@@ -11500,12 +11969,14 @@ public:
 };
 
 // vtable 0x008f0984: 1 slot, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x3c (2 allocation sites), constructor touches up to +0x3c
 class C_008f0984 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0070e311
 };
 
 // vtable 0x008f0988: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0988 {
 public:
     virtual void vf0();    // virtual 0x0070ed7f
@@ -11518,6 +11989,7 @@ public:
 };
 
 // vtable 0x008f0990: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0990 {
 public:
     virtual void vf0();    // virtual 0x0070ef6f
@@ -11659,6 +12131,7 @@ public:
 };
 
 // vtable 0x008f0b48: 1 slot, installed by 6 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0b48 {
 public:
     virtual void vf0();    // virtual 0x0071b968
@@ -11796,6 +12269,7 @@ public:
 };
 
 // vtable 0x008f0ce0: 2 slots, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0ce0 {
 public:
     virtual void vf0();    // virtual 0x0071b98e
@@ -11803,12 +12277,14 @@ public:
 };
 
 // vtable 0x008f0ce8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f0ce8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0071e2f1
 };
 
 // vtable 0x008f0cec: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f0cec {
 public:
     virtual void vf0();    // virtual 0x0071e2cf
@@ -12078,6 +12554,7 @@ public:
 };
 
 // vtable 0x008f1074: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1074 {
 public:
     virtual void vf0();    // virtual 0x0075bb28
@@ -12452,16 +12929,22 @@ public:
 };
 
 // vtable 0x008f1544: 1 slot, installed by 2 functions
+// size 0x50 (1 allocation site), constructor touches up to +0x4c
 class C_008f1544 {
 public:
     virtual void vf0();    // virtual 0x0077c81c
+    unsigned char m_raw[76];    // opaque: fields not recovered
 };
+typedef char size_check_C_008f1544[sizeof(C_008f1544) == 80 ? 1 : -1];
 
 // vtable 0x008f1548: 1 slot, installed by 2 functions
+// size 0x34 (1 allocation site), constructor touches up to +0x34
 class C_008f1548 {
 public:
     virtual void vf0();    // virtual 0x0077c8db
+    unsigned char m_raw[48];    // opaque: fields not recovered
 };
+typedef char size_check_C_008f1548[sizeof(C_008f1548) == 52 ? 1 : -1];
 
 // vtable 0x008f154c: 1 slot, installed by 2 functions
 class C_008f154c {
@@ -12476,10 +12959,13 @@ public:
 };
 
 // vtable 0x008f1554: 1 slot, installed by 3 functions
+// size 0x18 (1 allocation site), constructor touches up to +0x18
 class C_008f1554 {
 public:
     virtual void vf0();    // virtual 0x0077ccf8
+    unsigned char m_raw[20];    // opaque: fields not recovered
 };
+typedef char size_check_C_008f1554[sizeof(C_008f1554) == 24 ? 1 : -1];
 
 // vtable 0x008f1558: 90 slots, installed by 1 function
 class C_008f1558 {
@@ -12618,6 +13104,7 @@ public:
 };
 
 // vtable 0x008f1758: 20 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x4
 class C_008f1758 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00789ed7
@@ -12707,24 +13194,28 @@ public:
 };
 
 // vtable 0x008f187c: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f187c {
 public:
     virtual void vf0();    // virtual 0x0079d685
 };
 
 // vtable 0x008f1880: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1880 {
 public:
     virtual void vf0();    // virtual 0x0079d65f
 };
 
 // vtable 0x008f1884: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1884 {
 public:
     virtual void vf0();    // virtual 0x0079d639
 };
 
 // vtable 0x008f1888: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1888 {
 public:
     virtual void vf0();    // virtual 0x0079d613
@@ -12737,6 +13228,7 @@ public:
 };
 
 // vtable 0x008f18a4: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f18a4 {
 public:
     virtual void vf0();    // virtual 0x0079dbe9
@@ -12770,12 +13262,14 @@ public:
 };
 
 // vtable 0x008f18d8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x24
 class C_008f18d8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0079f59f
 };
 
 // vtable 0x008f18dc: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f18dc {
 public:
     virtual void vf0();    // virtual 0x0079f57d
@@ -12783,12 +13277,14 @@ public:
 };
 
 // vtable 0x008f18e4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f18e4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007a1173
 };
 
 // vtable 0x008f18e8: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f18e8 {
 public:
     virtual void vf0();    // virtual 0x007a10a9
@@ -12796,12 +13292,14 @@ public:
 };
 
 // vtable 0x008f18f0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f18f0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007a1194
 };
 
 // vtable 0x008f18f4: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f18f4 {
 public:
     virtual void vf0();    // virtual 0x007a10fd
@@ -12809,12 +13307,14 @@ public:
 };
 
 // vtable 0x008f18fc: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x28
 class C_008f18fc : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007a11b5
 };
 
 // vtable 0x008f1900: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1900 {
 public:
     virtual void vf0();    // virtual 0x007a1151
@@ -12860,18 +13360,21 @@ public:
 };
 
 // vtable 0x008f19dc: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f19dc {
 public:
     virtual void vf0();    // virtual 0x007b430e
 };
 
 // vtable 0x008f19e0: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f19e0 {
 public:
     virtual void vf0();    // virtual 0x007b42e8
 };
 
 // vtable 0x008f19e4: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f19e4 {
 public:
     virtual void vf0();    // virtual 0x007b42c2
@@ -12884,6 +13387,7 @@ public:
 };
 
 // vtable 0x008f1a08: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a08 {
 public:
     virtual void vf0();    // virtual 0x007b4525
@@ -12891,6 +13395,7 @@ public:
 };
 
 // vtable 0x008f1a10: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f1a10 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007b8463
@@ -12910,6 +13415,7 @@ public:
 };
 
 // vtable 0x008f1a20: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a20 {
 public:
     virtual void vf0();    // virtual 0x007b83ed
@@ -12917,12 +13423,14 @@ public:
 };
 
 // vtable 0x008f1a28: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x14
 class C_008f1a28 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007b84a5
 };
 
 // vtable 0x008f1a2c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a2c {
 public:
     virtual void vf0();    // virtual 0x007b8441
@@ -12936,42 +13444,49 @@ public:
 };
 
 // vtable 0x008f1a48: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a48 {
 public:
     virtual void vf0();    // virtual 0x007c1545
 };
 
 // vtable 0x008f1a4c: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a4c {
 public:
     virtual void vf0();    // virtual 0x007c151f
 };
 
 // vtable 0x008f1a50: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a50 {
 public:
     virtual void vf0();    // virtual 0x007c14f9
 };
 
 // vtable 0x008f1a54: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a54 {
 public:
     virtual void vf0();    // virtual 0x007c14d3
 };
 
 // vtable 0x008f1a58: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a58 {
 public:
     virtual void vf0();    // virtual 0x007c14ad
 };
 
 // vtable 0x008f1a5c: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a5c {
 public:
     virtual void vf0();    // virtual 0x007c1487
 };
 
 // vtable 0x008f1a60: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size 0x1c (1 allocation site), constructor touches up to +0x14
 class C_008f1a60 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007c086b
@@ -12984,6 +13499,7 @@ public:
 };
 
 // vtable 0x008f1a68: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a68 {
 public:
     virtual void vf0();    // virtual 0x007c17e9
@@ -12991,12 +13507,14 @@ public:
 };
 
 // vtable 0x008f1a70: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f1a70 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007c4c9e
 };
 
 // vtable 0x008f1a74: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a74 {
 public:
     virtual void vf0();    // virtual 0x007c4b38
@@ -13004,6 +13522,7 @@ public:
 };
 
 // vtable 0x008f1a7c: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f1a7c : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007c4cbf
@@ -13017,12 +13536,14 @@ public:
 };
 
 // vtable 0x008f1a88: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f1a88 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007c4ce0
 };
 
 // vtable 0x008f1a8c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f1a8c {
 public:
     virtual void vf0();    // virtual 0x007c4bdc
@@ -13030,6 +13551,7 @@ public:
 };
 
 // vtable 0x008f1a94: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f1a94 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007c4d01
@@ -13043,6 +13565,7 @@ public:
 };
 
 // vtable 0x008f1aa0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f1aa0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007c4d22
@@ -13569,6 +14092,7 @@ public:
 };
 
 // vtable 0x008f22a0: 15 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x240 (1 allocation site), constructor touches up to +0x23c
 class C_008f22a0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007f64e0
@@ -13589,6 +14113,7 @@ public:
 };
 
 // vtable 0x008f2398: 15 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x10
 class C_008f2398 {
 public:
     virtual void vf0();    // virtual 0x007f72e2
@@ -13609,6 +14134,7 @@ public:
 };
 
 // vtable 0x008f24a8: 15 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x248 (1 allocation site), constructor touches up to +0x10
 class C_008f24a8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007fbfbc
@@ -13629,6 +14155,7 @@ public:
 };
 
 // vtable 0x008f25a0: 15 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x268 (1 allocation site), constructor touches up to +0x10
 class C_008f25a0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x007fdc3c
@@ -13649,6 +14176,7 @@ public:
 };
 
 // vtable 0x008f2698: 15 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x10
 class C_008f2698 {
 public:
     virtual void vf0();    // virtual 0x0080113d
@@ -13669,6 +14197,7 @@ public:
 };
 
 // vtable 0x008f2798: 16 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x240 (1 allocation site), constructor touches up to +0x240
 class C_008f2798 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00803f13
@@ -13690,6 +14219,7 @@ public:
 };
 
 // vtable 0x008f2898: 15 slots, installed by 2 functions, base 0x008e84a0 (1 vote)
+// size 0x238 (1 allocation site), constructor touches up to +0x10
 class C_008f2898 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x008071e6
@@ -13710,6 +14240,7 @@ public:
 };
 
 // vtable 0x008f28d4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f28d4 {
 public:
     virtual void vf0();    // virtual 0x0080a005
@@ -13818,6 +14349,7 @@ public:
 };
 
 // vtable 0x008f2a78: 2 slots, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2a78 {
 public:
     virtual void vf0();    // virtual 0x0080cdc2
@@ -13825,12 +14357,14 @@ public:
 };
 
 // vtable 0x008f2a80: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f2a80 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0080dcc9
 };
 
 // vtable 0x008f2a84: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2a84 {
 public:
     virtual void vf0();    // virtual 0x0080dca7
@@ -14062,12 +14596,14 @@ public:
 };
 
 // vtable 0x008f2d8c: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x14
 class C_008f2d8c {
 public:
     virtual void vf0();    // virtual 0x00816679
 };
 
 // vtable 0x008f2d98: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008f2d98 {
 public:
     virtual void vf0();    // virtual 0x00819537
@@ -14117,6 +14653,7 @@ public:
 };
 
 // vtable 0x008f2e20: 2 slots, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2e20 {
 public:
     virtual void vf0();    // virtual 0x0081955d
@@ -14124,6 +14661,7 @@ public:
 };
 
 // vtable 0x008f2e28: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f2e28 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0081a826
@@ -14137,6 +14675,7 @@ public:
 };
 
 // vtable 0x008f2e34: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f2e34 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0081a847
@@ -14199,42 +14738,51 @@ public:
 };
 
 // vtable 0x008f2eec: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2eec {
 public:
     virtual void vf0();    // virtual 0x008295b1
 };
 
 // vtable 0x008f2ef0: 1 slot, installed by 2 functions
+// size 0x80 (1 allocation site), constructor touches up to +0x80
 class C_008f2ef0 {
 public:
     virtual void vf0();    // virtual 0x00827ea1
+    unsigned char m_raw[124];    // opaque: fields not recovered
 };
+typedef char size_check_C_008f2ef0[sizeof(C_008f2ef0) == 128 ? 1 : -1];
 
 // vtable 0x008f2ef4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2ef4 {
 public:
     virtual void vf0();    // virtual 0x0082966f
 };
 
 // vtable 0x008f2ef8: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2ef8 {
 public:
     virtual void vf0();    // virtual 0x00829649
 };
 
 // vtable 0x008f2efc: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2efc {
 public:
     virtual void vf0();    // virtual 0x00829623
 };
 
 // vtable 0x008f2f00: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f00 {
 public:
     virtual void vf0();    // virtual 0x008295fd
 };
 
 // vtable 0x008f2f04: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f04 {
 public:
     virtual void vf0();    // virtual 0x008295d7
@@ -14247,48 +14795,56 @@ public:
 };
 
 // vtable 0x008f2f0c: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f0c {
 public:
     virtual void vf0();    // virtual 0x008294c6
 };
 
 // vtable 0x008f2f10: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f10 {
 public:
     virtual void vf0();    // virtual 0x008294a0
 };
 
 // vtable 0x008f2f14: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f14 {
 public:
     virtual void vf0();    // virtual 0x0082947a
 };
 
 // vtable 0x008f2f18: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f18 {
 public:
     virtual void vf0();    // virtual 0x00829454
 };
 
 // vtable 0x008f2f1c: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f1c {
 public:
     virtual void vf0();    // virtual 0x0082942e
 };
 
 // vtable 0x008f2f20: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f20 {
 public:
     virtual void vf0();    // virtual 0x00829408
 };
 
 // vtable 0x008f2f24: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f24 {
 public:
     virtual void vf0();    // virtual 0x008293e2
 };
 
 // vtable 0x008f2f28: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f28 {
 public:
     virtual void vf0();    // virtual 0x008293bc
@@ -14301,6 +14857,7 @@ public:
 };
 
 // vtable 0x008f2f30: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f30 {
 public:
     virtual void vf0();    // virtual 0x0082958b
@@ -14308,6 +14865,7 @@ public:
 };
 
 // vtable 0x008f2f38: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f38 {
 public:
     virtual void vf0();    // virtual 0x008294ec
@@ -14326,24 +14884,28 @@ public:
 };
 
 // vtable 0x008f2f44: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f44 {
 public:
     virtual void vf0();    // virtual 0x008296e1
 };
 
 // vtable 0x008f2f48: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f48 {
 public:
     virtual void vf0();    // virtual 0x008296bb
 };
 
 // vtable 0x008f2f4c: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f4c {
 public:
     virtual void vf0();    // virtual 0x00829695
 };
 
 // vtable 0x008f2f68: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008f2f68 {
 public:
     virtual void vf0();    // virtual 0x0083dc52
@@ -14356,10 +14918,13 @@ public:
 };
 
 // vtable 0x008f2f70: 1 slot, installed by 5 functions
+// size 0x3c (2 allocation sites), constructor touches up to +0x4
 class C_008f2f70 {
 public:
     virtual void vf0();    // virtual 0x0083dc2c
+    unsigned char m_raw[56];    // opaque: fields not recovered
 };
+typedef char size_check_C_008f2f70[sizeof(C_008f2f70) == 60 ? 1 : -1];
 
 // vtable 0x008f2f74: 1 slot, installed by 3 functions
 class C_008f2f74 {
@@ -14368,6 +14933,7 @@ public:
 };
 
 // vtable 0x008f2f78: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f2f78 {
 public:
     virtual void vf0();    // virtual 0x0083dc06
@@ -14648,6 +15214,7 @@ public:
 };
 
 // vtable 0x008f32fc: 14 slots, installed by 1 function, base 0x008ea1c8 (1 vote)
+// size 0x98 (4 allocation sites), constructor touches up to +0x90
 class C_008f32fc : public C_008ea1c8 {
 public:
     virtual void vf3();    // override 0x00729630
@@ -14724,12 +15291,14 @@ public:
 };
 
 // vtable 0x008f3364: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x20
 class C_008f3364 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00841a6e
 };
 
 // vtable 0x008f3368: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3368 {
 public:
     virtual void vf0();    // virtual 0x0084128c
@@ -14743,6 +15312,7 @@ public:
 };
 
 // vtable 0x008f3374: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3374 {
 public:
     virtual void vf0();    // virtual 0x0084130c
@@ -14756,6 +15326,7 @@ public:
 };
 
 // vtable 0x008f3380: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3380 {
 public:
     virtual void vf0();    // virtual 0x0084138c
@@ -14769,6 +15340,7 @@ public:
 };
 
 // vtable 0x008f338c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f338c {
 public:
     virtual void vf0();    // virtual 0x0084140c
@@ -14782,6 +15354,7 @@ public:
 };
 
 // vtable 0x008f3398: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3398 {
 public:
     virtual void vf0();    // virtual 0x0084148c
@@ -14795,6 +15368,7 @@ public:
 };
 
 // vtable 0x008f33a4: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33a4 {
 public:
     virtual void vf0();    // virtual 0x0084150c
@@ -14808,6 +15382,7 @@ public:
 };
 
 // vtable 0x008f33b0: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33b0 {
 public:
     virtual void vf0();    // virtual 0x0084158c
@@ -14821,6 +15396,7 @@ public:
 };
 
 // vtable 0x008f33bc: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33bc {
 public:
     virtual void vf0();    // virtual 0x0084160c
@@ -14834,24 +15410,28 @@ public:
 };
 
 // vtable 0x008f33c8: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33c8 {
 public:
     virtual void vf0();    // virtual 0x008417af
 };
 
 // vtable 0x008f33cc: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x30
 class C_008f33cc {
 public:
     virtual void vf0();    // virtual 0x008416d7
 };
 
 // vtable 0x008f33d0: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33d0 {
 public:
     virtual void vf0();    // virtual 0x00841782
 };
 
 // vtable 0x008f33d4: 2 slots, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33d4 {
 public:
     virtual void vf0();    // virtual 0x0084175c
@@ -14865,18 +15445,21 @@ public:
 };
 
 // vtable 0x008f33e0: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33e0 {
 public:
     virtual void vf0();    // virtual 0x00841941
 };
 
 // vtable 0x008f33e4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33e4 {
 public:
     virtual void vf0();    // virtual 0x00841914
 };
 
 // vtable 0x008f33e8: 2 slots, installed by 4 functions
+// size unknown; constructor touches up to +0x2c
 class C_008f33e8 {
 public:
     virtual void vf0();    // virtual 0x008418ee
@@ -14890,6 +15473,7 @@ public:
 };
 
 // vtable 0x008f33f4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f33f4 {
 public:
     virtual void vf0();    // virtual 0x00841a4c
@@ -14984,6 +15568,7 @@ public:
 };
 
 // vtable 0x008f3518: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3518 {
 public:
     virtual void vf0();    // virtual 0x0084eb5a
@@ -15015,6 +15600,7 @@ public:
 };
 
 // vtable 0x008f3578: 14 slots, installed by 1 function, base 0x008ea1c8 (1 vote)
+// size unknown; constructor touches up to +0x8c
 class C_008f3578 : public C_008ea1c8 {
 public:
     virtual void vf3();    // override 0x0069f0b7
@@ -15071,6 +15657,7 @@ public:
 };
 
 // vtable 0x008f363c: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f363c {
 public:
     virtual void vf0();    // virtual 0x0084f363
@@ -15084,6 +15671,7 @@ public:
 };
 
 // vtable 0x008f3648: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3648 {
 public:
     virtual void vf0();    // virtual 0x00850e2d
@@ -15091,12 +15679,14 @@ public:
 };
 
 // vtable 0x008f3650: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f3650 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00852e67
 };
 
 // vtable 0x008f3654: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3654 {
 public:
     virtual void vf0();    // virtual 0x00852e45
@@ -15109,6 +15699,7 @@ public:
 };
 
 // vtable 0x008f3684: 1 slot, installed by 4 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3684 {
 public:
     virtual void vf0();    // virtual 0x00861d21
@@ -15133,18 +15724,21 @@ public:
 };
 
 // vtable 0x008f3694: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3694 {
 public:
     virtual void vf0();    // virtual 0x00861cfb
 };
 
 // vtable 0x008f3698: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3698 {
 public:
     virtual void vf0();    // virtual 0x00861cd5
 };
 
 // vtable 0x008f369c: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f369c {
 public:
     virtual void vf0();    // virtual 0x0086201e
@@ -15157,6 +15751,7 @@ public:
 };
 
 // vtable 0x008f36a4: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x4
 class C_008f36a4 {
 public:
     virtual void vf0();    // virtual 0x0086307c
@@ -15176,6 +15771,7 @@ public:
 };
 
 // vtable 0x008f36b4: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f36b4 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0086422e
@@ -15189,12 +15785,14 @@ public:
 };
 
 // vtable 0x008f36c0: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x28
 class C_008f36c0 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x0086424f
 };
 
 // vtable 0x008f36c4: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f36c4 {
 public:
     virtual void vf0();    // virtual 0x0086420c
@@ -15214,6 +15812,7 @@ public:
 };
 
 // vtable 0x008f36d4: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f36d4 {
 public:
     virtual void vf0();    // virtual 0x00865aad
@@ -15221,12 +15820,14 @@ public:
 };
 
 // vtable 0x008f36dc: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x18
 class C_008f36dc : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00865b94
 };
 
 // vtable 0x008f36e0: 2 slots, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f36e0 {
 public:
     virtual void vf0();    // virtual 0x00865b01
@@ -15234,6 +15835,7 @@ public:
 };
 
 // vtable 0x008f36e8: 1 slot, installed by 1 function, base 0x008e84a0 (1 vote)
+// size unknown; constructor touches up to +0x10
 class C_008f36e8 : public C_008e84a0 {
 public:
     virtual void vf0();    // override 0x00865bb5
@@ -15252,18 +15854,21 @@ public:
 };
 
 // vtable 0x008f3e64: 1 slot, installed by 2 functions
+// size unknown; constructor touches up to +0x4
 class C_008f3e64 {
 public:
     virtual void vf0();    // virtual 0x00868fc0
 };
 
 // vtable 0x008f3e88: 1 slot, installed by 3 functions
+// size unknown; constructor touches up to +0x10
 class C_008f3e88 {
 public:
     virtual void vf0();    // virtual 0x004038b2
 };
 
 // vtable 0x008f3e90: 1 slot, installed by 1 function
+// size unknown; constructor touches up to +0x4
 class C_008f3e90 {
 public:
     virtual void vf0();    // virtual 0x0087973a

@@ -15,9 +15,27 @@ Everything here is for the exe; the DLLs have not been run yet.
    (inlined base constructor) and (b) direct calls made with `ecx == this` to a function that
    installs another vtable (base constructor or destructor). Members constructed with
    `lea ecx, [this+N]` are not counted. Result: `GMSv62_hierarchy.csv`.
-3. `tools/gen_classes.py`: `src/cxx/GMSv62_classes.h`, one class per vtable (`C_<vtable VA>`),
+3. `tools/class_layouts.py`: object sizes and constructor extents (`GMSv62_layouts.csv`). Size votes come
+   from the `push imm` feeding the allocator call before a constructor call, and from inlined
+   constructors (`call alloc; mov [eax], vtable`). Extent is the highest `[this+off]` the constructor
+   touches, a lower bound on the size.
+4. `tools/gen_classes.py`: `src/cxx/GMSv62_classes.h`, one class per vtable (`C_<vtable VA>`),
    methods `vf<slot>`, bases first. `src/cxx/classes_selftest.cpp` compiles it under MSVC in C++
    mode (clean).
+
+## What was found (layouts)
+
+| | |
+|---|---|
+| Classes with any allocation-size vote | 83 of 1,318 (6%) |
+| Single size at every site (and size >= constructor extent) | 81; in 31 of them size equals the extent exactly |
+| Size asserts emitted | 10 (a derived class needs its base's size, and most bases have none) |
+
+The votes are only trustworthy for classes allocated at a visible `new`. A base class's votes are
+contaminated: derived constructors call the base constructor, so the `push` before that call is
+often an argument or the derived size (`8e84a0` shows 12, 36, 44 and 160). Only single-size classes
+are used. The size assert is partly circular (the tail is computed from the size), so it checks
+padding and base-size consistency, not the fields.
 
 ## What was found
 
@@ -36,7 +54,8 @@ Everything here is for the exe; the DLLs have not been run yet.
   names, or later-version symbol lists (which must be marked as borrowed).
 - **No signatures.** Every method is `virtual void vfN();`. Real signatures come from promoting the raw C
   ports (`src/c/gmsv62`) one function at a time.
-- **No layouts.** No sizes, no field offsets, no static asserts yet; the constructors give both.
+- **Almost no layouts.** 83 classes have an allocation-size estimate, 10 have a size assert, none has
+  field types. Field offsets exist only as the constructor extent.
 - **Slot counts are approximate.** Vtables are packed back to back with secondary vtables for virtual
   bases, so a run's length (from address gaps) can be off by the neighbour. The hierarchy tool treats
   slot count as a consistency check, not evidence.
