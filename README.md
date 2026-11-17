@@ -101,3 +101,9 @@ has 1,318 generated class declarations (513 with an inferred base, 220 with size
 one real name, `_com_error`; no signatures yet), plus `src/cxx/GMSv62_exceptions.h` with the exception
 types from the binary's own exception tables and compiles under MSVC in C++ mode. Tools: `tools/find_vtables.py`, `class_hierarchy.py`,
 `gen_classes.py`.
+
+## Parity harness
+
+`docs/PARITY.md`, `tools/parity/`: runs an original function and its reconstruction in one x86 emulator on
+random inputs and compares results, memory and external calls. `_com_error` (constructor, copy constructor,
+destructor) passes 300 cases each; a mutation test shows the harness catches seven deliberate breakages.

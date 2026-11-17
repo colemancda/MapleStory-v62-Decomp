@@ -85,7 +85,9 @@ have been applied. Two cautions from checking against the earlier reverse engine
 `src/cxx/ComError.{h,cpp}` is the first class rewritten as real C++ from the raw ports. It is MSVC's own
 `_com_error` (comdef.h; Ghidra tags the destructor "Library: Visual Studio 2003"): vptr, `HRESULT
 m_hresult` (+4), `IErrorInfo *m_perrinfo` (+8), `char *m_pszMsg` (+0xc, `LocalFree`d), 16 bytes, matching the
-exception tables. Verified against the original by compiling with MSVC 7.1 and comparing the listing:
+exception tables. Verified against the original two ways: by compiling with MSVC 7.1 and comparing the listing, and with the
+parity harness (`docs/PARITY.md`: both versions run in an emulator on 300 random inputs per function, all
+paths covered, plus a mutation test showing the harness catches seven deliberate breakages):
 
 | Function | Original | Result |
 |---|---|---|
@@ -94,8 +96,8 @@ exception tables. Verified against the original by compiling with MSVC 7.1 and c
 | `0x4038d2` `_com_error(const _com_error&)` | copies hresult and perrinfo, `AddRef` | same behaviour, same kind of difference |
 | `0x4038b2` scalar deleting destructor | `~_com_error`, then free through the pool | **not reproduced**: needs the client's replacement `operator delete` (below) |
 
-The first three are marked `PARITY-cxx-ComError.cpp` in `PROGRESS.csv`. They are behavioural parity, not byte
-matches: the exe was built with MSVC 6, which is not available here. `GMSv62_promoted.csv` lists promoted
+The first three are marked `PARITY-cxx-ComError.cpp` in `PROGRESS.csv`. The harness passes for each. They are
+behavioural parity, not byte matches: the exe was built with MSVC 6, which is not available here. `GMSv62_promoted.csv` lists promoted
 classes; the generator omits their generated declarations and includes the hand-written header.
 
 ### The client's allocator (found while checking)
