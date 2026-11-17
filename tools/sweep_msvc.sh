@@ -7,6 +7,6 @@ chk() { f=$1; b=$(basename $f)
   out=$(docker exec ms-check wine 'Z:\opt\msvc7\bin\cl.exe' /c /nologo /Zs "Z:\\work\\$2\\$b" 2>&1 | tr -d '\r' | sed 's#\\#/#g' | grep -E "error C")
   if [ -n "$out" ]; then echo "$b" >> /tmp/sweep_fail.txt; echo "$out" | sed "s|^|$b: |" >> /tmp/sweep_err.txt; fi; }
 export -f chk
-ls $D/*.c | xargs -P4 -I{} bash -c "chk {} ${rel//\//\\\\}"
-total=$(ls $D/*.c | wc -l); fail=$(sort -u /tmp/sweep_fail.txt | wc -l)
+if [ -n "$ONLY" ]; then sed "s|^|$D/|" "$ONLY"; else ls $D/*.c; fi | xargs -P4 -I{} bash -c "chk {} ${rel//\//\\\\}"
+if [ -n "$ONLY" ]; then total=$(wc -l < "$ONLY"); else total=$(ls $D/*.c | wc -l); fi; fail=$(sort -u /tmp/sweep_fail.txt | wc -l)
 echo "pass=$((total-fail)) fail=$fail"

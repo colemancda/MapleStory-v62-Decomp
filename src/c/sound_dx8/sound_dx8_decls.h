@@ -3,10 +3,11 @@
 #define SOUND_DX8_DECLS_H
 
 #include "sound_dx8_types.h"
+#include "sound_dx8_tags.h"
 #include "sound_dx8_globals.h"
 
-HRESULT DllCanUnloadNow(void);
-HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv);
+/* SDK declares this: HRESULT DllCanUnloadNow(void); */
+/* SDK declares this: HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv); */
 LONG FUN_51802f4b(int param_1);
 LONG FUN_5180325c(undefined4 *param_1);
 LONG FUN_51809c1e(void);

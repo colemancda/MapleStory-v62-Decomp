@@ -3,10 +3,11 @@
 #define CANVAS_DECLS_H
 
 #include "canvas_types.h"
+#include "canvas_tags.h"
 #include "canvas_globals.h"
 
-HRESULT DllCanUnloadNow(void);
-HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv);
+/* SDK declares this: HRESULT DllCanUnloadNow(void); */
+/* SDK declares this: HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv); */
 LONG FUN_50002ae7(int param_1);
 LONG FUN_50003732(int param_1);
 LONG FUN_50003845(undefined4 *param_1);

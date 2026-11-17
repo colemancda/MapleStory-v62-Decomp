@@ -58,3 +58,4 @@ dkms.conf
 ghidra_proj/*.lock
 ghidra_proj/*.lock~
 __pycache__/
+ghidra_proj_exe/

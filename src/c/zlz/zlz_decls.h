@@ -2,6 +2,7 @@
 #ifndef ZLZ_DECLS_H
 #define ZLZ_DECLS_H
 
+#include "zlz_tags.h"
 #include "zlz_types.h"
 #include "zlz_globals.h"
 

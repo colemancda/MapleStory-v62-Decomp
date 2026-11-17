@@ -63,21 +63,30 @@ forward branch.
 
 ## Raw C tier
 
-All eight Wizet DLLs have been decompiled to `src/c/<module>/` with `tools/run_module.sh`
+The exe and all eight Wizet DLLs are decompiled to `src/c/<module>/` with `tools/run_module.sh`
 (Ghidra, generated headers, MSVC syntax sweep). `RAW-src` means the file compiles under MSVC 7.1
-with no hand edits; it does not mean the function is correct.
+with no hand edits. It does not mean the function is correct.
 
 | Module | Decompiled | `RAW-src` (compiles) | `RAW-draft` | |
 |---|---|---|---|---|
 | ZLZ | 182 | 141 | 41 | 77% |
-| ResMan | 187 | 155 | 32 | 82% |
-| Shape2D | 411 | 328 | 83 | 79% |
-| PCOM | 468 | 367 | 101 | 78% |
-| NameSpace | 571 | 449 | 122 | 78% |
-| Sound_DX8 | 594 | 482 | 112 | 81% |
-| Canvas | 470 | 377 | 93 | 80% |
-| Gr2D_DX8 | 757 | 639 | 118 | 84% |
-| **All 8 DLLs** | **3640** | **2938** | **702** | **80%** |
+| ResMan | 187 | 153 | 34 | 81% |
+| Shape2D | 411 | 326 | 85 | 79% |
+| PCOM | 468 | 365 | 103 | 77% |
+| NameSpace | 571 | 447 | 124 | 78% |
+| Sound_DX8 | 594 | 481 | 113 | 80% |
+| Canvas | 470 | 375 | 95 | 79% |
+| Gr2D_DX8 | 757 | 637 | 120 | 84% |
+| **GMSv62 (exe)** | 8854 | 6915 | 1939 | 78% |
+| **All** | **12494** | **9840** | **2654** | **78%** |
 
-See `docs/PILOT-ZLZ.md` for the pipeline and the kinds of failures. The exe (`GMSv62`) has not been
-started. Class-heavy code there will fail more often on unknown struct layouts.
+Caveats on the exe row:
+- 1,904 callees with call-arity mismatches (register-convention helpers whose arguments Ghidra
+  did not pass: SEH prolog, allocators, constructors) are declared `ret f();` so their callers
+  compile. They are listed in `src/c/gmsv62/gmsv62_relaxed.txt`; the mismatch is unresolved and
+  those calls still need the register-argument audit.
+- 339 vtable-scan entries that Ghidra could not turn into functions are data, not code
+  (`EXCLUDED-not-code`); 4 functions timed out in the decompiler and stay `TODO`.
+
+See `docs/PILOT-ZLZ.md` for the pipeline and the kinds of failures. Everything is produced by
+`tools/run_module.sh MODULE` (Ghidra and the `ms-check` MSVC container required).

@@ -3,10 +3,11 @@
 #define GR2D_DX8_DECLS_H
 
 #include "gr2d_dx8_types.h"
+#include "gr2d_dx8_tags.h"
 #include "gr2d_dx8_globals.h"
 
-HRESULT DllCanUnloadNow(void);
-HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv);
+/* SDK declares this: HRESULT DllCanUnloadNow(void); */
+/* SDK declares this: HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv); */
 LONG FUN_504011a3(int param_1);
 LONG FUN_5040139a(int *param_1);
 LONG FUN_5040147d(undefined4 *param_1);

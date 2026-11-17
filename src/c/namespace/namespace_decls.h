@@ -3,10 +3,11 @@
 #define NAMESPACE_DECLS_H
 
 #include "namespace_types.h"
+#include "namespace_tags.h"
 #include "namespace_globals.h"
 
-HRESULT DllCanUnloadNow(void);
-HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv);
+/* SDK declares this: HRESULT DllCanUnloadNow(void); */
+/* SDK declares this: HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv); */
 LONG FUN_50801264(int param_1);
 LONG FUN_508026bf(undefined4 *param_1);
 LONG FUN_508031b6(int *param_1);

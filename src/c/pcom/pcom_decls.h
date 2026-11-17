@@ -3,10 +3,11 @@
 #define PCOM_DECLS_H
 
 #include "pcom_types.h"
+#include "pcom_tags.h"
 #include "pcom_globals.h"
 
-HRESULT DllCanUnloadNow(void);
-HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv);
+/* SDK declares this: HRESULT DllCanUnloadNow(void); */
+/* SDK declares this: HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv); */
 LONG FUN_50c02cfb(int param_1);
 LONG FUN_50c035e7(undefined4 *param_1);
 LONG FUN_50c0391d(int param_1);

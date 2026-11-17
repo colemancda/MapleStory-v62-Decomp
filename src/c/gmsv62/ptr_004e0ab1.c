@@ -1,0 +1,26 @@
+/* ptr_004e0ab1 - 0x004e0ab1 in GMSv62.exe (image base 0x00400000).
+ * Raw Ghidra decompiler output, not yet reviewed. */
+#include "ghidra_types.h"
+#include "gmsv62_decls.h"
+
+
+void ptr_004e0ab1(void)
+
+{
+  int unaff_EBX;
+  int unaff_EBP;
+  int unaff_ESI;
+  int unaff_EDI;
+  undefined4 uVar1;
+  
+  uVar1 = *(undefined4 *)(unaff_ESI + 200);
+  FUN_00429303(uVar1);
+  FUN_004eb1bf(uVar1);
+  if ((*(int *)(unaff_ESI + 0xbc) != unaff_EBX) || (*(int *)(DAT_00978368 + 0x3234) == unaff_EDI)) {
+    FUN_004de7d7(1);
+  }
+  ExceptionList = *(void **)(unaff_EBP + -0xc);
+  return;
+}
+
+

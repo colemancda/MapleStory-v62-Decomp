@@ -3,10 +3,11 @@
 #define RESMAN_DECLS_H
 
 #include "resman_types.h"
+#include "resman_tags.h"
 #include "resman_globals.h"
 
-HRESULT DllCanUnloadNow(void);
-HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv);
+/* SDK declares this: HRESULT DllCanUnloadNow(void); */
+/* SDK declares this: HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv); */
 LONG FUN_510011ac(int param_1);
 LONG FUN_51001762(void);
 LONG FUN_510017d8(int *param_1);

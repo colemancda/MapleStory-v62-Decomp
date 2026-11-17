@@ -27,11 +27,20 @@ typedef unsigned char bool;
 #include <stdarg.h>
 #include <malloc.h>
 
-#ifndef WIN32_LEAN_AND_MEAN
-#define WIN32_LEAN_AND_MEAN
-#endif
 #ifdef _WIN32
+/* The full SDK, not WIN32_LEAN_AND_MEAN: the exe uses COM/OLE, crypto, wininet, multimedia, IME,
+ * shell, toolhelp and netbios, and Ghidra names their types in prototypes. winsock2 first. */
+#include <winsock2.h>
 #include <windows.h>
+#include <objbase.h>
+#include <oleauto.h>
+#include <wincrypt.h>
+#include <wininet.h>
+#include <mmsystem.h>
+#include <imm.h>
+#include <shlobj.h>
+#include <tlhelp32.h>
+#include <nb30.h>
 #else
 #include "win_shim.h"
 #endif

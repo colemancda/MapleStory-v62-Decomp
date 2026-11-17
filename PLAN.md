@@ -141,7 +141,7 @@ so the client stays runnable throughout.
 
 ## Pilot result
 
-All eight DLLs: 2938 of 3640 unique functions compile clean with no hand edits (80%); see `docs/PILOT-ZLZ.md` and the README table. The exe is next.
+The exe and all eight DLLs are decompiled to the raw C tier: 9840 of 12494 unique functions compile with no hand edits (78%); see the README table. 1,904 exe callees are declared with unspecified arguments to get there (listed in `src/c/gmsv62/gmsv62_relaxed.txt`) and are not verified. Next: the register-argument audit, then the C++ tier.
 
 ## First milestones
 

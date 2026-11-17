@@ -1,0 +1,115 @@
+/* FUN_006a1c8c - 0x006a1c8c in GMSv62.exe (image base 0x00400000).
+ * Raw Ghidra decompiler output, not yet reviewed. */
+#include "ghidra_types.h"
+#include "gmsv62_decls.h"
+
+
+void FUN_006a1c8c(void)
+
+{
+  undefined4 *puVar1;
+  int iVar2;
+  undefined4 uVar3;
+  int extraout_ECX;
+  int unaff_EBP;
+  
+  FUN_00879bb8();
+  FUN_0049f842();
+  *(undefined4 *)(unaff_EBP + -0x38) = 0xffffffff;
+  *(undefined4 *)(unaff_EBP + -0x58) = 0;
+  *(undefined4 *)(unaff_EBP + -4) = 0;
+  *(undefined4 *)(unaff_EBP + -0x54) = 0;
+  *(undefined4 *)(unaff_EBP + -0x40) = 0xff000000;
+  puVar1 = (undefined4 *)FUN_00679e4e(unaff_EBP + -0x10,10);
+  FUN_00408b49();
+  FUN_00402fa6();
+  *(undefined4 *)(unaff_EBP + -0x48) = *puVar1;
+  if (*(int *)(unaff_EBP + -0x10) != 0) {
+    FUN_004030b1();
+  }
+  *(undefined4 *)(unaff_EBP + -0x28) = 0;
+  *(undefined4 *)(unaff_EBP + -0x2c) = 0x32;
+  iVar2 = FUN_004029b9(0xb8);
+  *(int *)(unaff_EBP + -0x10) = iVar2;
+  *(undefined1 *)(unaff_EBP + -4) = 1;
+  if (iVar2 == 0) {
+    uVar3 = 0;
+  }
+  else {
+    uVar3 = FUN_004a0726();
+  }
+  *(undefined1 *)(unaff_EBP + -4) = 0;
+  FUN_0045e196(uVar3);
+  (**(code **)(**(int **)(extraout_ECX + 0x7c) + 8))
+            (extraout_ECX,1000,100,0x153,0xa5,0xd,unaff_EBP + -0x5c);
+  FUN_008164fd(*(undefined4 *)(extraout_ECX + 0x7c));
+  *(undefined4 *)(unaff_EBP + -0x18) = 0;
+  *(undefined4 *)(unaff_EBP + -0x20) = 0;
+  *(undefined4 *)(unaff_EBP + -0x1c) = 0;
+  *(undefined4 *)(unaff_EBP + -0x24) = 0;
+  *(undefined1 *)(unaff_EBP + -4) = 2;
+  uVar3 = FUN_00679d86(unaff_EBP + -0x10,0x4ed);
+  *(undefined1 *)(unaff_EBP + -4) = 3;
+  FUN_00419192(uVar3);
+  *(undefined1 *)(unaff_EBP + -4) = 2;
+  FUN_00402676();
+  iVar2 = FUN_004029b9(0x578);
+  *(int *)(unaff_EBP + -0x10) = iVar2;
+  *(undefined1 *)(unaff_EBP + -4) = 4;
+  if (iVar2 == 0) {
+    uVar3 = 0;
+  }
+  else {
+    uVar3 = FUN_0044f3fa();
+  }
+  *(undefined1 *)(unaff_EBP + -4) = 2;
+  FUN_00450382(uVar3);
+  (**(code **)(**(int **)(extraout_ECX + 0x84) + 0x20))
+            (extraout_ECX,1,0xed,0x17b,0,unaff_EBP + -0x24);
+  *(undefined4 *)(unaff_EBP + -0x24) = 0;
+  uVar3 = FUN_00679d86(unaff_EBP + -0x10,0xf12);
+  *(undefined1 *)(unaff_EBP + -4) = 5;
+  FUN_00419192(uVar3);
+  *(undefined1 *)(unaff_EBP + -4) = 2;
+  FUN_00402676();
+  iVar2 = FUN_004029b9(0x578);
+  *(int *)(unaff_EBP + -0x10) = iVar2;
+  *(undefined1 *)(unaff_EBP + -4) = 6;
+  if (iVar2 == 0) {
+    uVar3 = 0;
+  }
+  else {
+    uVar3 = FUN_0044f3fa();
+  }
+  *(undefined1 *)(unaff_EBP + -4) = 2;
+  FUN_00450382(uVar3);
+  (**(code **)(**(int **)(extraout_ECX + 0x8c) + 0x20))
+            (extraout_ECX,0x3ea,0xc1,0x17c,0,unaff_EBP + -0x24);
+  *(undefined4 *)(unaff_EBP + -0x24) = 0;
+  uVar3 = FUN_00679d86(unaff_EBP + -0x10,0xf13);
+  *(undefined1 *)(unaff_EBP + -4) = 7;
+  FUN_00419192(uVar3);
+  *(undefined1 *)(unaff_EBP + -4) = 2;
+  FUN_00402676();
+  iVar2 = FUN_004029b9(0x578);
+  *(int *)(unaff_EBP + -0x14) = iVar2;
+  *(undefined1 *)(unaff_EBP + -4) = 8;
+  if (iVar2 == 0) {
+    uVar3 = 0;
+  }
+  else {
+    uVar3 = FUN_0044f3fa();
+  }
+  *(undefined1 *)(unaff_EBP + -4) = 2;
+  FUN_00450382(uVar3);
+  (**(code **)(**(int **)(extraout_ECX + 0x94) + 0x20))
+            (extraout_ECX,0x3e9,0x80,0x17c,0,unaff_EBP + -0x24);
+  *(undefined1 *)(unaff_EBP + -4) = 0;
+  FUN_00402676();
+  *(undefined4 *)(unaff_EBP + -4) = 0xffffffff;
+  FUN_0045c14e();
+  ExceptionList = *(void **)(unaff_EBP + -0xc);
+  return;
+}
+
+

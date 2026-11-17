@@ -1,0 +1,202 @@
+/* FUN_0082f37d - 0x0082f37d in GMSv62.exe (image base 0x00400000).
+ * Raw Ghidra decompiler output, not yet reviewed. */
+#include "ghidra_types.h"
+#include "gmsv62_decls.h"
+
+
+undefined4 * FUN_0082f37d(void)
+
+{
+  int iVar1;
+  undefined4 *extraout_ECX;
+  int unaff_EBP;
+  
+  FUN_00879bb8();
+  DAT_00978368 = -(uint)(extraout_ECX != (undefined4 *)0xfffffffc) & (uint)extraout_ECX;
+  *(undefined4 **)(unaff_EBP + -0x10) = extraout_ECX;
+  extraout_ECX[2] = 0;
+  extraout_ECX[0x807] = 0;
+  extraout_ECX[0x808] = 0;
+  extraout_ECX[0x809] = 0;
+  *(undefined4 *)(unaff_EBP + -4) = 0;
+  extraout_ECX[0x80a] = 0;
+  FUN_0083d31a();
+  extraout_ECX[0x80f] = 0;
+  extraout_ECX[0x810] = 0;
+  extraout_ECX[0x820] = 0;
+  extraout_ECX[0x821] = 0;
+  extraout_ECX[0x822] = 0;
+  extraout_ECX[0x823] = 0;
+  extraout_ECX[0x826] = 0;
+  *(undefined1 *)(unaff_EBP + -4) = 4;
+  FUN_004bf8a2();
+  FUN_0066137b();
+  FUN_00660de8();
+  extraout_ECX[0xac8] = 0;
+  extraout_ECX[0xac9] = 0;
+  extraout_ECX[0xaca] = 0;
+  extraout_ECX[0xac6] = &PTR_FUN_008f2f78;
+  extraout_ECX[0xac5] = &PTR_FUN_008f2f74;
+  extraout_ECX[0xacf] = 0;
+  extraout_ECX[0xad0] = 0;
+  extraout_ECX[0xb1d] = 0;
+  extraout_ECX[0xb1e] = 0;
+  *(undefined1 *)(unaff_EBP + -4) = 6;
+  extraout_ECX[0xb1f] = 0;
+  FUN_0085cdb1();
+  extraout_ECX[0xb25] = 0;
+  extraout_ECX[0xb26] = 0;
+  extraout_ECX[0xb28] = 0;
+  extraout_ECX[0xb29] = 0;
+  extraout_ECX[0xb2a] = 0;
+  *(undefined1 *)(unaff_EBP + -4) = 9;
+  FUN_0082f882();
+  *(undefined1 *)(unaff_EBP + -4) = 10;
+  extraout_ECX[0xb36] = 0;
+  FUN_004184ca(&DAT_0097812c,0xffffffff);
+  *(undefined1 *)(unaff_EBP + -4) = 0xb;
+  extraout_ECX[0xb37] = 0;
+  FUN_0082f909();
+  extraout_ECX[0xb3e] = 0;
+  extraout_ECX[0xb3f] = 0;
+  *(undefined1 *)(extraout_ECX + 0xb40) = 0;
+  *(undefined1 *)((int)extraout_ECX + 0x2d01) = 0;
+  extraout_ECX[0xb41] = 0;
+  extraout_ECX[0xb42] = 0;
+  extraout_ECX[0xb43] = 0;
+  extraout_ECX[0xb44] = 0;
+  *(undefined1 *)(unaff_EBP + -4) = 0xf;
+  FUN_0087b2f0(extraout_ECX + 0xb45,8,0x31,&LAB_004c252c,FUN_00449716);
+  *(undefined1 *)(unaff_EBP + -4) = 0x10;
+  FUN_0087b2f0(extraout_ECX + 0xba7,8,0x31,&LAB_004c252c,FUN_00449716);
+  *(undefined1 *)(unaff_EBP + -4) = 0x11;
+  FUN_0066c089();
+  *(undefined1 *)(unaff_EBP + -4) = 0x12;
+  FUN_0046a1fc();
+  *(undefined1 *)(unaff_EBP + -4) = 0x13;
+  FUN_0046a1fc();
+  *(undefined1 *)(unaff_EBP + -4) = 0x14;
+  FUN_0046a1fc();
+  *(undefined1 *)(unaff_EBP + -4) = 0x15;
+  FUN_0046a1fc();
+  *(undefined1 *)(unaff_EBP + -4) = 0x16;
+  FUN_0063435b();
+  extraout_ECX[0xc52] = 0;
+  extraout_ECX[0xc54] = 0;
+  extraout_ECX[0xc57] = 0;
+  extraout_ECX[0xc59] = 0;
+  extraout_ECX[0xc5b] = 0;
+  extraout_ECX[0xc5d] = 0;
+  extraout_ECX[0xc5f] = 0;
+  extraout_ECX[0xc61] = 0;
+  extraout_ECX[0xc63] = 0;
+  extraout_ECX[0xc65] = 0;
+  extraout_ECX[0xc67] = 0;
+  extraout_ECX[0xc69] = 0;
+  extraout_ECX[0xc6b] = 0;
+  extraout_ECX[0xc6d] = 0;
+  extraout_ECX[0xc6f] = 0;
+  extraout_ECX[0xc71] = 0;
+  extraout_ECX[0xc73] = 0;
+  extraout_ECX[0xc75] = 0;
+  extraout_ECX[0xc77] = 0;
+  extraout_ECX[0xc79] = 0;
+  extraout_ECX[0xc7b] = 0;
+  extraout_ECX[0xc7d] = 0;
+  extraout_ECX[0xc7f] = 0;
+  extraout_ECX[0xc81] = 0;
+  extraout_ECX[0xc83] = 0;
+  *(undefined1 *)(unaff_EBP + -4) = 0x2f;
+  iVar1 = FUN_004029b9(0x3c);
+  *(int *)(unaff_EBP + -0x14) = iVar1;
+  *(undefined1 *)(unaff_EBP + -4) = 0x30;
+  if (iVar1 == 0) {
+    iVar1 = 0;
+  }
+  else {
+    iVar1 = FUN_0070e2b3();
+  }
+  extraout_ECX[0xc85] = iVar1;
+  if (iVar1 != 0) {
+    InterlockedIncrement((LONG *)(iVar1 + 4));
+  }
+  extraout_ECX[0xc87] = 0;
+  extraout_ECX[0xc89] = 0;
+  extraout_ECX[0xc8a] = 0;
+  extraout_ECX[0xc8d] = 0;
+  extraout_ECX[0xc8e] = 0;
+  extraout_ECX[0xc8f] = 0;
+  extraout_ECX[0xc8b] = &PTR_FUN_008ea6b8;
+  extraout_ECX[0xc92] = 0;
+  extraout_ECX[0xc93] = 0;
+  extraout_ECX[0xc94] = 0;
+  extraout_ECX[0xc90] = &PTR_FUN_008f2f70;
+  *(undefined1 *)(unaff_EBP + -4) = 0x36;
+  FUN_00687ae9();
+  extraout_ECX[0xc99] = 0;
+  extraout_ECX[0xc9a] = 0;
+  extraout_ECX[0xc9b] = 0;
+  extraout_ECX[0xc9c] = 0;
+  extraout_ECX[0xc9d] = 0;
+  extraout_ECX[0xc9e] = 0;
+  extraout_ECX[0xc9f] = 0;
+  extraout_ECX[0xca2] = 0;
+  extraout_ECX[0xca3] = 0;
+  extraout_ECX[0xca4] = 0;
+  extraout_ECX[0xca5] = 0;
+  extraout_ECX[0xca6] = 0;
+  extraout_ECX[0xcac] = 0;
+  extraout_ECX[0xcad] = 0x1f;
+  extraout_ECX[0xcae] = 0;
+  extraout_ECX[0xcab] = &PTR_FUN_008ecb0c;
+  extraout_ECX[0xcaf] = 100;
+  extraout_ECX[0xcb0] = 0x18;
+  extraout_ECX[0xcb1] = 0;
+  extraout_ECX[0xcb2] = 0;
+  extraout_ECX[0xcb3] = 0;
+  extraout_ECX[0xcb5] = 0;
+  extraout_ECX[0xcb6] = 0x1f;
+  extraout_ECX[0xcb7] = 0;
+  extraout_ECX[0xcb4] = &PTR_FUN_008ed1ac;
+  extraout_ECX[0xcb8] = 100;
+  extraout_ECX[0xcb9] = 0x18;
+  extraout_ECX[0xcbb] = 0;
+  extraout_ECX[0xcbc] = 0x1f;
+  extraout_ECX[0xcbd] = 0;
+  extraout_ECX[0xcba] = &PTR_FUN_008ed1ac;
+  extraout_ECX[0xcbe] = 100;
+  extraout_ECX[0xcbf] = 0x18;
+  extraout_ECX[0xcc0] = 0;
+  extraout_ECX[0xcc1] = 0;
+  extraout_ECX[0xcc2] = 0;
+  extraout_ECX[0xcc3] = 0;
+  extraout_ECX[0xcc4] = 0;
+  extraout_ECX[0xcc5] = 0;
+  extraout_ECX[0xcc6] = 0;
+  extraout_ECX[0xcc7] = 0;
+  extraout_ECX[0xcca] = 0;
+  *(undefined1 *)(unaff_EBP + -4) = 0x45;
+  extraout_ECX[0xccb] = 0;
+  extraout_ECX[0xccc] = 0;
+  extraout_ECX[0xccd] = 0;
+  extraout_ECX[0xcce] = 0;
+  extraout_ECX[0xccf] = 0;
+  *extraout_ECX = &PTR_FUN_008f2f6c;
+  iVar1 = (*DAT_0097b704)();
+  extraout_ECX[0xc46] = iVar1 + -300000;
+  extraout_ECX[0xc55] = iVar1 + -300000;
+  extraout_ECX[0xc48] = iVar1;
+  extraout_ECX[0xc47] = iVar1;
+  extraout_ECX[0x824] = iVar1;
+  extraout_ECX[0xc49] = iVar1;
+  extraout_ECX[0xacd] = 0xffffffff;
+  extraout_ECX[0xace] = 0xffffffff;
+  extraout_ECX[0xacb] = 999999999;
+  extraout_ECX[0xacc] = 999999999;
+  ExceptionList = *(void **)(unaff_EBP + -0xc);
+  extraout_ECX[0xca9] = iVar1 + 3600000;
+  extraout_ECX[0xcaa] = 1;
+  return extraout_ECX;
+}
+
+

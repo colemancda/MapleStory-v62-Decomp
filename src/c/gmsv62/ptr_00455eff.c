@@ -1,0 +1,28 @@
+/* ptr_00455eff - 0x00455eff in GMSv62.exe (image base 0x00400000).
+ * Raw Ghidra decompiler output, not yet reviewed. */
+#include "ghidra_types.h"
+#include "gmsv62_decls.h"
+
+
+void __thiscall ptr_00455eff(int *param_1,int param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  
+  if (param_2 == 1) {
+    iVar1 = *param_1;
+    uVar2 = 1;
+  }
+  else {
+    if (param_2 != 2) {
+      return;
+    }
+    iVar1 = *param_1;
+    uVar2 = 2;
+  }
+  (**(code **)(iVar1 + 0x34))(uVar2);
+  return;
+}
+
+

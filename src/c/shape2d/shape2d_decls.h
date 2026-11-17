@@ -3,10 +3,11 @@
 #define SHAPE2D_DECLS_H
 
 #include "shape2d_types.h"
+#include "shape2d_tags.h"
 #include "shape2d_globals.h"
 
-HRESULT DllCanUnloadNow(void);
-HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv);
+/* SDK declares this: HRESULT DllCanUnloadNow(void); */
+/* SDK declares this: HRESULT DllGetClassObject(IID *rclsid,IID *riid,LPVOID *ppv); */
 LONG FUN_5140122d(int param_1);
 LONG FUN_51401959(undefined4 *param_1);
 LONG FUN_51401b36(int *param_1);
